@@ -1,0 +1,11 @@
+@media (hover: hover) {
+  @media (pointer: fine) {
+    .header {
+      &__button {
+        &:hover {
+          background-color: #9fd3ff;
+        }
+      }
+    }
+  }
+}
