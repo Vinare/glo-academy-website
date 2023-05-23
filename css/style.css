@@ -12,7 +12,7 @@
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   color: #FBFBFB;
-  margin-right: 73px;
+  margin-right: 64px;
 }
 .header__date-group {
   display: flex;
@@ -23,6 +23,7 @@
   font-size: 55px;
   line-height: 67px;
   margin-right: 6px;
+  flex-shrink: 0;
 }
 .header__month {
   font-size: 24px;
@@ -33,19 +34,36 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  max-width: 384px;
 }
 .header__button {
   border: none;
-  padding: 15px 19px;
+  padding: 15px 24px;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #003277;
-  border-radius: 12px;
-  background-color: #FBFBFB;
-  margin-left: 81px;
+  border-radius: 62px;
+  background-color: #FFFFFF;
+  margin-left: 61px;
+}
+@media (min-width: 1200px) and (max-width: 1359px) {
+  .header {
+    padding: 11px 100px;
+  }
+  .header__date-group {
+    margin-right: 24px;
+  }
+  .header__main-info {
+    margin-right: 50px;
+    flex-shrink: 0;
+  }
+  .header__button {
+    padding: 10px 22px;
+    margin-left: 51px;
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {
