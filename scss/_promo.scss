@@ -1,0 +1,128 @@
+.promo {
+  @media (min-width: 768px) {    
+      &__date {
+        font-size: 34px;
+        line-height: 60px;
+      }
+      &__month {
+        font-size: 17px;
+        line-height: 26px;
+      }
+      &__date-group {
+        margin-right: 12px;
+      }
+      &__main-info {
+        flex-shrink: 0;
+      }
+      &__presentation {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 308px;
+      }
+      &__button {
+        font-size: 15px;
+        line-height: 19px;
+        padding: 8px 22px; 
+        margin-left: 34px;
+      }
+    }
+
+  @media (min-width: 992px) { 
+    &__date {
+      font-size: 52px;
+      line-height: 64px;
+    }
+    &__month {
+      font-size: 22px;
+    }
+    &__date-group {
+      margin-right: 18px;
+    }
+    &__main-info {
+      flex-shrink: 0;
+    }
+    &__presentation {
+      font-size: 18px;
+      max-width: 355px;
+    }
+    &__button {
+      padding: 8px 22px; 
+      margin-left: 34px;
+    }
+  }
+
+  @media (min-width: 1200px) { 
+    .promo {
+    &__date-group {
+      margin-right: 24px;
+    }
+    &__main-info {
+      flex-shrink: 0;
+    }
+    &__button {
+      padding: 10px 22px; 
+      margin-left: 51px;
+    }
+  }
+
+  @media (min-width: 1360px) { 
+      height: 90px;
+      background-color: $dark-blue;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url('/img/building.png');
+      background-repeat: no-repeat;
+      background-position: 777px 0;
+      background-size: 159px 90px;
+      &__main-info {
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        color: $white;  
+      }
+      &__date-group {
+        display: flex;
+        font-weight: 700;
+        margin-right: 35px;
+      }
+      &__date {
+        font-size: 55px;
+        line-height: 67px;
+        margin-right: 6px;
+        flex-shrink: 0;
+      }
+      &__month {
+        font-size: 24px;
+        line-height: 29px;
+      }
+      &__presentation {
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 384px;
+      }
+      &__button {
+        border: none;
+        padding: 15px 24px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $dark-blue;
+        border-radius: 62px;
+        background-color: $snow-white;
+      }
+
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+  }
+  }
+}
+
+
