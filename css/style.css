@@ -6,7 +6,7 @@
   align-items: center;
   position: relative;
 }
-.promo:before {
+.promo::before {
   content: " ";
   display: block;
   position: absolute;
@@ -15,11 +15,10 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  background-image: url("/img/building.png");
+  background-image: url("../img/building.png");
   background-repeat: no-repeat;
   background-position: calc(50% + 176px) 0;
   background-size: 159px 90px;
-  z-index: 0;
 }
 .promo__main-info {
   display: flex;
