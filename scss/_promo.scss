@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+
   &::before {
     content: ' ';
     display: block;
@@ -19,6 +20,7 @@
     background-position: calc(50% + 176px) 0;
     background-size: 159px 90px;
   }
+
   &__main-info {
     display: flex;
     align-items: center;
@@ -26,21 +28,25 @@
     font-style: normal;
     color: $white;
   }
+
   &__date-group {
     display: flex;
     font-weight: 700;
     margin-right: 35px;
   }
+
   &__date {
     font-size: 55px;
     line-height: 67px;
     margin-right: 6px;
     flex-shrink: 0;
   }
+
   &__month {
     font-size: 24px;
     line-height: 29px;
   }
+
   &__presentation {
     margin-bottom: 0;
     font-weight: 400;
@@ -48,6 +54,7 @@
     line-height: 24px;
     max-width: 384px;
   }
+
   &__button {
     border: none;
     padding: 15px 24px;
@@ -60,8 +67,8 @@
     border-radius: 62px;
     background-color: $snow-white;
   }
-  
-  @media (min-width: 1360px) { 
+
+  @media (min-width: 1360px) {
     .container {
       padding-left: 0;
       padding-right: 0;
@@ -72,24 +79,29 @@
     &__date-group {
       margin-right: 18px;
     }
+
     &__date {
       font-size: 54px;
       line-height: 66px;
     }
+
     &__month {
       font-size: 22px;
     }
+
     &__main-info {
       flex-shrink: 0;
     }
+
     &__presentation {
       font-size: 19px;
       line-height: 23px;
     }
+
     &__button {
       padding: 10px 22px;
-       line-height: 19px;
-       max-width: 198px;
+      line-height: 19px;
+      max-width: 198px;
     }
   }
 
@@ -97,25 +109,32 @@
     &::before {
       opacity: 0.3;
     }
+
     &__date {
       font-size: 48px;
       line-height: 60px;
     }
+
     &__month {
       font-size: 18px;
     }
+
     &__date-group {
       margin-right: 14px;
     }
+
     &__main-info {
       flex-shrink: 0;
       z-index: 3;
     }
+
     &__presentation {
       font-size: 17px;
       font-weight: 700;
       line-height: 24px;
+      max-width: 365px;
     }
+
     &__button {
       padding: 8px 22px;
       z-index: 3;
@@ -123,30 +142,49 @@
   }
 
   @media (max-width: 767.98px) {
+    height: 190px;
+
+    &::before {
+      background-position: center bottom;
+      background-size: contain;
+    }
+
     &__date {
-      font-size: 34px;
-      line-height: 60px;
+      font-size: 44px;
+      line-height: 54px;
     }
+
     &__month {
-      font-size: 17px;
-      line-height: 26px;
+      font-size: 18px;
+      line-height: 22px;
     }
+
     &__date-group {
-      margin-right: 12px;
+      width: 100%;
+      margin-right: 0;
     }
+
     &__main-info {
       flex-shrink: 0;
+      flex-direction: column;
+      width: 100%;
     }
+
     &__presentation {
       font-size: 16px;
-      line-height: 20px;
-      max-width: 308px;
+      line-height: 24px;
+      font-weight: 400;
+      max-width: 330px;
+      margin-bottom: 16px;
+      align-self: flex-start;
     }
+
     &__button {
+      width: 100%;
+      max-width: 100%;
       font-size: 15px;
       line-height: 19px;
-      padding: 8px 22px;
-      margin-left: 34px;
+      padding: 16px 22px;
     }
   }
 }

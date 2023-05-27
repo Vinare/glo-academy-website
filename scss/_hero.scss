@@ -12,11 +12,16 @@
 
 .logo__link {
   margin-right: 70px;
+
+  @media (max-width: 991.98px) {
+    margin-right: 0;
+  }
 }
 
 .navbar {
   &-nav {
     margin-top: 23px;
+
     .nav {
       &-link {
         font-family: "Montserrat";
@@ -30,9 +35,19 @@
       }
     }
   }
+
   &-toggler {
     align-self: center;
+    border: none;
+    outline: 0;
+
+    &:focus {
+      border: none;
+      outline: 0;
+      box-shadow: none;
+    }
   }
+
   &-expand-lg {
     .navbar {
       &-nav {
@@ -40,6 +55,7 @@
           &-link {
             padding-left: 0;
             padding-right: 50px;
+
             &:last-child {
               padding-right: 0;
             }
@@ -48,6 +64,7 @@
       }
     }
   }
+
   &__button {
     font-family: "Montserrat";
     font-style: normal;
@@ -62,8 +79,13 @@
   }
 
   @media (max-width: 991.98px) {
-    &__button {
-      display: none;
+    &-nav {
+      margin-bottom: 24px;
+
+      li {
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
     }
   }
 }
