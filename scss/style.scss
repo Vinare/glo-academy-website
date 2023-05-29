@@ -1,5 +1,9 @@
 @import 'variables';
-@import 'promo';
-@import 'hero';
+@import './interface';
+
+// SECTIONS
+@import './sections/header';
+@import './sections/promo';
+@import './sections/hero';
+@import './sections/courses';
 @import './sections/timeline';
-@import 'media';

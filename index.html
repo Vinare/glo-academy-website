@@ -13,11 +13,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>Glo Academy</title>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"
-    defer></script>
   <script src="js/main.js" defer></script>
 </head>
 
@@ -36,61 +34,213 @@
       <button class="promo__button">Участвовать бесплатно</button>
     </div>
   </div>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg py-0">
+        <div class="container-fluid px-0">
+          <a href="#" class="logo__link">
+            <img src="img/glo-logo.png" alt="Logo: GloAcademy" class="logo__image">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="navbar-wrapper d-flex flex-column flex-lg-row justify-content-between w-100">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Курсы
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Курс по верстке</a></li>
+                    <li><a class="dropdown-item" href="#">Курс по JavaScript</a></li>
+                    <li><a class="dropdown-item" href="#">Курс по React</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Интенсивы
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Интенсив BMW</a></li>
+                    <li><a class="dropdown-item" href="#">Интенсив по React</a></li>
+                    <li><a class="dropdown-item" href="#">Интенсив по Vue</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Шаблоны для верстки</a>
+                </li>
+              </ul>
+
+              <button class="navbar__button">Войти</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
   <main>
     <section class="hero">
-      <header class="header">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg py-0">
-            <div class="container-fluid px-0">
-              <a href="#" class="logo__link">
-                <img src="img/glo-logo.png" alt="Logo: GloAcademy" class="logo__image">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <div class="navbar-wrapper d-flex flex-column flex-lg-row justify-content-between w-100">
-                  <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Курсы
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Курс по верстке</a></li>
-                        <li><a class="dropdown-item" href="#">Курс по JavaScript</a></li>
-                        <li><a class="dropdown-item" href="#">Курс по React</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Интенсивы
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Интенсив BMW</a></li>
-                        <li><a class="dropdown-item" href="#">Интенсив по React</a></li>
-                        <li><a class="dropdown-item" href="#">Интенсив по Vue</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Шаблоны для верстки</a>
-                    </li>
-                  </ul>
+      <div class="container">
+        <div class="video-block">
+          <img src="./img/hero_img.png" class="video-img" alt="GloAcademy">
+          <div class="video-promo">
+            <h2 class="video-title">Glo Academy</h2>
+            <p class="video-description">
+              Освойте восстребованную профессию в&nbsp;онлайн-школе программирования
+            </p>
+            <button class="video-button">Начать учиться</button>
+          </div>
+          <svg class="video-play" width="106" height="106" viewBox="0 0 106 106" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="53" cy="53" r="52" stroke="white" stroke-width="2" />
+            <path
+              d="M72.368 50.3871C74.4027 51.5349 74.4027 54.4651 72.368 55.6129L42.474 72.4762C40.4741 73.6043 38 72.1594 38 69.8633L38 36.1367C38 33.8406 40.4741 32.3957 42.474 33.5238L72.368 50.3871Z"
+              fill="white" />
+          </svg>
+        </div>
+      </div>
+    </section>
 
-                  <button class="navbar__button">Войти</button>
+    <section class="courses">
+      <div class="container">
+        <h2 class="courses__title">Получай знания через курсы</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="courses__card">
+                <img src="./img/card-1.png" alt="Карточка 1">
+                <div class="card__text">
+                  <h5 class="card__start">Старт 16 авг</h5>
+                  <div>
+                    <span class="card__period card__period_orange">6 недель</span>
+                    <h4 class="card__title">Дизайн</h4>
+                    <span class="card__price">от 16 000 ₽</span>
+                  </div>
                 </div>
               </div>
-
             </div>
-          </nav>
+
+            <div class="swiper-slide">
+              <div class="courses__card">
+                <img src="./img/card-2.png" alt="Карточка 2">
+                <div class="card__text">
+                  <h5 class="card__start card__start_white">Старт 1 декабря</h5>
+                  <div>
+                    <span class="card__period card__period_blue">4 недели</span>
+                    <h4 class="card__title">Верстка</h4>
+                    <span class="card__price">от 18 990 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="courses__card">
+                <img src="./img/card-3.png" alt="Карточка 3">
+                <div class="card__text">
+                  <h5 class="card__start card__start_black">Старт 9 ноября</h5>
+                  <div>
+                    <span class="card__period">7 недель</span>
+                    <h4 class="card__title card__title_black">JavaScript</h4>
+                    <span class="card__price card__price_black">от 21 490 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="courses__card">
+                <img src="./img/card-4.png" alt="Карточка 4">
+                <div class="card__text">
+                  <h5 class="card__start card__start_white">старт 20 ноября</h5>
+                  <div>
+                    <span class="card__period card__period_marine">7 недель</span>
+                    <h4 class="card__title">Wordpress</h4>
+                    <span class="card__price">от 18 990 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="courses__card">
+                <img src="./img/card-5.png" alt="Карточка 5">
+                <div class="card__text">
+                  <h5 class="card__start">Старт 18 сентября</h5>
+                  <div>
+                    <span class="card__period">6 недель</span>
+                    <h4 class="card__title card__title_black">React</h4>
+                    <span class="card__price card__price_black">от 16 000 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="courses__card swiper-slide">
+              <img src="./img/card-1.png" alt="Карточка 1">
+              <div class="card__text">
+                <h5 class="card__start">Старт 16 авг</h5>
+                <div>
+                  <span class="card__period card__period_orange">6 недель</span>
+                  <h4 class="card__title">Дизайн</h4>
+                  <span class="card__price">от 16 000 ₽</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="courses__card swiper-slide">
+              <img src="./img/card-2.png" alt="Карточка 2">
+              <div class="card__text">
+                <h5 class="card__start card__start_white">Старт 1 декабря</h5>
+                <div>
+                  <span class="card__period card__period_blue">4 недели</span>
+                  <h4 class="card__title">Верстка</h4>
+                  <span class="card__price">от 18 990 ₽</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="courses__card swiper-slide">
+              <img src="./img/card-3.png" alt="Карточка 3">
+              <div class="card__text">
+                <h5 class="card__start card__start_black">Старт 9 ноября</h5>
+                <div>
+                  <span class="card__period">7 недель</span>
+                  <h4 class="card__title card__title_black">JavaScript</h4>
+                  <span class="card__price card__price_black">от 21 490 ₽</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="courses__card swiper-slide">
+              <img src="./img/card-4.png" alt="Карточка 4">
+              <div class="card__text">
+                <h5 class="card__start card__start_white">старт 20 ноября</h5>
+                <div>
+                  <span class="card__period card__period_marine">7 недель</span>
+                  <h4 class="card__title">Wordpress</h4>
+                  <span class="card__price">от 18 990 ₽</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="courses__card swiper-slide">
+              <img src="./img/card-5.png" alt="Карточка 5">
+              <div class="card__text">
+                <h5 class="card__start">Старт 18 сентября</h5>
+                <div>
+                  <span class="card__period">6 недель</span>
+                  <h4 class="card__title card__title_black">React</h4>
+                  <span class="card__price card__price_black">от 16 000 ₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </header>
-      <div class="video-block">
-
-      </div>
-
       </div>
     </section>
 
@@ -134,7 +284,7 @@
               <span class="timeline-description-months__line--line-text-sm text-5">5 мес</span>
               <span class="timeline-description-months__line--line-text-sm text-6">6 мес</span>
             </div>
-            <div class="timeline-description-months__blocks row order-2 order-xl-1">
+            <div class="timeline-description-months__blocks row align-items-stretch order-2 order-xl-1">
               <div class="col col-12 col-xl-5">
                 <div class="timeline-description-months__blocks-item">
                   <span class="timeline-description-months__blocks-item--date">
@@ -196,7 +346,10 @@
       </div>
     </section>
   </main>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 
 </html>

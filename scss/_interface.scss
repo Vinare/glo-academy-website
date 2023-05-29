@@ -1,0 +1,28 @@
+@media (min-width: 1360px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (hover: hover) {
+    @media (pointer: fine) {
+        .promo {
+            &__button {
+                &:hover {
+                    background-color: #9fd3ff;
+                }
+            }
+        }
+
+        .navbar {
+            &__button {
+                &:hover {
+                    background-color: #333333;
+                    color: $white;
+                    border-color: #333333;
+                }
+            }
+        }
+    }
+}

@@ -145,6 +145,7 @@
     height: 190px;
 
     &::before {
+      background-image: url('../img/building-small.png');
       background-position: center bottom;
       background-size: contain;
     }
