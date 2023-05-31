@@ -116,11 +116,6 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-    }
-
-    @media (max-width: 575.98px) {
-        &-slide {
-            justify-content: center;
-        }
+        width: auto;
     }
 }
