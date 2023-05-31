@@ -59,4 +59,113 @@
     padding: 20px 45px;
     color: $color-primary
   }
+
+  @media (max-width: 1199.98px) {
+    &-title {
+      font-size: 52px;
+    }
+    &-button {
+      padding: 16px 42px;
+    }
+    &-promo {
+      top: unset;
+      bottom: 48px;
+    }
+    &-play {
+      height: 80px;
+      width: 80px;
+    } 
+  }
+
+  @media (max-width: 991.98px) {
+    &-promo {
+      bottom: 58px;
+    }
+    &-title {
+      font-size: 37px;
+      line-height: 45px;
+    }
+    &-description {
+      font-size: 19px;
+      line-height: 26px;
+      width: 58%;
+    }
+    &-button {
+      padding: 12px 34px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+    &-play {
+      height: 66px;
+      width: 66px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &-promo {
+      bottom: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      left: 40px;
+      right: 0;
+      top: 45px;
+    }
+    &-title {
+      font-size: 37px;
+      line-height: 45px;
+      align-self: flex-start;
+      margin-bottom: 115px;
+    }
+    &-description {
+      width: 90%;
+      margin-top: 100px;
+    }
+    &-button {
+      width: fit-content;
+    }
+  }
+ 
+  @media (max-width: 575.98px) { 
+    &-description {
+      width: 94%;
+      font-size: 18px;
+    } 
+    &-promo {
+      left: 30px;
+    }
+  }
+
+  @media (max-width: 419px) { 
+
+    &-description {
+      font-size: 17px;
+      line-height: 25px;
+      margin-top: 105px;
+      width: 100%;
+    } 
+    &-promo {
+      bottom: 40px;
+      left: 24px;
+      right: 24px;
+      top: 30px;
+    }
+    &-title {
+      font-size: 30px;
+    }
+    &-button {
+      font-size: 17px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 396px) {
+    &-description {
+      font-size: 16px;
+      margin-top: 100px;
+    }
+    &-button {
+      font-size: 16px;  
+    }
+  }
 }
