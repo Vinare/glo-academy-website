@@ -5,6 +5,12 @@
     }
 }
 
+@media (max-width: 480px) {
+    .container {
+        --bs-gutter-x: 2rem;
+    }
+}
+
 @media (hover: hover) {
     @media (pointer: fine) {
         .promo {

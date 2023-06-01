@@ -7,6 +7,37 @@
         line-height: 49px;
         color: $color-primary;
         margin-bottom: 24px;
+
+    }
+     
+    @media (max-width: 1199.98px) {
+        &__title {
+            font-size: 38px;
+            line-height: 47px;
+            margin-bottom: 28px;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        &__title {
+            font-size: 34px;
+            line-height: 45px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        &__title {
+            font-size: 32px;
+            line-height: 44px;
+        }
+    }
+
+    @media (max-width: 480px) { 
+        &__title {
+            line-height: 36px;
+            margin-bottom: 16px;
+        }
     }
 
     &__card {
@@ -117,5 +148,10 @@
         justify-content: flex-start;
         align-items: center;
         width: auto;
+    }
+
+    @media (max-width: 480px) { 
+        margin-bottom: 62px;
+        overflow: visible;
     }
 }
