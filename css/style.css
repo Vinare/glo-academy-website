@@ -257,7 +257,6 @@ header .navbar__button {
 .video-block {
   position: relative;
   height: 477px;
-  margin-bottom: 70px;
 }
 .video-img {
   border-radius: 39px;
@@ -413,6 +412,9 @@ header .navbar__button {
   }
 }
 
+.courses {
+  padding-top: 70px;
+}
 .courses__title {
   font-family: "Montserrat";
   font-style: normal;
@@ -445,7 +447,7 @@ header .navbar__button {
 @media (max-width: 480px) {
   .courses__title {
     line-height: 36px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 }
 .courses__card {
@@ -532,9 +534,6 @@ header .navbar__button {
   color: #333333;
 }
 
-.swiper {
-  margin-bottom: 80px;
-}
 .swiper-slide {
   position: relative;
   display: flex;
@@ -542,10 +541,45 @@ header .navbar__button {
   align-items: center;
   width: auto;
 }
-@media (max-width: 480px) {
+@media (max-width: 767.98px) {
   .swiper {
-    margin-bottom: 62px;
     overflow: visible;
+  }
+}
+
+.professions {
+  padding-top: 121px;
+  padding-bottom: 40px;
+  margin-top: -41px;
+  background: radial-gradient(135.64% 135.64% at 35.92% 127.13%, #0ED1FF 0%, #1461D2 100%);
+}
+.professions__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #FFFFFF;
+  margin-right: 21px;
+}
+.professions__title-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.professions__button {
+  border: 1px solid #C9C9C9;
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 7px 12px;
+}
+.professions__button_second {
+  margin-left: 8px;
+}
+@media (max-width: 480px) {
+  .professions {
+    padding-top: 124px;
+    margin-top: -62px;
   }
 }
 

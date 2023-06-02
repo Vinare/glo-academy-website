@@ -1,4 +1,5 @@
 .courses {
+    padding-top: 70px;
     &__title {
         font-family: 'Montserrat';
         font-style: normal;
@@ -36,7 +37,7 @@
     @media (max-width: 480px) { 
         &__title {
             line-height: 36px;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
         }
     }
 
@@ -140,8 +141,6 @@
 }
 
 .swiper {
-    margin-bottom: 80px;
-
     &-slide {
         position: relative;
         display: flex;
@@ -150,8 +149,11 @@
         width: auto;
     }
 
-    @media (max-width: 480px) { 
-        margin-bottom: 62px;
-        overflow: visible;
+    @media (max-width: 767.98px) { 
+       overflow: visible;
     }
+
+    
+
+    
 }
