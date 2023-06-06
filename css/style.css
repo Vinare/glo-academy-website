@@ -598,9 +598,73 @@ header .navbar__button {
   height: 7px;
   margin-right: 4px;
 }
+.professions__card {
+  position: relative;
+  width: 366px;
+  height: 307px;
+}
+.professions__card_img {
+  margin-left: -8px;
+  border-radius: 30px;
+}
+.professions__card_text {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.professions__card_details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.professions__card_start {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+.professions__card_period {
+  padding: 1px 8px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #119CEA;
+}
+.professions__card_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 2px;
+}
+.professions__card_price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+  margin-right: 16px;
+}
+.professions__card_price_group {
+  display: flex;
+}
 .professions__card_price_del {
   position: relative;
-  color: #FFFFFF;
+  font-weight: 700;
+  margin-right: 0;
 }
 .professions__card_price_del svg {
   position: absolute;

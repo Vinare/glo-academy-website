@@ -50,10 +50,70 @@
     }
   }
   &__card {
+    position: relative;
+    width: 366px;
+    height: 307px;
+    &_img {
+      margin-left: -8px;
+      border-radius: 30px;
+    }
+    &_text {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+    }
+    &_details {
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    &_start {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 14px;
+      text-transform: uppercase;
+      color: $snow-white;
+      margin-right: 16px;
+      margin-bottom: 0;
+    }
+    &_period {
+      padding: 1px 8px;
+      background: $snow-white;
+      border-radius: 20px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 14px;
+      text-transform: uppercase;
+      color: #119CEA;
+    }
+    &_title {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: $snow-white;
+      margin-bottom: 2px;
+    }
     &_price {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 38px;
+      color: $snow-white;
+      margin-right: 16px;
+      &_group {
+        display: flex;
+      }
       &_del {
         position: relative;
-        color: $snow-white;
+        font-weight: 700;
+        margin-right: 0;
         svg {
           position: absolute;
           top: 0;
@@ -61,7 +121,9 @@
           right: 0;
           bottom: 0;
         }
-        }}}
+      }
+    }
+  }
 
   @media (max-width: 480px) { 
       padding-top: 124px; 
