@@ -41,6 +41,8 @@
 
     .professions {
       &__card {
+        overflow: hidden;
+
         &::before {
             content: "";
             position: absolute;
@@ -49,7 +51,7 @@
             left: 0;
             bottom: 0;
             background: radial-gradient(66.53% 94.56% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%);
-            transition: all 1.5s;
+            transition: all .3s;
             opacity: 0;
             z-index: -1;
         }
