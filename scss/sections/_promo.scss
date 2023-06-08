@@ -27,6 +27,7 @@
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     color: $white;
+    z-index: 2;
   }
 
   &__date-group {
@@ -66,6 +67,7 @@
     color: $dark-blue;
     border-radius: 62px;
     background-color: $snow-white;
+    z-index: 2;
     
   }
 

@@ -23,8 +23,20 @@
     color: #FBFBFB;
     border-color: #333333;
   }
-  .professions__card:hover {
+  .professions__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     background: radial-gradient(66.53% 94.56% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%);
+    transition: all 1.5s;
+    opacity: 0;
+    z-index: -1;
+  }
+  .professions__card:hover::before {
+    opacity: 1;
   }
 }
 header.header {
@@ -125,6 +137,7 @@ header .navbar__button {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   color: #FBFBFB;
+  z-index: 2;
 }
 .promo__date-group {
   display: flex;
@@ -159,6 +172,7 @@ header .navbar__button {
   color: #003277;
   border-radius: 62px;
   background-color: #FFFFFF;
+  z-index: 2;
 }
 @media (min-width: 1360px) {
   .promo .container {
@@ -605,6 +619,7 @@ header .navbar__button {
   width: 366px;
   height: 307px;
   border-radius: 30px;
+  cursor: pointer;
 }
 .professions__card_img {
   margin-left: -8px;
