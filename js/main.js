@@ -19,14 +19,17 @@ const swiper = new Swiper(".mySwiper", {
     992: {
       slidesPerView: 4,
       spaceBetween: 28,
+      slidesOffsetBefore: 0,
     },
     1200: {
       slidesPerView: 5,
       spaceBetween: 10,
+      slidesOffsetBefore: 0,
     },
     1360: {
       slidesPerView: 5,
       spaceBetween: 20,
+      slidesOffsetBefore: 0,
     },
   },
 });
@@ -52,14 +55,17 @@ const professionsSwiper = new Swiper(".professionsSwiper", {
     992: {
       slidesPerView: "auto",
       spaceBetween: 28,
+      slidesOffsetBefore: 0,
     },
     1200: {
       slidesPerView: "auto",
       spaceBetween: 10,
+      slidesOffsetBefore: 0,
     },
     1360: {
       slidesPerView: 3,
       spaceBetween: 21,
+      slidesOffsetBefore: 0,
     },
   },
 });
