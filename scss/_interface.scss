@@ -9,6 +9,8 @@
   .container {
     &-swiper {
       max-width: 100%;
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
@@ -41,8 +43,6 @@
 
     .professions {
       &__card {
-        overflow: hidden;
-
         &::before {
             content: "";
             position: absolute;

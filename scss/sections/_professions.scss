@@ -3,6 +3,7 @@
   padding-bottom: 40px;
   margin-top: -41px;
   background: radial-gradient(135.64% 135.64% at 35.92% 127.13%, #0ED1FF 0%, #1461D2 100%);
+
   &__title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -10,19 +11,23 @@
     font-size: 40px;
     line-height: 49px;
     color: $snow-white;
-    margin-right: 21px;
     margin-bottom: 0;
+
      &-group {
       display: flex;
       justify-content: flex-start;
+      flex-wrap: wrap;
       align-items: center;
       margin-bottom: 24px;
+      gap: 20px;
      }
   }
+
   &__buttons {
     &-group {
       display: flex;
     }}
+
   &__button {
     border: 1px solid #C9C9C9;
     border-radius: 20px;
@@ -38,16 +43,19 @@
     display: flex;
     align-items: baseline;
     min-width: 89px;
+
     &_second {
       margin-left: 8px;
       min-width: 138px;
     }
+
     &-plus {
       width: 7px;
       height: 7px;
       margin-right: 4px;
     }
   }
+
   &__card {
     position: relative;
     width: 366px;
@@ -55,6 +63,12 @@
     border: 1px solid $snow-white;
     border-radius: 30px;
     cursor: pointer;
+
+    &-wrapper {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
     &_img {
       position: absolute;
       left: -8px;
