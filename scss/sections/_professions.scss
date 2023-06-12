@@ -52,11 +52,14 @@
     position: relative;
     width: 366px;
     height: 307px;
+    border: 1px solid $snow-white;
     border-radius: 30px;
     cursor: pointer;
     &_img {
-      margin-left: -8px;
-      border-radius: 30px;
+      position: absolute;
+      left: -8px;
+      bottom: 0;
+      border-radius: 0px 0px 30px 0px;
     }
     &_text {
       position: absolute;
@@ -134,4 +137,10 @@
       margin-top: -62px;  
     }
   
+}
+
+.swiper {
+  &-double-wrapper { 
+    margin-left: -8px;
+  }
 }
