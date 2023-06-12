@@ -41,6 +41,8 @@
 
     .professions {
       &__card {
+        overflow: hidden;
+
         &::before {
             content: "";
             position: absolute;
