@@ -19,7 +19,7 @@
       flex-wrap: wrap;
       align-items: center;
       margin-bottom: 24px;
-      gap: 20px;
+      gap: 18px;
      }
   }
 
@@ -66,7 +66,6 @@
 
     &-wrapper {
       padding-left: 8px;
-      padding-right: 8px;
     }
 
     &_img {
@@ -107,9 +106,6 @@
       line-height: 14px;
       text-transform: uppercase;
       color: #119CEA;
-      &_third {
-        color: #1472D9;
-      }
     }
     &_title {
       font-family: 'Inter';
@@ -146,15 +142,36 @@
     }
   }
 
+  @media (max-width: 1199.98px) {
+    &__card {
+        width: 248px;
+        height: 312px;
+        &_img {
+          width: 253.42px;
+          height: 118.58px;
+          left: -5px;
+          border-radius: 0px 0px 32px 35px;
+        }
+        &_period {
+          padding: 2px 8px;
+        }
+        &_details {
+          margin-bottom: 10px;
+        }
+        &_price_group {
+          flex-direction: column;
+        }
+      }
+    }
+
   @media (max-width: 480px) { 
       padding-top: 124px; 
       margin-top: -62px;  
     }
-  
 }
 
-.swiper {
-  &-double-wrapper { 
-    margin-left: -8px;
-  }
+.professionsSwiper {
+  margin-left: -8px;
 }
+
+

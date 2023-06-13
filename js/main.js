@@ -13,17 +13,17 @@ const swiper = new Swiper(".mySwiper", {
     },
     768: {
       slidesOffsetBefore: 0,
-      slidesPerView: "3",
+      slidesPerView: 3,
       spaceBetween: 30,
     },
     992: {
       slidesPerView: 4,
-      spaceBetween: 28,
+      spaceBetween: 29.33,
       slidesOffsetBefore: 0,
     },
     1200: {
       slidesPerView: 5,
-      spaceBetween: 10,
+      spaceBetween: 14,
       slidesOffsetBefore: 0,
     },
     1360: {
@@ -54,17 +54,17 @@ const professionsSwiper = new Swiper(".professionsSwiper", {
     },
     992: {
       slidesPerView: "auto",
-      spaceBetween: 28,
+      spaceBetween: 15,
       slidesOffsetBefore: 0,
     },
     1200: {
-      slidesPerView: "auto",
-      spaceBetween: 10,
+      slidesPerView: 3,
+      spaceBetween: 1,
       slidesOffsetBefore: 0,
     },
     1360: {
       slidesPerView: 3,
-      spaceBetween: 21,
+      spaceBetween: 13,
       slidesOffsetBefore: 0,
     },
   },

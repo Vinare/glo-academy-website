@@ -46,21 +46,44 @@
         &::before {
             content: "";
             position: absolute;
+            width: 366px;
+            height: 307px;
             top: 0;
             right: 0;
             left: 0;
             bottom: 0;
-            background: radial-gradient(66.53% 94.56% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%);
+            border: 1px solid transparent;
+            background: radial-gradient(66.53% 94.56% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) padding-box, radial-gradient(66.53% 94.56% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) border-box;
             border-radius: 30px;
-            transition: opacity .8s;
+            transition: opacity .5s;
             opacity: 0;
             z-index: -1;
+
+            @media (max-width: 1199.98px) {
+                width: 248px;
+                height: 312px;
+            }
         }
-        &:hover::before {
-            opacity: 1;
+        &:hover {
+            border: 1px solid transparent;
+            &::before {
+                opacity: 1;
+            }
+            .professions__card_period {
+                color: #C790B6;    
+            }
+
+            .professions__card_price_del {
+                svg {
+                    path {
+                        &:nth-child(2) {
+                            stroke: #B0CDF7;
+                        }
+                    }
+                }
+            }
         }
       }
-
     }
   }
 }
