@@ -747,6 +747,9 @@ header .navbar__button {
     padding-top: 124px;
     margin-top: -62px;
   }
+  .professions__title-group {
+    margin-bottom: 20px;
+  }
 }
 
 .professionsSwiper {

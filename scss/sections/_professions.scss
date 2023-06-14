@@ -167,6 +167,11 @@
   @media (max-width: 480px) { 
       padding-top: 124px; 
       margin-top: -62px;  
+
+      &__title {
+        &-group {
+          margin-bottom: 20px;
+        }}
     }
 }
 
