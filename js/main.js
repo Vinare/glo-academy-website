@@ -23,12 +23,12 @@ const swiper = new Swiper(".mySwiper", {
     },
     1200: {
       slidesPerView: 5,
-      spaceBetween: 10,
+      spaceBetween: 14,
       slidesOffsetBefore: 0,
     },
     1360: {
       slidesPerView: 5,
-      spaceBetween: 60,
+      spaceBetween: 20,
       slidesOffsetBefore: 0,
     },
   },
