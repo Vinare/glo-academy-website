@@ -24,7 +24,7 @@
   &__main-info {
     display: flex;
     align-items: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Inter';
     font-style: normal;
     color: $white;
     z-index: 2;
@@ -37,15 +37,15 @@
   }
 
   &__date {
-    font-size: 55px;
-    line-height: 67px;
+    font-size: 52px;
+    line-height: 52px;
     margin-right: 6px;
     flex-shrink: 0;
   }
 
   &__month {
     font-size: 24px;
-    line-height: 29px;
+    line-height: 30px;
   }
 
   &__presentation {
@@ -53,13 +53,13 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    max-width: 384px;
+    max-width: 376px;
   }
 
   &__button {
     border: none;
     padding: 15px 24px;
-    font-family: "Montserrat";
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

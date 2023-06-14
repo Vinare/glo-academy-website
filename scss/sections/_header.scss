@@ -1,7 +1,7 @@
 header {
     &.header {
         padding-top: 16px;
-        padding-bottom: 25px;
+        padding-bottom: 0;
 
         @media (min-width: 1360px) {
             .container {
@@ -12,7 +12,7 @@ header {
     }
 
     .logo__link {
-        margin-right: 70px;
+        margin-right: 78px;
 
         @media (max-width: 991.98px) {
             margin-right: 0;
@@ -21,16 +21,16 @@ header {
 
     .navbar {
         &-nav {
-            margin-top: 23px;
+            margin-top: 20px;
 
             .nav {
                 &-link {
-                    font-family: "Montserrat";
+                    font-family: 'Inter';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 20px;
-                    color: $black;
+                    color: $color-primary;
                     padding: 0;
                     padding-left: 0;
                 }
@@ -53,13 +53,17 @@ header {
             .navbar {
                 &-nav {
                     .nav {
-                        &-link {
+                        &-item {
                             padding-left: 0;
-                            padding-right: 50px;
+                            padding-right: 40px;
 
                             &:last-child {
                                 padding-right: 0;
                             }
+                        }
+                        &-link {
+                            padding-left: 0;
+                            padding-right: 0;
                         }
                     }
                 }
@@ -67,7 +71,7 @@ header {
         }
 
         &__button {
-            font-family: "Montserrat";
+            font-family: "Inter";
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
@@ -76,7 +80,8 @@ header {
             border: 1px solid #1461d2;
             border-radius: 8px;
             background: $snow-white;
-            padding: 9px 34px;
+            padding: 14px 30px;
+            margin-top: 5px;
         }
 
         @media (max-width: 991.98px) {

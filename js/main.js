@@ -4,11 +4,11 @@ const swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
   loop: true,
   spaceBetween: 10,
-  slidesOffsetBefore: 16,
+  slidesOffsetBefore: 12,
   breakpoints: {
     480: {
       slidesPerView: "auto",
-      slidesOffsetBefore: 16,
+      slidesOffsetBefore: 12,
       spaceBetween: 20,
     },
     768: {
@@ -18,7 +18,7 @@ const swiper = new Swiper(".mySwiper", {
     },
     992: {
       slidesPerView: 4,
-      spaceBetween: 29.33,
+      spaceBetween: 29,
       slidesOffsetBefore: 0,
     },
     1200: {
@@ -27,7 +27,7 @@ const swiper = new Swiper(".mySwiper", {
       slidesOffsetBefore: 0,
     },
     1360: {
-      slidesPerView: 5,
+      slidesPerView: "auto",
       spaceBetween: 20,
       slidesOffsetBefore: 0,
     },

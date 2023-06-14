@@ -1,3 +1,7 @@
+.pr-10 {
+  padding-right: 10px;
+}
+
 @media (min-width: 1360px) {
   .container {
     padding-left: 0;
@@ -50,7 +54,7 @@
 }
 @media (hover: hover) and (pointer: fine) {
   .professions__card:hover {
-    border: 1px solid transparent;
+    border-color: transparent;
   }
   .professions__card:hover::before {
     opacity: 1;
@@ -64,7 +68,7 @@
 }
 header.header {
   padding-top: 16px;
-  padding-bottom: 25px;
+  padding-bottom: 0;
 }
 @media (min-width: 1360px) {
   header.header .container {
@@ -73,7 +77,7 @@ header.header {
   }
 }
 header .logo__link {
-  margin-right: 70px;
+  margin-right: 78px;
 }
 @media (max-width: 991.98px) {
   header .logo__link {
@@ -81,15 +85,15 @@ header .logo__link {
   }
 }
 header .navbar-nav {
-  margin-top: 23px;
+  margin-top: 20px;
 }
 header .navbar-nav .nav-link {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: #333333;
   padding: 0;
   padding-left: 0;
 }
@@ -103,15 +107,19 @@ header .navbar-toggler:focus {
   outline: 0;
   box-shadow: none;
 }
+header .navbar-expand-lg .navbar-nav .nav-item {
+  padding-left: 0;
+  padding-right: 40px;
+}
+header .navbar-expand-lg .navbar-nav .nav-item:last-child {
+  padding-right: 0;
+}
 header .navbar-expand-lg .navbar-nav .nav-link {
   padding-left: 0;
-  padding-right: 50px;
-}
-header .navbar-expand-lg .navbar-nav .nav-link:last-child {
   padding-right: 0;
 }
 header .navbar__button {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -120,7 +128,8 @@ header .navbar__button {
   border: 1px solid #1461d2;
   border-radius: 8px;
   background: #FFFFFF;
-  padding: 9px 34px;
+  padding: 14px 30px;
+  margin-top: 5px;
 }
 @media (max-width: 991.98px) {
   header .navbar-nav {
@@ -157,7 +166,7 @@ header .navbar__button {
 .promo__main-info {
   display: flex;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter";
   font-style: normal;
   color: #FBFBFB;
   z-index: 2;
@@ -168,26 +177,26 @@ header .navbar__button {
   margin-right: 35px;
 }
 .promo__date {
-  font-size: 55px;
-  line-height: 67px;
+  font-size: 52px;
+  line-height: 52px;
   margin-right: 6px;
   flex-shrink: 0;
 }
 .promo__month {
   font-size: 24px;
-  line-height: 29px;
+  line-height: 30px;
 }
 .promo__presentation {
   margin-bottom: 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  max-width: 384px;
+  max-width: 376px;
 }
 .promo__button {
   border: none;
   padding: 15px 24px;
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -296,6 +305,85 @@ header .navbar__button {
     font-size: 15px;
     line-height: 19px;
     padding: 16px 22px;
+  }
+}
+
+.start-learning {
+  background: linear-gradient(90deg, rgb(255, 255, 255) 70%, rgb(231, 232, 232));
+}
+.start-learning__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 452px;
+  min-height: 600px;
+}
+.start-learning__content_wrapper {
+  max-width: 462px;
+}
+.start-learning__content--title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 20px;
+}
+.start-learning__content--subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.start-learning__content--btn {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15px 24px;
+  background: #1462D3;
+  border-radius: 8px;
+  border: 0;
+}
+@media (max-width: 1199.98px) {
+  .start-learning__content {
+    min-height: 500px;
+  }
+}
+@media (max-width: 991.98px) {
+  .start-learning__content {
+    min-height: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .start-learning__content--title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .start-learning__content--subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .start-learning__content--btn {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
+}
+.start-learning__image {
+  position: relative;
+  height: 100%;
+  margin-top: 2px;
+}
+@media (max-width: 991.98px) {
+  .start-learning__image {
+    min-height: 350px;
+  }
+}
+@media (max-width: 575.98px) {
+  .start-learning__image {
+    min-height: 270px;
   }
 }
 
@@ -642,9 +730,12 @@ header .navbar__button {
   position: relative;
   width: 366px;
   height: 307px;
-  border: 1px solid #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #FFFFFF;
   border-radius: 30px;
   cursor: pointer;
+  transition: border-color 0.5s;
 }
 .professions__card-wrapper {
   padding-left: 8px;
@@ -687,6 +778,7 @@ header .navbar__button {
   line-height: 14px;
   text-transform: uppercase;
   color: #119CEA;
+  transition: color 0.5s;
 }
 .professions__card_title {
   font-family: "Inter";
@@ -720,6 +812,9 @@ header .navbar__button {
   left: -1.4px;
   right: 29px;
   bottom: 3px;
+}
+.professions__card_price_del svg path {
+  transition: stroke 0.5s;
 }
 @media (max-width: 1199.98px) {
   .professions__card {

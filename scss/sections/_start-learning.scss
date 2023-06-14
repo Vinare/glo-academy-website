@@ -1,16 +1,23 @@
 .start-learning {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 70%, rgb(231, 232, 232));
     &__content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        max-width: 452px;
         min-height: 600px;
+
+        &_wrapper {
+            max-width: 462px;
+        }
 
         &--title {
             font-family: 'Inter', sans-serif;
             font-weight: 700;
             font-size: 40px;
             line-height: 46px;
+            margin-bottom: 20px;
         }
 
         &--subtitle {
@@ -18,16 +25,18 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
+            margin-bottom: 20px;
         }
 
         &--btn {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter';
             font-weight: 700;
             font-size: 16px;
             line-height: 20px;
             padding: 15px 24px;
             background: #1462D3;
             border-radius: 8px;
+            border: 0;
         }
 
         @media (max-width: 1199.98px) {
@@ -60,6 +69,10 @@
     &__image {
         position: relative;
         height: 100%;
+        margin-top: 2px;
+        &_img {
+            
+        }
 
         @media (max-width: 1199.98px) {}
 
@@ -70,5 +83,6 @@
         @media (max-width: 575.98px) {
             min-height: 270px;
         }
+
     }
 }
