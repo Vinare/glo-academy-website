@@ -1,5 +1,4 @@
 .start-learning {
-    background: linear-gradient(90deg, rgb(255, 255, 255) 70%, rgb(231, 232, 232));
     &__content {
         display: flex;
         flex-direction: column;
@@ -70,8 +69,21 @@
         position: relative;
         height: 100%;
         margin-top: 2px;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 120%;
+            height: 94%;
+            inset: -5px;
+            filter: blur(25px);
+            transform: translate(30px, 30px) scale(0.9);
+            z-index: -1;
+            background: linear-gradient(135deg, rgb(255, 255, 255) 65%, rgb(190, 191, 191));
+            border-radius: 28px;
         &_img {
-            
+            }
         }
 
         @media (max-width: 1199.98px) {}
