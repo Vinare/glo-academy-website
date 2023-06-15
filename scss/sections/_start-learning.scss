@@ -1,4 +1,9 @@
 .start-learning {
+    background-image: url("../img/img-head.png");
+    background-repeat: no-repeat;
+    background-position: top -30px right 0;
+    background-size: auto;
+    min-height: 620px;
     &__content {
         display: flex;
         flex-direction: column;
@@ -68,23 +73,8 @@
     &__image {
         position: relative;
         height: 100%;
-        margin-top: 2px;
-        &::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 120%;
-            height: 94%;
-            inset: -5px;
-            filter: blur(25px);
-            transform: translate(30px, 30px) scale(0.9);
-            z-index: -1;
-            background: linear-gradient(135deg, rgb(255, 255, 255) 65%, rgb(190, 191, 191));
-            border-radius: 28px;
-        &_img {
-            }
-        }
+       
+        
 
         @media (max-width: 1199.98px) {}
 
