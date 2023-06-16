@@ -1,9 +1,9 @@
 .start-learning {
     background-image: url("../img/img-head.png");
     background-repeat: no-repeat;
-    background-position: top -30px right 0;
+    background-position: calc(50% + 274px) -35px;
     background-size: auto;
-    min-height: 620px;
+    min-height: 600px;
     &__content {
         display: flex;
         flex-direction: column;
@@ -79,7 +79,7 @@
         @media (max-width: 1199.98px) {}
 
         @media (max-width: 991.98px) {
-            min-height: 350px;
+            min-height: 560px;
         }
 
         @media (max-width: 575.98px) {
@@ -87,4 +87,13 @@
         }
 
     }
+
+    @media (max-width: 1359.98px) {
+            background-position: calc(50% + 250px) -25px;
+            background-size: 700px auto;
+            min-height: 550px;
+            &__content {
+               min-height: 475px;
+            }
+        }
 }
