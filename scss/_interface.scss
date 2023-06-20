@@ -1,6 +1,4 @@
-.pr-10 {
-  padding-right: 10px;
-}
+
 
 @media (min-width: 1360px) {
   .container {
@@ -19,7 +17,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
   .container {
     --bs-gutter-x: 2rem;
   }

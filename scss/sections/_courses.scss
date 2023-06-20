@@ -1,6 +1,6 @@
 .courses {
     &__title {
-        font-family: 'Montserrat';
+        font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -19,7 +19,7 @@
     }
 
     @media (max-width: 991.98px) {
-        padding-top: 70px;
+        padding-top: 80px;
         &__title {
             font-size: 34px;
             line-height: 45px;

@@ -3,13 +3,18 @@
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
   loop: true,
-  spaceBetween: 10,
-  slidesOffsetBefore: 12,
+  spaceBetween: 20,
+  slidesOffsetBefore: 16,
   breakpoints: {
     480: {
       slidesPerView: "auto",
       slidesOffsetBefore: 12,
       spaceBetween: 20,
+    },
+    576: {
+      slidesPerView: "auto",
+      slidesOffsetBefore: 30,
+      spaceBetween: 30,
     },
     768: {
       slidesOffsetBefore: 0,
@@ -46,6 +51,11 @@ const professionsSwiper = new Swiper(".professionsSwiper", {
       slidesPerView: "auto",
       spaceBetween: 20,
       slidesOffsetBefore: 16,
+    },
+    576: {
+      slidesPerView: "auto",
+      spaceBetween: 22,
+      slidesOffsetBefore: 30,
     },
     768: {
       slidesPerView: "auto",
