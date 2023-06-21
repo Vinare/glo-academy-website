@@ -11,12 +11,21 @@ header {
         }
     }
 
-    .logo__link {
+    .logo {
+        &__link {
         margin-right: 78px;
 
         @media (max-width: 991.98px) {
             margin-right: 0;
         }
+        }
+        &__image {
+            @media (max-width: 480px) {
+                width: 163.03px;
+                height: 40px;
+            }
+        }
+
     }
 
     .navbar {

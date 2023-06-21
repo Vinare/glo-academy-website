@@ -11,7 +11,7 @@
     padding-left: 0;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 479.98px) {
   .container {
     --bs-gutter-x: 2rem;
   }
@@ -78,6 +78,12 @@ header .logo__link {
 @media (max-width: 991.98px) {
   header .logo__link {
     margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  header .logo__image {
+    width: 163.03px;
+    height: 40px;
   }
 }
 header .navbar-nav {
@@ -382,12 +388,12 @@ header .navbar__button {
 }
 @media (max-width: 575.98px) {
   .start-learning__image {
-    min-height: 350px;
+    min-height: 415px;
   }
 }
 @media (max-width: 480px) {
   .start-learning__image {
-    min-height: 300px;
+    min-height: 290px;
   }
 }
 @media (max-width: 1359.98px) {
@@ -432,25 +438,44 @@ header .navbar__button {
     max-width: 100%;
   }
   .start-learning__content--title {
-    font-size: 37px;
+    font-size: 36px;
   }
 }
 @media (max-width: 767.98px) {
   .start-learning {
-    background-size: 600px auto;
+    background-size: 560px auto;
   }
   .start-learning__content {
     min-height: auto;
   }
+  .start-learning__content--title {
+    font-size: 33px;
+    line-height: 44px;
+  }
 }
 @media (max-width: 575.98px) {
   .start-learning {
-    background-size: 500px auto;
+    background-size: 550px auto;
+  }
+  .start-learning__content--title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .start-learning__content--subtitle {
+    margin-bottom: 26px;
   }
 }
 @media (max-width: 480px) {
   .start-learning {
-    background-size: 390px auto;
+    background-size: 124% auto;
+  }
+  .start-learning__content--title {
+    line-height: 38px;
+    width: 95%;
+    margin-bottom: 16px;
+  }
+  .start-learning__content--subtitle {
+    margin-bottom: 16px;
   }
 }
 
@@ -645,6 +670,9 @@ header .navbar__button {
   }
 }
 @media (max-width: 480px) {
+  .courses {
+    padding-top: 60px;
+  }
   .courses__title {
     line-height: 36px;
     margin-bottom: 18px;
@@ -904,6 +932,17 @@ header .navbar__button {
     flex-direction: column;
   }
 }
+@media (max-width: 991.98px) {
+  .professions__title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767.98px) {
+  .professions__title {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
 @media (max-width: 480px) {
   .professions {
     padding-top: 124px;
@@ -916,6 +955,11 @@ header .navbar__button {
 
 .professionsSwiper {
   margin-left: -8px;
+}
+@media (min-width: 480px) and (max-width: 575.98px) {
+  .professionsSwiper {
+    margin-left: -12px;
+  }
 }
 
 .timeline-section {
