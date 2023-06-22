@@ -986,15 +986,18 @@ header .navbar__button {
 
 .timeline-section {
   background: #141414;
+  background-image: url(/img/globe.png) no-repeat, radial-gradient(60.62% 75.01% at 82.94% 86.7%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 87.98%);
   padding: 140px 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 .timeline-section .timeline-description {
   display: flex;
   flex-direction: column;
 }
 .timeline-section .timeline-description-head {
-  max-width: 490px;
-  margin-bottom: 125px;
+  max-width: 43%;
+  margin-bottom: 80px;
 }
 .timeline-section .timeline-description-head__title {
   font-family: "Inter";
@@ -1002,13 +1005,18 @@ header .navbar__button {
   font-size: 60px;
   line-height: 60px;
   color: #FFFFFF;
+  margin-bottom: 24px;
 }
 .timeline-section .timeline-description-head__subtitle {
-  font-family: "Montserrat";
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 30px;
   color: #FFFFFF;
+  opacity: 0.8;
+  width: 115%;
+  margin-bottom: 0;
 }
 @media (max-width: 1199.98px) {
   .timeline-section .timeline-description-head {
@@ -1051,6 +1059,7 @@ header .navbar__button {
 .timeline-section .timeline-description-months {
   display: flex;
   flex-direction: column;
+  margin-bottom: 228px;
 }
 .timeline-section .timeline-description-months__line {
   width: 100%;
@@ -1299,7 +1308,7 @@ header .navbar__button {
   font-family: "Inter";
   font-weight: 700;
   font-size: 10px;
-  line-height: 12px;
+  line-height: 14px;
   text-transform: uppercase;
   color: #FFFFFF;
   opacity: 0.5;
@@ -1309,9 +1318,9 @@ header .navbar__button {
   font-family: "Inter";
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 20px;
   color: #FFFFFF;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 .timeline-section .timeline-description-months__blocks-item--text {
   font-family: "Inter";
@@ -1319,6 +1328,7 @@ header .navbar__button {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  margin-bottom: 0;
 }
 @media (max-width: 1199.98px) {
   .timeline-section .timeline-description-months {
