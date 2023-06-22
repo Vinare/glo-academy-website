@@ -391,9 +391,19 @@ header .navbar__button {
     min-height: 415px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 440px) {
   .start-learning__image {
-    min-height: 290px;
+    min-height: 370px;
+  }
+}
+@media (max-width: 400px) {
+  .start-learning__image {
+    min-height: 330px;
+  }
+}
+@media (max-width: 360px) {
+  .start-learning__image {
+    min-height: 295px;
   }
 }
 @media (max-width: 1359.98px) {
@@ -466,9 +476,6 @@ header .navbar__button {
   }
 }
 @media (max-width: 480px) {
-  .start-learning {
-    background-size: 124% auto;
-  }
   .start-learning__content--title {
     line-height: 38px;
     width: 95%;
@@ -476,6 +483,21 @@ header .navbar__button {
   }
   .start-learning__content--subtitle {
     margin-bottom: 16px;
+  }
+}
+@media (max-width: 440px) {
+  .start-learning {
+    background-size: 496px auto;
+  }
+}
+@media (max-width: 400px) {
+  .start-learning {
+    background-size: 446px auto;
+  }
+}
+@media (max-width: 360px) {
+  .start-learning {
+    background-size: 396px auto;
   }
 }
 
