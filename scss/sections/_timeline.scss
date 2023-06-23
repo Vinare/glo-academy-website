@@ -1,8 +1,7 @@
 .timeline-section {
     background-color: #141414;
-    // background-image: radial-gradient(60.62% 75.01% at 82.94% 86.7%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 87.98%);
-    padding: 140px 0;
-    // clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    background-image: radial-gradient(60.62% 75.01% at 82.94% 86.7%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 87.98%);
+    padding: 140px 0 0;
     position: relative;
 
     &::after {
@@ -12,10 +11,10 @@
         position: absolute;
         right: 0;
         left: 0;
-        height: 300px;
+        height: 120px;
         width: 100%;
         background-color: white;
-        clip-path: polygon(0 100%, 100% 1%, 100% 100%, 0% 100%);
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
     }
 
     .timeline-description {
