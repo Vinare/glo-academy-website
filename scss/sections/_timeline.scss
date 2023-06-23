@@ -1,6 +1,6 @@
 .timeline-section {
-    background: $background-secondary;
-    background-image: url(/img/globe.png) no-repeat, radial-gradient(60.62% 75.01% at 82.94% 86.7%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 87.98%);
+    background-color: #141414;
+    background-image: radial-gradient(60.62% 75.01% at 82.94% 86.7%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 87.98%);
     padding: 140px 0;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 
@@ -446,4 +446,12 @@
     @media (max-width: 767.98px) {
         padding: 60px 0;
     }
+
+    .timeline-globe {
+        background-image: url(/img/globe.png);
+        background-position: right 0 bottom 30px;
+        background-repeat: no-repeat;
+        min-height: 710px;
+    }
 }
+
