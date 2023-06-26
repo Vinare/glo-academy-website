@@ -1382,8 +1382,8 @@ header .navbar__button {
   }
 }
 .timeline-section .timeline-globe {
-  background-image: url(/img/globe.png);
-  background-position: right 0 bottom 30px;
+  background-image: url(../img/globe.png);
+  background-position: left calc(50% + 360px) bottom 0;
   background-repeat: no-repeat;
   min-height: 710px;
   position: relative;
