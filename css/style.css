@@ -1388,4 +1388,29 @@ header .navbar__button {
   min-height: 710px;
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.timeline-section .timeline-globe__students {
+  margin-top: -60px;
+}
+.timeline-section .timeline-globe__students_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+  max-width: 40%;
+  margin-bottom: 24px;
+}
+.timeline-section .timeline-globe__students_subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  max-width: 50%;
 }/*# sourceMappingURL=style.css.map */
