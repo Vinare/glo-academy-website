@@ -56,6 +56,7 @@
                 }
 
                 &__subtitle {
+                    width: 105%;
                     font-size: 16px;
                     line-height: 20px;
                 }
@@ -92,7 +93,7 @@
         &-months {
             display: flex;
             flex-direction: column;
-            margin-bottom: 228px;
+            margin-bottom: 195px;
 
 
             &__line {
@@ -437,7 +438,24 @@
                     }
 
                     &-item {
+                        width: 102.5%;
                         padding: 16px;
+                    }
+                }
+            }
+
+            @media (max-width: 991.98px) {
+                &__blocks {
+                    &-item {
+                        width: 105.5%;
+                    }
+                }
+            }
+
+            @media (max-width: 767.98px) {
+                &__blocks {
+                    &-item {
+                        width: 102.6%;
                     }
                 }
             }
@@ -453,16 +471,28 @@
     }
 
     @media (max-width: 1199.98px) {
-        padding: 80px 0;
+        padding: 80px 0 0;
+        &::after {
+            height: 94px;
+        }
+
+        .timeline {
+            &-description {
+                &-months {
+                    margin-bottom: 182px;
+                    
+                }
+            }
+        }
     }
 
     @media (max-width: 767.98px) {
-        padding: 60px 0;
+        padding: 60px 0 0;
     }
 
     .timeline-globe {
         background-image: url(../img/globe.png);
-        background-position: left calc(50% + 360px) bottom 0;
+        background-position: left calc(50% + 363px) bottom 5px;
         background-repeat: no-repeat;
         min-height: 710px;
         position: relative;
@@ -491,6 +521,57 @@
                 opacity: 0.8;
                 max-width: 50%;
             }
+        }
+
+        @media (max-width: 1199.98px) {
+            &__students {
+                    margin-top: -18px;
+                    &_title {
+                        font-size: 52px;
+                        line-height: 54px;
+                        margin-bottom: 26px;
+                    }
+
+                    &_subtitle {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+ 
+        }
+
+        @media (max-width: 991.98px) {
+             &__students {
+                &_title {
+                    font-size: 38px;
+                    line-height: 44px;
+                }
+
+                &_subtitle {
+                    font-size: 18px;
+                    line-height: 24px;
+                    }
+             }
+   
+        }
+
+        @media (max-width: 767.98px) {
+            &__students {
+                &_title {
+                    font-size: 34px;
+                    line-height: 40px;
+                    max-width: 42%;
+                    }
+
+                    &_subtitle {
+                    font-size: 17px;
+                    line-height: 22px;
+                    }
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            
         }
     }
 }

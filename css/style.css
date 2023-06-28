@@ -1040,6 +1040,7 @@ header .navbar__button {
     line-height: 54px;
   }
   .timeline-section .timeline-description-head__subtitle {
+    width: 105%;
     font-size: 16px;
     line-height: 20px;
   }
@@ -1071,7 +1072,7 @@ header .navbar__button {
 .timeline-section .timeline-description-months {
   display: flex;
   flex-direction: column;
-  margin-bottom: 228px;
+  margin-bottom: 195px;
 }
 .timeline-section .timeline-description-months__line {
   width: 100%;
@@ -1358,7 +1359,18 @@ header .navbar__button {
     margin-bottom: 10px;
   }
   .timeline-section .timeline-description-months__blocks-item {
+    width: 102.5%;
     padding: 16px;
+  }
+}
+@media (max-width: 991.98px) {
+  .timeline-section .timeline-description-months__blocks-item {
+    width: 105.5%;
+  }
+}
+@media (max-width: 767.98px) {
+  .timeline-section .timeline-description-months__blocks-item {
+    width: 102.6%;
   }
 }
 @media (max-width: 1199.98px) {
@@ -1373,17 +1385,23 @@ header .navbar__button {
 }
 @media (max-width: 1199.98px) {
   .timeline-section {
-    padding: 80px 0;
+    padding: 80px 0 0;
+  }
+  .timeline-section::after {
+    height: 94px;
+  }
+  .timeline-section .timeline-description-months {
+    margin-bottom: 182px;
   }
 }
 @media (max-width: 767.98px) {
   .timeline-section {
-    padding: 60px 0;
+    padding: 60px 0 0;
   }
 }
 .timeline-section .timeline-globe {
   background-image: url(../img/globe.png);
-  background-position: left calc(50% + 360px) bottom 0;
+  background-position: left calc(50% + 363px) bottom 5px;
   background-repeat: no-repeat;
   min-height: 710px;
   position: relative;
@@ -1413,4 +1431,39 @@ header .navbar__button {
   color: #FFFFFF;
   opacity: 0.8;
   max-width: 50%;
+}
+@media (max-width: 1199.98px) {
+  .timeline-section .timeline-globe__students {
+    margin-top: -18px;
+  }
+  .timeline-section .timeline-globe__students_title {
+    font-size: 52px;
+    line-height: 54px;
+    margin-bottom: 26px;
+  }
+  .timeline-section .timeline-globe__students_subtitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 991.98px) {
+  .timeline-section .timeline-globe__students_title {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  .timeline-section .timeline-globe__students_subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .timeline-section .timeline-globe__students_title {
+    font-size: 34px;
+    line-height: 40px;
+    max-width: 42%;
+  }
+  .timeline-section .timeline-globe__students_subtitle {
+    font-size: 17px;
+    line-height: 22px;
+  }
 }/*# sourceMappingURL=style.css.map */
