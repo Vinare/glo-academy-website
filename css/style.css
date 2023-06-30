@@ -1062,11 +1062,22 @@ header .navbar__button {
   }
   .timeline-section .timeline-description-head__title {
     font-size: 32px;
-    line-height: 36px;
+    line-height: 38px;
   }
   .timeline-section .timeline-description-head__subtitle {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .timeline-section .timeline-description-head {
+    padding-right: 0;
+  }
+  .timeline-section .timeline-description-head__title {
+    margin-bottom: 12px;
+  }
+  .timeline-section .timeline-description-head__subtitle {
+    width: 100%;
   }
 }
 .timeline-section .timeline-description-months {
@@ -1373,6 +1384,11 @@ header .navbar__button {
     width: 102.6%;
   }
 }
+@media (max-width: 480px) {
+  .timeline-section .timeline-description-months__blocks-item {
+    width: 105%;
+  }
+}
 @media (max-width: 1199.98px) {
   .timeline-section .timeline-description {
     flex-direction: row;
@@ -1397,6 +1413,31 @@ header .navbar__button {
 @media (max-width: 767.98px) {
   .timeline-section {
     padding: 60px 0 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .timeline-section {
+    background-image: radial-gradient(99% 25% at 74% 80%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+  }
+  .timeline-section::after {
+    -webkit-clip-path: polygon(0 75%, 100% 48%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 75%, 100% 48%, 100% 100%, 0% 100%);
+    height: 330px;
+  }
+  .timeline-section .timeline-description-months {
+    margin-bottom: 110px;
+  }
+}
+@media (max-width: 480px) {
+  .timeline-section {
+    background-image: radial-gradient(99% 20% at 79% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+  }
+  .timeline-section .timeline-description-months {
+    margin-bottom: 80px;
+  }
+  .timeline-section::after {
+    -webkit-clip-path: polygon(0 65%, 100% 45%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 65%, 100% 45%, 100% 100%, 0% 100%);
   }
 }
 .timeline-section .timeline-globe {
@@ -1465,5 +1506,35 @@ header .navbar__button {
   .timeline-section .timeline-globe__students_subtitle {
     font-size: 17px;
     line-height: 22px;
+  }
+}
+@media (max-width: 575.98px) {
+  .timeline-section .timeline-globe {
+    background-position: left calc(50% + 40px) top 150px;
+    min-height: 745px;
+    align-items: flex-start;
+    background-size: 620px auto;
+  }
+  .timeline-section .timeline-globe__students_title {
+    font-size: 32px;
+    line-height: 38px;
+    max-width: 100%;
+  }
+  .timeline-section .timeline-globe__students_subtitle {
+    font-size: 16px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .timeline-section .timeline-globe {
+    background-position: left calc(50% + 86px) top 215px;
+    background-size: 500px auto;
+  }
+  .timeline-section .timeline-globe__students_title {
+    margin-bottom: 16px;
+    max-width: 98%;
+  }
+  .timeline-section .timeline-globe__students_subtitle {
+    line-height: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
