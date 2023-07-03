@@ -1,0 +1,61 @@
+.glo-academy-presentation {
+  padding: 80px 0 60px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+      flex-basis: 50%;
+  }
+  
+
+  &__title {
+    width: 93%;
+    color: $color-primary;
+    font-size: 60px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    color: $color-primary;
+    font-size: 24px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    width: 90%;
+  }
+  &__details {
+    flex-basis: 41%;
+    &__block {
+      display: flex;
+      margin-bottom: 26px;
+    }
+    &__number{
+      color: $color-primary;
+      font-size: 140px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140px;
+      letter-spacing: -8.4px;
+      margin-right: 16px;
+      
+    }
+
+    &__description {
+      max-width: 26%;
+      color: $color-primary;
+      font-size: 16px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+}
