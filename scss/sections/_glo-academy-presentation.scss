@@ -35,6 +35,20 @@
     &__block {
       display: flex;
       margin-bottom: 26px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:first-child {
+        .glo-academy-presentation__details__number {
+          min-width: 61%;
+          margin-right: 20px;
+        }
+
+        .glo-academy-presentation__details__description {
+          align-self: center;
+
+        }
+      }
     }
     &__number{
       color: $color-primary;
@@ -49,7 +63,7 @@
     }
 
     &__description {
-      max-width: 26%;
+      max-width: 32%;
       color: $color-primary;
       font-size: 16px;
       font-family: Inter;

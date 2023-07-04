@@ -1575,6 +1575,16 @@ header .navbar__button {
   display: flex;
   margin-bottom: 26px;
 }
+.glo-academy-presentation__details__block:last-child {
+  margin-bottom: 0;
+}
+.glo-academy-presentation__details__block:first-child .glo-academy-presentation__details__number {
+  min-width: 61%;
+  margin-right: 20px;
+}
+.glo-academy-presentation__details__block:first-child .glo-academy-presentation__details__description {
+  align-self: center;
+}
 .glo-academy-presentation__details__number {
   color: #333333;
   font-size: 140px;
@@ -1586,7 +1596,7 @@ header .navbar__button {
   margin-right: 16px;
 }
 .glo-academy-presentation__details__description {
-  max-width: 26%;
+  max-width: 32%;
   color: #333333;
   font-size: 16px;
   font-family: Inter;
