@@ -459,7 +459,7 @@ header .navbar__button {
     min-height: auto;
   }
   .start-learning__content--title {
-    font-size: 33px;
+    font-size: 32px;
     line-height: 44px;
   }
 }
@@ -1579,11 +1579,11 @@ header .navbar__button {
   margin-bottom: 0;
 }
 .glo-academy-presentation__details__block:first-child .glo-academy-presentation__details__number {
-  min-width: 61%;
   margin-right: 20px;
 }
 .glo-academy-presentation__details__block:first-child .glo-academy-presentation__details__description {
   align-self: center;
+  padding-top: 0;
 }
 .glo-academy-presentation__details__number {
   color: #333333;
@@ -1603,4 +1603,126 @@ header .navbar__button {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  padding-top: 16px;
+}
+@media (max-width: 1199.98px) {
+  .glo-academy-presentation__info {
+    flex-basis: 57%;
+  }
+  .glo-academy-presentation__title {
+    font-size: 52px;
+    line-height: 52px;
+  }
+  .glo-academy-presentation__subtitle {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .glo-academy-presentation__details__block:first-child .glo-academy-presentation__details__description {
+    padding-top: 14px;
+  }
+  .glo-academy-presentation__details__number {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .glo-academy-presentation__details__description {
+    max-width: 38%;
+    padding-top: 11px;
+  }
+}
+@media (max-width: 991.98px) {
+  .glo-academy-presentation__info {
+    flex-basis: 60%;
+  }
+  .glo-academy-presentation__title {
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 20px;
+    width: 87%;
+  }
+  .glo-academy-presentation__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    width: 94%;
+  }
+  .glo-academy-presentation__details {
+    flex-basis: 32%;
+  }
+  .glo-academy-presentation__details__block {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .glo-academy-presentation__details__block:first-child .glo-academy-presentation__details__number {
+    margin-right: 0;
+  }
+  .glo-academy-presentation__details__block:first-child .glo-academy-presentation__details__description {
+    padding-top: 4px;
+  }
+  .glo-academy-presentation__details__number {
+    margin-right: 0;
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .glo-academy-presentation__details__description {
+    padding-top: 4px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .glo-academy-presentation__wrapper {
+    flex-direction: column;
+  }
+  .glo-academy-presentation__info {
+    margin-bottom: 26px;
+  }
+  .glo-academy-presentation__title {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .glo-academy-presentation__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .glo-academy-presentation__details__block {
+    margin-bottom: 24px;
+  }
+  .glo-academy-presentation__details__block:first-child .glo-academy-presentation__details__description {
+    padding-top: 8px;
+    align-self: flex-start;
+  }
+  .glo-academy-presentation__details__description {
+    padding-top: 8px;
+  }
+}
+@media (max-width: 575.98px) {
+  .glo-academy-presentation__title {
+    font-size: 32px;
+    line-height: 38px;
+    max-width: 95%;
+  }
+  .glo-academy-presentation__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .glo-academy-presentation {
+    padding: 30px 0 60px;
+  }
+  .glo-academy-presentation__info {
+    margin-bottom: 36px;
+  }
+  .glo-academy-presentation__title {
+    margin-bottom: 8px;
+  }
+  .glo-academy-presentation__subtitle {
+    line-height: 20px;
+  }
+  .glo-academy-presentation__details__number {
+    line-height: normal;
+    letter-spacing: unset;
+  }
 }/*# sourceMappingURL=style.css.map */
