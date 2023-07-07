@@ -29,20 +29,18 @@
     }}
 
   &__button {
-    border: 1px solid #C9C9C9;
-    border-radius: 20px;
+    border: 1px solid $snow-white;
+    border-radius: 50px;
     background-color: transparent;
-    padding: 6px 11px;
-    font-family: 'Inter';
+    padding: 7px 13px 7px 11px;
+    font-size: 14px;
+    font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    text-transform: uppercase;
+    line-height: 18px;
     color: $snow-white;
     display: flex;
-    align-items: baseline;
-    min-width: 89px;
+    align-items: center;
 
     &_second {
       margin-left: 8px;
@@ -50,9 +48,7 @@
     }
 
     &-plus {
-      width: 7px;
-      height: 7px;
-      margin-right: 4px;
+      margin-right: 1px;
     }
   }
 

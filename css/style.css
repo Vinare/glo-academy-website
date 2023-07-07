@@ -819,29 +819,25 @@ header .navbar__button {
   display: flex;
 }
 .professions__button {
-  border: 1px solid #C9C9C9;
-  border-radius: 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
   background-color: transparent;
-  padding: 6px 11px;
-  font-family: "Inter";
+  padding: 7px 13px 7px 11px;
+  font-size: 14px;
+  font-family: Inter;
   font-style: normal;
   font-weight: 400;
-  font-size: 10px;
-  line-height: 12px;
-  text-transform: uppercase;
+  line-height: 18px;
   color: #FFFFFF;
   display: flex;
-  align-items: baseline;
-  min-width: 89px;
+  align-items: center;
 }
 .professions__button_second {
   margin-left: 8px;
   min-width: 138px;
 }
 .professions__button-plus {
-  width: 7px;
-  height: 7px;
-  margin-right: 4px;
+  margin-right: 1px;
 }
 .professions__card {
   position: relative;
@@ -1710,7 +1706,7 @@ header .navbar__button {
 }
 @media (max-width: 480px) {
   .glo-academy-presentation {
-    padding: 30px 0 60px;
+    padding: 30px 0 100px;
   }
   .glo-academy-presentation__info {
     margin-bottom: 36px;
@@ -1721,8 +1717,97 @@ header .navbar__button {
   .glo-academy-presentation__subtitle {
     line-height: 20px;
   }
+  .glo-academy-presentation__details__block {
+    margin-bottom: 32px;
+  }
+  .glo-academy-presentation__details__block:first-child .glo-academy-presentation__details__description {
+    padding-top: 0;
+    margin-top: -6px;
+  }
   .glo-academy-presentation__details__number {
     line-height: normal;
     letter-spacing: unset;
   }
+  .glo-academy-presentation__details__description {
+    padding-top: 0;
+    margin-top: -6px;
+    max-width: 80%;
+  }
+}
+
+.footer {
+  padding: 300px 0 60px;
+  background: linear-gradient(180deg, rgba(18, 154, 233, 0) 0%, #129AE9 41.58%, #129AE9 71.65%, #1461D2 98.06%);
+}
+.footer__title {
+  color: #FFFFFF;
+  font-size: 60px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 80px;
+}
+.footer__vk {
+  display: flex;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.footer__vk__group {
+  display: flex;
+}
+.footer__vk__followers__title {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+.footer__vk__followers__number {
+  display: flex;
+}
+.footer__vk__followers__figure {
+  color: #FFFFFF;
+  font-size: 52px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+}
+.footer__vk__followers__thousands {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.footer__vk__followers__thousands_normal {
+  font-weight: 400;
+  padding-left: 2px;
+}
+.footer__vk__buttons {
+  display: flex;
+  gap: 8px;
+}
+.footer__button {
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  background-color: transparent;
+  padding: 7px 13px 7px 11px;
+  font-size: 14px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: -moz-min-content;
+  height: min-content;
+}
+.footer__button-plus {
+  margin-right: 1px;
 }/*# sourceMappingURL=style.css.map */

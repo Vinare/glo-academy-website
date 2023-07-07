@@ -1,0 +1,86 @@
+.footer {
+  padding: 300px 0 60px;
+  background: linear-gradient(180deg, rgba(18, 154, 233, 0.00) 0%, #129AE9 41.58%, #129AE9 71.65%, #1461D2 98.06%);
+  &__title {
+    color: $snow-white;
+    font-size: 60px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 80px;
+  }
+
+  &__vk {
+    display: flex;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    &__group {
+      display: flex;
+    }
+
+    &__followers {
+      &__title {
+        color: $snow-white;
+        font-size: 20px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 6px;
+      }
+
+      &__number {
+        display: flex;
+      }
+
+      &__figure {
+        color: $snow-white;
+        font-size: 52px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 52px;
+      }
+
+      &__thousands {
+        color: $snow-white;
+        font-size: 16px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        &_normal {
+          font-weight: 400;
+          padding-left: 2px;
+        }
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  &__button {
+    border: 1px solid $snow-white;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 7px 13px 7px 11px;
+    font-size: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: $snow-white;
+    display: flex;
+    align-items: center;
+    height: min-content;
+
+    &-plus {
+      margin-right: 1px;
+    }
+  }
+}
