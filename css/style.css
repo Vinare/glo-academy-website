@@ -1739,6 +1739,9 @@ header .navbar__button {
   padding: 300px 0 60px;
   background: linear-gradient(180deg, rgba(18, 154, 233, 0) 0%, #129AE9 41.58%, #129AE9 71.65%, #1461D2 98.06%);
 }
+.footer-social-media {
+  margin-bottom: 100px;
+}
 .footer__title {
   color: #FFFFFF;
   font-size: 60px;
@@ -1750,8 +1753,19 @@ header .navbar__button {
 }
 .footer__vk {
   display: flex;
-  padding-bottom: 60px;
+  padding: 0 0 60px 33px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  justify-content: space-between;
+}
+.footer__vk_telegram {
+  padding: 60px 0 60px 33px;
+}
+.footer__vk_youtube {
+  padding: 60px 0 0 33px;
+  border-bottom: none;
+}
+.footer__vk__icon {
+  margin-right: 132px;
 }
 .footer__vk__group {
   display: flex;
@@ -1775,6 +1789,7 @@ header .navbar__button {
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
+  margin-right: 1px;
 }
 .footer__vk__followers__thousands {
   color: #FFFFFF;
@@ -1791,6 +1806,11 @@ header .navbar__button {
 .footer__vk__buttons {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
+  max-width: 476px;
+  width: 43%;
+  height: -moz-max-content;
+  height: max-content;
 }
 .footer__button {
   border: 1px solid #FFFFFF;
@@ -1810,4 +1830,25 @@ header .navbar__button {
 }
 .footer__button-plus {
   margin-right: 1px;
+}
+.footer__sections {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 40px;
+  width: -moz-max-content;
+  width: max-content;
+  height: 80px;
+}
+.footer__sections__item {
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.footer__sections__item:nth-child(-n+3) {
+  padding-right: 60px;
 }/*# sourceMappingURL=style.css.map */

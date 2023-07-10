@@ -1,6 +1,11 @@
 .footer {
   padding: 300px 0 60px;
   background: linear-gradient(180deg, rgba(18, 154, 233, 0.00) 0%, #129AE9 41.58%, #129AE9 71.65%, #1461D2 98.06%);
+
+  &-social-media {
+    margin-bottom: 100px;
+  }
+
   &__title {
     color: $snow-white;
     font-size: 60px;
@@ -13,8 +18,22 @@
 
   &__vk {
     display: flex;
-    padding-bottom: 60px;
+    padding: 0 0 60px 33px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    justify-content: space-between;
+
+    &_telegram {
+      padding: 60px 0 60px 33px;
+    }
+
+    &_youtube {
+      padding: 60px 0 0 33px;
+      border-bottom: none;
+    }
+
+    &__icon {
+      margin-right: 132px;
+    }
 
     &__group {
       display: flex;
@@ -42,6 +61,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: 52px;
+        margin-right: 1px;
       }
 
       &__thousands {
@@ -61,6 +81,10 @@
     &__buttons {
       display: flex;
       gap: 8px;
+      flex-wrap: wrap;
+      max-width: 476px;
+      width: 43%;
+      height: max-content;
     }
   }
 
@@ -83,4 +107,29 @@
       margin-right: 1px;
     }
   }
+
+  &__sections {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+    width: max-content;
+    height: 80px;
+
+    &__item {
+      color: $snow-white;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      padding-bottom: 10px;
+      display: inline-block;
+
+      &:nth-child(-n+3) {
+        padding-right: 60px;
+      }
+    }
+  }
+
+  
 }
