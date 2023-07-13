@@ -182,7 +182,205 @@
       &:last-child {
         padding-right: 0;
       }
-    }}
+    }
+  }
 
+  @media (max-width: 1199.98px) {
+    &__title {
+      font-size: 52px;
+      line-height: 52px;
+    }
+
+    &__vk {
+      padding: 0 0 60px 0;
+
+      &_telegram {
+        padding: 60px 0 60px 0;
+      }
+
+      &_youtube {
+        padding: 60px 0 0 0;
+      }
+
+      &__icon {
+        margin-right: 80px;
+        width: 100px;
+        height: auto;
+      }
+
+      &__followers {
+        &__figure {
+            font-size: 48px;
+            line-height: 48px;
+          }
+      }
+
+      &__buttons {
+          width: 49%;
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    padding: 250px 0 60px;
+
+    &__title {
+      font-size: 42px;
+      line-height: 46px;
+      margin-bottom: 70px;
+    }
+
+    &__vk {
+      padding: 0 0 40px 0;
+      align-items: flex-end;
+      
+      &__group {
+        flex-direction: column;
+      }
+
+      &__icon {
+        width: 80px;
+        margin-bottom: 24px;
+      }
+
+      &__followers {
+        &__number {
+          align-items: baseline;
+        }
+
+        &__figure {
+          font-size: 22px;
+          line-height: 22px;
+          margin-right: 4px;
+        }
+      }
+
+      &__buttons {
+        width: 66%;
+      }
+
+      &_telegram {
+        padding: 40px 0 40px 0;
+      }
+
+      &_youtube {
+        padding: 40px 0 0 0;
+      }
+    }
+
+    &__sections {
+      margin-bottom: 50px;
+    }
+
+    &__payment-methods {
+      flex-basis: 40%;
+      flex-wrap: wrap;
+      &__item {
+        padding-bottom: 16px;
+      }
+    }
+  }
   
+  @media (max-width: 767.98px) {
+    &__title {
+      font-size: 38px;
+      line-height: 44px;
+    }
+
+    &__vk{
+      &__followers{
+        &__title {
+          margin-bottom: 8px;
+        }
+      }
+
+      &__buttons {
+        width: 51%;
+      }
+    }
+
+    &__sections {
+      width: 100%;
+      margin-bottom: 60px;
+      order: 1;
+      &__item:nth-child(-n+3) {
+        padding-right: 40px;
+      }
+    }
+
+    &__payment-methods {
+      flex-basis: 100%;
+      order: 2;
+      margin-bottom: 70px;
+      justify-content: flex-start;
+      &__item {
+        padding-bottom: 0;
+      }
+    }
+
+    &__policy {
+      flex-direction: column;
+      width: 100%;
+      order: 3;
+      &__item {
+        padding-bottom: 10px;
+      }
+    }
+
+    &__copyright {
+      order: 4;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__title {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 40px;
+    }
+
+    &__vk {
+      align-items: flex-start;
+      flex-direction: column;
+
+      &__group {
+        flex-direction: row;
+        margin-bottom: 24px;
+      }
+
+      &__icon {
+        width: 62px;
+        
+        flex-shrink: 0;
+        margin-right: 20px;
+        margin-bottom: 0;
+
+      }
+
+      &__followers {
+        &__title {
+          margin-bottom: 6px;
+        }
+
+        &__figure {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      
+      &__buttons {
+        width: 100%;
+      }
+    }
+
+    &-social-media {
+      margin-bottom: 60px;
+    }
+
+    &__sections {
+      height: 180px;
+    }
+    
+  }
+
 }
