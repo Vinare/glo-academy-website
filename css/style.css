@@ -35,7 +35,7 @@
     left: 0;
     bottom: 0;
     border: 1px solid transparent;
-    background: radial-gradient(66.53% 94.56% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) padding-box, radial-gradient(66.53% 94.56% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) border-box;
+    background: radial-gradient(112.83% 90.64% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) padding-box, radial-gradient(112.83% 90.64% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) border-box;
     border-radius: 30px;
     transition: opacity 0.5s;
     opacity: 0;
@@ -794,7 +794,6 @@ header .navbar__button {
 
 .professions {
   padding-top: 121px;
-  padding-bottom: 40px;
   margin-top: -41px;
   background: radial-gradient(135.64% 135.64% at 35.92% 127.13%, #0ED1FF 0%, #1461D2 100%);
 }
@@ -973,6 +972,12 @@ header .navbar__button {
 
 .professionsSwiper {
   margin-left: -8px;
+  padding-bottom: 40px;
+  padding-right: 15px;
+  margin-right: -15px;
+}
+.professionsSwiper .swiper-slide:hover .professions__card {
+  box-shadow: 0px 34px 44px -10px rgba(245, 168, 210, 0.61);
 }
 @media (min-width: 480px) and (max-width: 575.98px) {
   .professionsSwiper {
@@ -2016,6 +2021,9 @@ header .navbar__button {
   }
 }
 @media (max-width: 480px) {
+  .footer {
+    padding: 260px 0 60px;
+  }
   .footer__title {
     font-size: 32px;
     line-height: 38px;
@@ -2050,5 +2058,19 @@ header .navbar__button {
   }
   .footer__sections {
     height: 180px;
+    margin-bottom: 30px;
+  }
+  .footer__payment-methods {
+    order: 3;
+  }
+  .footer__policy {
+    order: 2;
+    margin-bottom: 30px;
+  }
+  .footer__payment-methods {
+    margin-bottom: 40px;
+  }
+  .footer__payment-methods__item:nth-child(-n+3) {
+    padding-bottom: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

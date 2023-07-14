@@ -333,6 +333,8 @@
   }
 
   @media (max-width: 480px) {
+    padding: 260px 0 60px;
+    
     &__title {
       font-size: 32px;
       line-height: 38px;
@@ -379,8 +381,27 @@
 
     &__sections {
       height: 180px;
+      margin-bottom: 30px;
     }
-    
+
+    &__payment-methods {
+      order: 3;
+    }
+
+    &__policy {
+      order: 2;
+      margin-bottom: 30px;
+    }
+
+    &__payment-methods {
+      margin-bottom: 40px;
+
+      &__item {
+        &:nth-child(-n+3) {
+          padding-bottom: 16px;
+        }
+      }
+    }
   }
 
 }
