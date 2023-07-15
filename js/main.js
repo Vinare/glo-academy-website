@@ -32,7 +32,7 @@ const swiper = new Swiper(".mySwiper", {
       slidesOffsetBefore: 0,
     },
     1360: {
-      slidesPerView: "auto",
+      slidesPerView: 5,
       spaceBetween: 20,
       slidesOffsetBefore: 0,
     },

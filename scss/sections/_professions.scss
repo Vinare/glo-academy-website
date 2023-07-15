@@ -193,14 +193,13 @@
 .professionsSwiper {
   margin-left: -8px;
   padding-bottom: 40px;
-  padding-right: 15px;
-  margin-right: -15px;
+  // padding-right: 15px;
+  // margin-right: -15px;
 
   .swiper-slide {
     &:hover {
-
       .professions__card {
-        box-shadow: 0px 34px 44px -10px rgba(245, 168, 210, 0.61);
+        filter: drop-shadow(0px 20px 12px rgba(245, 168, 210, 0.611764705882353));
       }
     }
   }
