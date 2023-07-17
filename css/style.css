@@ -37,7 +37,7 @@
     border: 1px solid transparent;
     background: radial-gradient(112.83% 90.64% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) padding-box, radial-gradient(112.83% 90.64% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) border-box;
     border-radius: 30px;
-    transition: all 0.5s;
+    transition: opacity 0.5s;
     opacity: 0;
     z-index: -1;
   }
