@@ -1,6 +1,6 @@
 .professions {
   padding-top: 121px;
-  margin-top: -41px;
+  margin-top: -81px;
   background: radial-gradient(135.64% 135.64% at 35.92% 127.13%, #0ED1FF 0%, #1461D2 100%);
 
   &__title {
@@ -60,7 +60,7 @@
     border-color: $snow-white;
     border-radius: 30px;
     cursor: pointer;
-    transition: border-color .5s;
+    transition: all .5s;
 
     &-wrapper {
       padding-left: 8px;
@@ -193,17 +193,19 @@
 .professionsSwiper {
   margin-left: -8px;
   padding-bottom: 40px;
+  padding-right: 5px;
+  margin-right: -5px;
+  padding-top: 5px;
 
   .swiper-slide {
     &:hover {
       .professions__card {
-        filter: drop-shadow(0px 20px 12px rgba(245, 168, 210, 0.611764705882353));
+        box-shadow: 0px 34px 44px -10px rgba(245, 168, 210, 0.61);
+        // filter: drop-shadow(0px 20px 12px rgba(245, 168, 210, 0.611764705882353));
         transform: rotate(-1deg);
       }
     }
   }
-
-
 
     @media (min-width: 480px) { @media (max-width: 575.98px) {
       margin-left: -12px;
