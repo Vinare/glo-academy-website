@@ -37,6 +37,16 @@ const swiper = new Swiper(".mySwiper", {
       slidesOffsetBefore: 0,
     },
   },
+
+  navigation: {
+    nextEl: ".swiper__button--next",
+    prevEl: ".swiper__button--prev",
+    disabledClass: "swiper__button--disabled",
+  },
+
+  keyboard: {
+    enabled: true,
+  },
 });
 
 //Swiper-slider Professions

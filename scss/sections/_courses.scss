@@ -9,6 +9,14 @@
         margin-bottom: 24px;
 
     }
+
+    &__card {
+        position: relative;
+        width: 212px;
+        height: 260px;
+        border-radius: 20px;
+        transition: all .5s;
+    }
      
     @media (max-width: 1199.98px) {
         &__title {
@@ -40,12 +48,6 @@
             line-height: 36px;
             margin-bottom: 18px;
         }
-    }
-    &__card {
-        position: relative;
-        width: 212px;
-        height: 260px;
-        border-radius: 20px;
     }
 }
 
@@ -160,16 +162,69 @@
     padding-top: 5px;
     padding-bottom: 40px;
 
-    .swiper-slide {
-        &:nth-child(n+1) {
+    .swiper {
+        &-slide {
             &:hover {
                 .courses__card { 
-                    box-shadow: 0px 35px 30px -15px rgba(251, 160, 93, 0.65);
                     transform: rotate(-1deg);
-                
-                }
-            }    
+
+                    &_orange {
+                        box-shadow: 0px 35px 30px -15px rgba(251, 160, 93, 0.65);
+                    }
+
+                    &_blue {
+                        box-shadow: 0px 35px 30px -15px rgba(44, 95, 224, 1);
+                    }
+
+                    &_yellow {
+                        box-shadow: 0px 35px 30px -15px rgba(255, 211, 48, 0.55);
+                    }
+
+                    &_teal {
+                        box-shadow: 0px 35px 30px -15px rgba(40, 150, 185, 1);
+                    }
+
+                    &_light-blue {
+                        box-shadow: 0px 35px 30px -15px rgba(107, 225, 251, 0.50);
+                    }
+                } 
+            }   
         }
     }
 }
+
+.swiper {
+    &__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-52%);
+        width: 56px;
+        height: 56px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+        border-radius: 2000px;
+        z-index: 99;
+        cursor: pointer;
+        background-repeat: no-repeat;
+
+        &--prev {
+            left: -65px;
+            background-image: url('../img/arrow-prev.svg');
+            background-position: 21px 19.5px;
+        }
+
+        &--next {
+            right: -65px;
+            background-image: url('../img/arrow-next.svg');
+            background-position: 21px 22.4px;
+        }
+
+        &--disabled {
+            display: none;
+        }
+    }
+
+}
+
 

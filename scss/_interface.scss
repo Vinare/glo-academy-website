@@ -1,4 +1,9 @@
+.container {
+    &-swiper {
+      position: relative;
 
+    }
+}
 
 @media (min-width: 1360px) {
   .container {
