@@ -2,7 +2,7 @@
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
-  loop: true,
+  loop: false,
   spaceBetween: 20,
   slidesOffsetBefore: 16,
   breakpoints: {

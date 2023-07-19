@@ -211,13 +211,17 @@
         &--prev {
             left: -65px;
             background-image: url('../img/arrow-prev.svg');
-            background-position: 21px 19.5px;
+            // background-position: 21px 19.5px;
+            background-position: center;
+            background-size: 30px;
         }
 
         &--next {
             right: -65px;
             background-image: url('../img/arrow-next.svg');
-            background-position: 21px 22.4px;
+            // background-position: 21px 22.4px;
+            background-position: center;
+            background-size: 30px;
         }
 
         &--disabled {
