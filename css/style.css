@@ -46,6 +46,11 @@
     z-index: -1;
   }
 }
+@media (hover: hover) and (pointer: fine) and (max-width: 1359px) {
+  .professions__card::before {
+    width: 362px;
+  }
+}
 @media (hover: hover) and (pointer: fine) and (max-width: 1199.98px) {
   .professions__card::before {
     width: 248px;
@@ -1007,6 +1012,15 @@ header .navbar__button {
   background-image: url("../img/chevron_right_icon_white.svg");
   background-position: center;
   background-size: 36px;
+}
+@media (max-width: 1359px) {
+  .professions__card {
+    width: 362px;
+  }
+  .professions__card_img {
+    border-radius: 0px 0px 0px 40px;
+    width: 362px;
+  }
 }
 @media (max-width: 1199.98px) {
   .professions__card {
