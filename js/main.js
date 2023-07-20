@@ -2,9 +2,10 @@
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
-  loop: false,
+  loop: true,
   spaceBetween: 20,
   slidesOffsetBefore: 16,
+  speed: 500,
   breakpoints: {
     480: {
       slidesPerView: "auto",
@@ -36,12 +37,16 @@ const swiper = new Swiper(".mySwiper", {
       spaceBetween: 20,
       slidesOffsetBefore: 0,
     },
+    1400: {
+      slidesPerView: 5,
+      spaceBetween: 64,
+      slidesOffsetBefore: 0,
+    },
   },
 
   navigation: {
-    nextEl: ".swiper__button--next",
-    prevEl: ".swiper__button--prev",
-    disabledClass: "swiper__button--disabled",
+    nextEl: ".courses__swiper__button--next",
+    prevEl: ".courses__swiper__button--prev",
   },
 
   keyboard: {
@@ -56,6 +61,7 @@ const professionsSwiper = new Swiper(".professionsSwiper", {
   loop: true,
   spaceBetween: 10,
   slidesOffsetBefore: 16,
+  speed: 500,
   breakpoints: {
     480: {
       slidesPerView: "auto",
@@ -87,5 +93,19 @@ const professionsSwiper = new Swiper(".professionsSwiper", {
       spaceBetween: 13,
       slidesOffsetBefore: 0,
     },
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 100,
+      slidesOffsetBefore: 0,
+    },
+  },
+
+  navigation: {
+    nextEl: ".professions__swiper__button--next",
+    prevEl: ".professions__swiper__button--prev",
+  },
+
+  keyboard: {
+    enabled: true,
   },
 });

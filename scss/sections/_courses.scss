@@ -17,6 +17,36 @@
         border-radius: 20px;
         transition: all .5s;
     }
+
+    &__swiper {
+        &__button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-88%);
+            width: 56px;
+            height: 56px;
+            border: none;
+            z-index: 99;
+            cursor: pointer;
+            background-repeat: no-repeat;
+
+            &--prev {
+                left: -65px;
+                background-image: url('../img/chevron_left_icon.svg');
+                
+                background-position: center;
+                background-size: 36px;
+            }
+
+            &--next {
+                right: -65px;
+                background-image: url('../img/chevron_right_icon.svg');
+                
+                background-position: center;
+                background-size: 36px;
+            }
+        }
+    }
      
     @media (max-width: 1199.98px) {
         &__title {
@@ -160,7 +190,7 @@
     padding-left: 5px;
     margin-left: -5px;
     padding-top: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 
     .swiper {
         &-slide {
@@ -169,23 +199,23 @@
                     transform: rotate(-1deg);
 
                     &_orange {
-                        box-shadow: 0px 35px 30px -15px rgba(251, 160, 93, 0.65);
+                        box-shadow: 0px 34px 44px -15px rgba(251, 160, 93, 0.68);
                     }
 
                     &_blue {
-                        box-shadow: 0px 35px 30px -15px rgba(44, 95, 224, 1);
+                        box-shadow: 0px 34px 44px -15px rgba(44, 95, 224, 1);
                     }
 
                     &_yellow {
-                        box-shadow: 0px 35px 30px -15px rgba(255, 211, 48, 0.55);
+                        box-shadow: 0px 34px 44px -15px rgba(255, 211, 48, 0.68);
                     }
 
                     &_teal {
-                        box-shadow: 0px 35px 30px -15px rgba(40, 150, 185, 1);
+                        box-shadow: 0px 34px 44px -15px rgba(40, 150, 185, 1);
                     }
 
                     &_light-blue {
-                        box-shadow: 0px 35px 30px -15px rgba(107, 225, 251, 0.50);
+                        box-shadow: 0px 34px 44px -15px rgba(107, 225, 251, 0.68);
                     }
                 } 
             }   
@@ -193,42 +223,6 @@
     }
 }
 
-.swiper {
-    &__button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-52%);
-        width: 56px;
-        height: 56px;
-        border: none;
-        background: #FFFFFF;
-        box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
-        border-radius: 2000px;
-        z-index: 99;
-        cursor: pointer;
-        background-repeat: no-repeat;
 
-        &--prev {
-            left: -65px;
-            background-image: url('../img/arrow-prev.svg');
-            // background-position: 21px 19.5px;
-            background-position: center;
-            background-size: 30px;
-        }
-
-        &--next {
-            right: -65px;
-            background-image: url('../img/arrow-next.svg');
-            // background-position: 21px 22.4px;
-            background-position: center;
-            background-size: 30px;
-        }
-
-        &--disabled {
-            display: none;
-        }
-    }
-
-}
 
 

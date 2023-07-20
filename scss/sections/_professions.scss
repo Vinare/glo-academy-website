@@ -1,6 +1,6 @@
 .professions {
   padding-top: 121px;
-  margin-top: -81px;
+  margin-top: -101px;
   background: radial-gradient(135.64% 135.64% at 35.92% 127.13%, #0ED1FF 0%, #1461D2 100%);
 
   &__title {
@@ -143,6 +143,36 @@
       }
     }
   }
+
+  &__swiper {
+        &__button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-86%);
+            width: 56px;
+            height: 56px;
+            border: none;
+            z-index: 99;
+            cursor: pointer;
+            background-repeat: no-repeat;
+
+            &--prev {
+                left: -65px;
+                background-image: url('../img/chevron_left_icon_white.svg');
+                
+                background-position: center;
+                background-size: 36px;
+            }
+
+            &--next {
+                right: -65px;
+                background-image: url('../img/chevron_right_icon_white.svg');
+                
+                background-position: center;
+                background-size: 36px;
+            }
+        }
+    }
 
   @media (max-width: 1199.98px) {
     &__card {
