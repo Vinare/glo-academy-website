@@ -53,8 +53,13 @@
 }
 @media (hover: hover) and (pointer: fine) and (max-width: 1199.98px) {
   .professions__card::before {
-    width: 248px;
+    width: 280px;
     height: 312px;
+  }
+}
+@media (hover: hover) and (pointer: fine) and (max-width: 991.98px) {
+  .professions__card::before {
+    width: 328px;
   }
 }
 @media (hover: hover) and (pointer: fine) {
@@ -1018,20 +1023,20 @@ header .navbar__button {
     width: 362px;
   }
   .professions__card_img {
+    width: 369px;
     border-radius: 0px 0px 0px 40px;
-    width: 362px;
   }
 }
 @media (max-width: 1199.98px) {
   .professions__card {
-    width: 248px;
+    width: 280px;
     height: 312px;
   }
   .professions__card_img {
-    width: 253.42px;
-    height: 118.58px;
+    width: 283px;
+    height: auto;
     left: -5px;
-    border-radius: 0px 0px 32px 35px;
+    border-radius: 0px 0px 29px 35px;
   }
   .professions__card_period {
     padding: 2px 8px;
@@ -1046,9 +1051,27 @@ header .navbar__button {
 @media (max-width: 991.98px) {
   .professions__title {
     font-size: 38px;
+    margin-bottom: 10px;
+  }
+  .professions__title-group {
+    margin-bottom: 30px;
+  }
+  .professions__card {
+    width: 328px;
+  }
+  .professions__card_img {
+    width: 330px;
   }
 }
 @media (max-width: 767.98px) {
+  .professions__card {
+    width: 248px;
+  }
+  .professions__card_img {
+    width: 253.42px;
+    height: 118.58px;
+    border-radius: 0px 0px 32px 35px;
+  }
   .professions__title {
     font-size: 32px;
     line-height: 44px;

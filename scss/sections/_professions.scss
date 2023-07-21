@@ -179,45 +179,66 @@
       width: 362px;
 
       &_img {
+        width: 369px;
         border-radius: 0px 0px 0px 40px;
-        width: 362px;
       }
     }
   }
 
   @media (max-width: 1199.98px) {
     &__card {
-        width: 248px;
-        height: 312px;
-        &_img {
-          width: 253.42px;
-          height: 118.58px;
-          left: -5px;
-          border-radius: 0px 0px 32px 35px;
-        }
-        &_period {
-          padding: 2px 8px;
-        }
-        &_details {
-          margin-bottom: 10px;
-        }
-        &_price_group {
-          flex-direction: column;
-        }
+      width: 280px;
+      height: 312px;
+      &_img {
+        width: 283px;
+        height: auto;
+        left: -5px; 
+        border-radius: 0px 0px 29px 35px;
+      }
+      &_period {
+        padding: 2px 8px;
+      }
+      &_details {
+        margin-bottom: 10px;
+      }
+      &_price_group {
+        flex-direction: column;
       }
     }
+  }
+
   @media (max-width: 991.98px) {
-        &__title {
-          font-size: 38px;
-        }
+    &__title {
+      font-size: 38px;
+      margin-bottom: 10px;
+      &-group {
+        margin-bottom: 30px;
+      }
     }
 
-  @media (max-width: 767.98px) {
-        &__title {
-            font-size: 32px;
-            line-height: 44px;
-        }
+    &__card {
+      width: 328px;
+      &_img {
+        width: 330px;
+      }
     }
+  }
+
+  @media (max-width: 767.98px) {
+    &__card {
+      width: 248px;
+      &_img {
+        width: 253.42px;
+        height: 118.58px;
+        border-radius: 0px 0px 32px 35px;
+      }
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
 
   @media (max-width: 480px) { 
       padding-top: 124px; 

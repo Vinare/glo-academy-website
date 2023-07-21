@@ -74,13 +74,13 @@ const professionsSwiper = new Swiper(".professionsSwiper", {
       slidesOffsetBefore: 30,
     },
     768: {
-      slidesPerView: "auto",
-      spaceBetween: 30,
+      slidesPerView: 2,
+      spaceBetween: 31,
       slidesOffsetBefore: 0,
     },
     992: {
-      slidesPerView: "auto",
-      spaceBetween: 15,
+      slidesPerView: 3,
+      spaceBetween: 40,
       slidesOffsetBefore: 0,
     },
     1200: {
