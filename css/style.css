@@ -29,6 +29,9 @@
     color: #FBFBFB;
     border-color: #333333;
   }
+  .start-learning__content--btn:hover {
+    background-color: #1154b4;
+  }
   .professions__card::before {
     content: "";
     position: absolute;
@@ -62,6 +65,11 @@
     width: 328px;
   }
 }
+@media (hover: hover) and (pointer: fine) and (max-width: 767.98px) {
+  .professions__card::before {
+    width: 248px;
+  }
+}
 @media (hover: hover) and (pointer: fine) {
   .professions__card:hover {
     border-color: transparent;
@@ -74,6 +82,12 @@
   }
   .professions__card:hover .professions__card_price_del svg path:nth-child(2) {
     stroke: #B0CDF7;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .professions__button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 2px 2px 5px rgba(224, 220, 216, 0.5) inset, 1px 1px 5px rgb(255, 255, 255);
   }
 }
 header.header {
@@ -362,9 +376,10 @@ header .navbar__button {
   font-size: 16px;
   line-height: 20px;
   padding: 15px 24px;
-  background: #1462D3;
+  background: #1462d3;
   border-radius: 8px;
   border: 0;
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 991.98px) {
   .start-learning__content {
@@ -728,11 +743,23 @@ header .navbar__button {
     line-height: 45px;
     margin-bottom: 30px;
   }
+  .courses__swiper__button--prev {
+    left: -35px;
+  }
+  .courses__swiper__button--next {
+    right: -35px;
+  }
 }
 @media (max-width: 767.98px) {
   .courses__title {
     font-size: 32px;
     line-height: 44px;
+  }
+  .courses__swiper__button--prev {
+    display: none;
+  }
+  .courses__swiper__button--next {
+    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -844,19 +871,19 @@ header .navbar__button {
   transform: rotate(-1deg);
 }
 .mySwiper .swiper-slide:hover .courses__card_orange {
-  box-shadow: 0px 34px 44px -15px rgba(251, 160, 93, 0.68);
+  box-shadow: 0px 34px 44px -15px rgba(251, 160, 93, 0.69);
 }
 .mySwiper .swiper-slide:hover .courses__card_blue {
   box-shadow: 0px 34px 44px -15px rgb(44, 95, 224);
 }
 .mySwiper .swiper-slide:hover .courses__card_yellow {
-  box-shadow: 0px 34px 44px -15px rgba(255, 211, 48, 0.68);
+  box-shadow: 0px 34px 44px -15px rgba(255, 211, 48, 0.69);
 }
 .mySwiper .swiper-slide:hover .courses__card_teal {
   box-shadow: 0px 34px 44px -15px rgb(40, 150, 185);
 }
 .mySwiper .swiper-slide:hover .courses__card_light-blue {
-  box-shadow: 0px 34px 44px -15px rgba(107, 225, 251, 0.68);
+  box-shadow: 0px 34px 44px -15px rgba(107, 225, 251, 0.69);
 }
 
 .professions {
@@ -897,6 +924,7 @@ header .navbar__button {
   color: #FFFFFF;
   display: flex;
   align-items: center;
+  transition: all 0.5s;
 }
 .professions__button_second {
   margin-left: 8px;
@@ -1051,7 +1079,7 @@ header .navbar__button {
 @media (max-width: 991.98px) {
   .professions__title {
     font-size: 38px;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
   }
   .professions__title-group {
     margin-bottom: 30px;
@@ -1060,7 +1088,8 @@ header .navbar__button {
     width: 328px;
   }
   .professions__card_img {
-    width: 330px;
+    width: 332px;
+    border-radius: 0px 0px 31px 36px;
   }
 }
 @media (max-width: 767.98px) {
@@ -1075,6 +1104,12 @@ header .navbar__button {
   .professions__title {
     font-size: 32px;
     line-height: 44px;
+  }
+  .professions__swiper__button--prev {
+    display: none;
+  }
+  .professions__swiper__button--next {
+    display: none;
   }
 }
 @media (max-width: 480px) {

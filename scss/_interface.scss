@@ -48,6 +48,17 @@
       }
     }
 
+    .start-learning {
+      &__content{
+        &--btn {
+          &:hover {
+            background-color: darken(#1462d3, 6.6%);
+          }
+
+        }
+      }
+    }
+
     .professions {
       &__card {
         &::before {
@@ -71,13 +82,16 @@
             }
 
             @media (max-width: 1199.98px) {
-                // width: 248px;
                 width: 280px;
                 height: 312px;
             }
 
             @media (max-width: 991.98px) {
               width: 328px;
+            }
+
+            @media (max-width: 767.98px) {
+              width: 248px;
             }
         }
 
@@ -100,6 +114,14 @@
                     }
                 }
             }
+        }
+      }
+
+      &__button {
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.25);
+          box-shadow: 2px 2px 5px rgba(224, 220, 216, 0.5) inset, 1px 1px 5px rgba(255, 255, 255, 1);
+          
         }
       }
     }
