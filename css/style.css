@@ -1091,6 +1091,12 @@ header .navbar__button {
     width: 332px;
     border-radius: 0px 0px 31px 36px;
   }
+  .professions__swiper__button--prev {
+    left: -35px;
+  }
+  .professions__swiper__button--next {
+    right: -35px;
+  }
 }
 @media (max-width: 767.98px) {
   .professions__card {

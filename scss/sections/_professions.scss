@@ -224,6 +224,18 @@
         border-radius: 0px 0px 31px 36px;
       }
     }
+
+    &__swiper {
+      &__button {
+          &--prev {
+            left: -35px;
+          }
+
+          &--next {
+            right: -35px; 
+          }
+      }
+    }
   }
 
   @media (max-width: 767.98px) {
