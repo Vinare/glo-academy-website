@@ -23,7 +23,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-88%);
-            width: 56px;
+            width: 24px;
             height: 56px;
             border: none;
             z-index: 99;
@@ -31,7 +31,7 @@
             background-repeat: no-repeat;
 
             &--prev {
-                left: -65px;
+                left: -50px;
                 background-image: url('../img/chevron_left_icon.svg');
                 
                 background-position: center;
@@ -39,28 +39,144 @@
             }
 
             &--next {
-                right: -65px;
+                right: -50px;
                 background-image: url('../img/chevron_right_icon.svg');
                 
                 background-position: center;
                 background-size: 36px;
             }
-        }
-    
 
-        // @media (max-width: 1210px) {
-        
-        //     &__button {
-        //         &--prev {
-        //             left: ;
-        //         }
+            @media (max-width: 1449px) {
+                &--prev {
+                    left: -35px;
+                }
 
-        //         &--next {
-        //             right: ;
-        //         }
-        //     }
-        // }
-        
+                &--next {
+                    right: -35px;
+                }
+            }
+
+            @media (max-width: 1399px) {
+                &--prev {
+                    left: -50px;
+                }
+
+                &--next {
+                    right: -50px;
+                }
+            }
+
+            @media (max-width: 1299px) {
+                &--prev {
+                    left: -35px;
+                }
+
+                &--next {
+                    right: -35px;
+                }
+            }
+
+            @media (max-width: 1249px) {
+                &--prev {
+                    left: -25px;
+                }
+
+                &--next {
+                    right: -25px;
+                }
+            }
+
+            @media (max-width: 1199.98px) {
+                &--prev {
+                    left: -50px;
+                }
+
+                &--next {
+                    right: -50px;
+                }
+            }
+
+            @media (max-width: 1089px) {
+                &--prev {
+                    left: -27px;
+                }
+
+                &--next {
+                    right: -27px;
+                }
+            }
+
+            @media (max-width: 1029px) {
+                &--prev {
+                    left: -16px;
+                }
+
+                &--next {
+                    right: -16px;
+                }
+            }
+
+            @media (max-width: 991.98px) {
+                &--prev {
+                    left: -70px;
+                }
+
+                &--next {
+                    right: -70px;
+                }
+            }
+
+            @media (max-width: 949px) {
+                &--prev {
+                    left: -63px;
+                }
+
+                &--next {
+                    right: -63px;
+                }
+            }
+
+            @media (max-width: 899px) {
+                &--prev {
+                    left: -40px;
+                }
+
+                &--next {
+                    right: -40px; 
+                }
+            }
+
+            @media (max-width: 849px) {
+                &--prev {
+                    left: -28px;
+                }
+
+                &--next {
+                    right: -28px; 
+                }
+            }
+
+            @media (max-width: 799px) {
+
+                &--prev {
+                    left: -20px;
+                }
+
+                &--next {
+                    right: -20px; 
+                }
+            }
+
+            @media (max-width: 767.98px) {
+                &--prev {
+                    display: none;
+                }
+
+                &--next {
+                    display: none;
+                }
+            }
+        }    
     }
      
     @media (max-width: 1199.98px) {
@@ -78,36 +194,12 @@
             line-height: 45px;
             margin-bottom: 30px;
         }
-
-        &__swiper {
-            &__button {
-                &--prev {
-                   left: -35px;
-                }
-
-                &--next {
-                   right: -35px; 
-                }
-            }
-        }
     }
 
     @media (max-width: 767.98px) {
         &__title {
             font-size: 32px;
             line-height: 44px;
-        }
-
-        &__swiper {
-            &__button {
-                &--prev {
-                    display: none;
-                }
-
-                &--next {
-                    display: none;
-                }
-            }
         }
     }
 
@@ -230,6 +322,13 @@
     margin-left: -5px;
     padding-top: 5px;
     padding-bottom: 60px;
+
+    @media (max-width: 767.98px) {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     .swiper {
         &-slide {

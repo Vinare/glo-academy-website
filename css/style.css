@@ -708,7 +708,7 @@ header .navbar__button {
   position: absolute;
   top: 50%;
   transform: translateY(-88%);
-  width: 56px;
+  width: 24px;
   height: 56px;
   border: none;
   z-index: 99;
@@ -716,16 +716,120 @@ header .navbar__button {
   background-repeat: no-repeat;
 }
 .courses__swiper__button--prev {
-  left: -65px;
+  left: -50px;
   background-image: url("../img/chevron_left_icon.svg");
   background-position: center;
   background-size: 36px;
 }
 .courses__swiper__button--next {
-  right: -65px;
+  right: -50px;
   background-image: url("../img/chevron_right_icon.svg");
   background-position: center;
   background-size: 36px;
+}
+@media (max-width: 1449px) {
+  .courses__swiper__button--prev {
+    left: -35px;
+  }
+  .courses__swiper__button--next {
+    right: -35px;
+  }
+}
+@media (max-width: 1399px) {
+  .courses__swiper__button--prev {
+    left: -50px;
+  }
+  .courses__swiper__button--next {
+    right: -50px;
+  }
+}
+@media (max-width: 1299px) {
+  .courses__swiper__button--prev {
+    left: -35px;
+  }
+  .courses__swiper__button--next {
+    right: -35px;
+  }
+}
+@media (max-width: 1249px) {
+  .courses__swiper__button--prev {
+    left: -25px;
+  }
+  .courses__swiper__button--next {
+    right: -25px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .courses__swiper__button--prev {
+    left: -50px;
+  }
+  .courses__swiper__button--next {
+    right: -50px;
+  }
+}
+@media (max-width: 1089px) {
+  .courses__swiper__button--prev {
+    left: -27px;
+  }
+  .courses__swiper__button--next {
+    right: -27px;
+  }
+}
+@media (max-width: 1029px) {
+  .courses__swiper__button--prev {
+    left: -16px;
+  }
+  .courses__swiper__button--next {
+    right: -16px;
+  }
+}
+@media (max-width: 991.98px) {
+  .courses__swiper__button--prev {
+    left: -70px;
+  }
+  .courses__swiper__button--next {
+    right: -70px;
+  }
+}
+@media (max-width: 949px) {
+  .courses__swiper__button--prev {
+    left: -63px;
+  }
+  .courses__swiper__button--next {
+    right: -63px;
+  }
+}
+@media (max-width: 899px) {
+  .courses__swiper__button--prev {
+    left: -40px;
+  }
+  .courses__swiper__button--next {
+    right: -40px;
+  }
+}
+@media (max-width: 849px) {
+  .courses__swiper__button--prev {
+    left: -28px;
+  }
+  .courses__swiper__button--next {
+    right: -28px;
+  }
+}
+@media (max-width: 799px) {
+  .courses__swiper__button--prev {
+    left: -20px;
+  }
+  .courses__swiper__button--next {
+    right: -20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .courses__swiper__button--prev {
+    display: none;
+  }
+  .courses__swiper__button--next {
+    display: none;
+  }
 }
 @media (max-width: 1199.98px) {
   .courses__title {
@@ -743,23 +847,11 @@ header .navbar__button {
     line-height: 45px;
     margin-bottom: 30px;
   }
-  .courses__swiper__button--prev {
-    left: -35px;
-  }
-  .courses__swiper__button--next {
-    right: -35px;
-  }
 }
 @media (max-width: 767.98px) {
   .courses__title {
     font-size: 32px;
     line-height: 44px;
-  }
-  .courses__swiper__button--prev {
-    display: none;
-  }
-  .courses__swiper__button--next {
-    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -866,6 +958,14 @@ header .navbar__button {
   margin-left: -5px;
   padding-top: 5px;
   padding-bottom: 60px;
+}
+@media (max-width: 767.98px) {
+  .mySwiper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .mySwiper .swiper-slide:hover .courses__card {
   transform: rotate(-1deg);
@@ -1027,7 +1127,7 @@ header .navbar__button {
   position: absolute;
   top: 50%;
   transform: translateY(-86%);
-  width: 56px;
+  width: 24px;
   height: 56px;
   border: none;
   z-index: 99;
@@ -1035,16 +1135,120 @@ header .navbar__button {
   background-repeat: no-repeat;
 }
 .professions__swiper__button--prev {
-  left: -65px;
+  left: -50px;
   background-image: url("../img/chevron_left_icon_white.svg");
   background-position: center;
   background-size: 36px;
 }
 .professions__swiper__button--next {
-  right: -65px;
+  right: -50px;
   background-image: url("../img/chevron_right_icon_white.svg");
   background-position: center;
   background-size: 36px;
+}
+@media (max-width: 1449px) {
+  .professions__swiper__button--prev {
+    left: -35px;
+  }
+  .professions__swiper__button--next {
+    right: -35px;
+  }
+}
+@media (max-width: 1399px) {
+  .professions__swiper__button--prev {
+    left: -50px;
+  }
+  .professions__swiper__button--next {
+    right: -50px;
+  }
+}
+@media (max-width: 1299px) {
+  .professions__swiper__button--prev {
+    left: -35px;
+  }
+  .professions__swiper__button--next {
+    right: -35px;
+  }
+}
+@media (max-width: 1249px) {
+  .professions__swiper__button--prev {
+    left: -25px;
+  }
+  .professions__swiper__button--next {
+    right: -25px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .professions__swiper__button--prev {
+    left: -50px;
+  }
+  .professions__swiper__button--next {
+    right: -50px;
+  }
+}
+@media (max-width: 1089px) {
+  .professions__swiper__button--prev {
+    left: -27px;
+  }
+  .professions__swiper__button--next {
+    right: -27px;
+  }
+}
+@media (max-width: 1029px) {
+  .professions__swiper__button--prev {
+    left: -16px;
+  }
+  .professions__swiper__button--next {
+    right: -16px;
+  }
+}
+@media (max-width: 991.98px) {
+  .professions__swiper__button--prev {
+    left: -70px;
+  }
+  .professions__swiper__button--next {
+    right: -70px;
+  }
+}
+@media (max-width: 949px) {
+  .professions__swiper__button--prev {
+    left: -63px;
+  }
+  .professions__swiper__button--next {
+    right: -63px;
+  }
+}
+@media (max-width: 899px) {
+  .professions__swiper__button--prev {
+    left: -40px;
+  }
+  .professions__swiper__button--next {
+    right: -40px;
+  }
+}
+@media (max-width: 849px) {
+  .professions__swiper__button--prev {
+    left: -28px;
+  }
+  .professions__swiper__button--next {
+    right: -28px;
+  }
+}
+@media (max-width: 799px) {
+  .professions__swiper__button--prev {
+    left: -20px;
+  }
+  .professions__swiper__button--next {
+    right: -20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .professions__swiper__button--prev {
+    display: none;
+  }
+  .professions__swiper__button--next {
+    display: none;
+  }
 }
 @media (max-width: 1359px) {
   .professions__card {
@@ -1091,12 +1295,6 @@ header .navbar__button {
     width: 332px;
     border-radius: 0px 0px 31px 36px;
   }
-  .professions__swiper__button--prev {
-    left: -35px;
-  }
-  .professions__swiper__button--next {
-    right: -35px;
-  }
 }
 @media (max-width: 767.98px) {
   .professions__card {
@@ -1110,12 +1308,6 @@ header .navbar__button {
   .professions__title {
     font-size: 32px;
     line-height: 44px;
-  }
-  .professions__swiper__button--prev {
-    display: none;
-  }
-  .professions__swiper__button--next {
-    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -1134,6 +1326,14 @@ header .navbar__button {
   padding-right: 5px;
   margin-right: -5px;
   padding-top: 5px;
+}
+@media (max-width: 767.98px) {
+  .professionsSwiper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .professionsSwiper .swiper-slide:hover .professions__card {
   box-shadow: 0px 34px 44px -10px rgba(245, 168, 210, 0.62);

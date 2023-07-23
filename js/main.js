@@ -95,7 +95,7 @@ const professionsSwiper = new Swiper(".professionsSwiper", {
     },
     1400: {
       slidesPerView: 3,
-      spaceBetween: 100,
+      spaceBetween: 103,
       slidesOffsetBefore: 0,
     },
   },
