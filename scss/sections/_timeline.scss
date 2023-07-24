@@ -1,6 +1,6 @@
 .timeline-section {
     background-color: #141414;
-    background-image: radial-gradient(60.62% 75.01% at 82.94% 86.7%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 87.98%);
+    background-image: radial-gradient(60.62% 50.01% at 77.94% 86.7%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 87.98%);
     padding: 140px 0 0;
     position: relative;
 
@@ -103,7 +103,7 @@
         &-months {
             display: flex;
             flex-direction: column;
-            margin-bottom: 195px;
+            margin-bottom: 200px;
 
 
             &__line {

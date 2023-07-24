@@ -41,9 +41,9 @@
     .navbar {
       &__button {
         &:hover {
-          background-color: #333333;
+          background-color: #1462d3;
           color: $white;
-          border-color: #333333;
+          border-color: #1462d3;
         }
       }
     }
@@ -52,7 +52,7 @@
       &__content{
         &--btn {
           &:hover {
-            background-color: darken(#1462d3, 6.7%);
+            background-color: darken(#1462d3, 6.8%);
           }
 
         }

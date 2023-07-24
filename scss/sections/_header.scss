@@ -91,6 +91,7 @@ header {
             background: $snow-white;
             padding: 14px 30px;
             margin-top: 5px;
+            transition: all .5s;
         }
 
         @media (max-width: 991.98px) {
