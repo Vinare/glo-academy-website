@@ -473,7 +473,39 @@
             @media (max-width: 480px) {
                 &__blocks {
                     &-item {
-                        width: 105%;
+                        width: 103%;
+                    }
+                }
+            }
+
+            @media (max-width: 464px) {
+                &__blocks {
+                    &-item {
+                        width: 103.5%;
+                    }
+                }
+            }
+
+            @media (max-width: 420px) {
+                &__blocks {
+                    &-item {
+                        width: 104%;
+                    }
+                }
+            }
+
+            @media (max-width: 389px) {
+                &__blocks {
+                    &-item {
+                        width: 104.5%;
+                    }
+                }
+            }
+
+            @media (max-width: 353px) {
+                &__blocks {
+                    &-item {
+                        width: 105.2%;
                     }
                 }
             }
@@ -509,11 +541,11 @@
     }
 
     @media (max-width: 575.98px) {
-       background-image: radial-gradient(99% 25% at 74% 80%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);   
+       background-image: radial-gradient(99% 22% at 62% 80%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);   
        
        &::after {
         clip-path: polygon(0 75%, 100% 48%, 100% 100%, 0% 100%);
-        height: 330px;
+        height: 290px;
         } 
 
        .timeline {
@@ -526,7 +558,8 @@
     }
 
     @media (max-width: 480px) {
-        background-image: radial-gradient(99% 20% at 79% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+        background-image: radial-gradient(99% 28% at 83% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+
         .timeline {
             &-description {
                 &-months {
@@ -539,6 +572,10 @@
                 clip-path: polygon(0 62%, 100% 45%, 100% 100%, 0% 100%);
             }
 
+    }
+
+    @media (max-width: 420px) {
+        background-image: radial-gradient(99% 20% at 79% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
     }
 
     .timeline-globe {
@@ -622,8 +659,8 @@
         }
 
         @media (max-width: 575.98px) {
-            background-position: left calc(50% + 40px) top 150px;
-            min-height: 745px;
+            background-position: left calc(50% + 40px) top 200px;
+            min-height: 772px;
             align-items: flex-start;
             background-size: 620px auto;
             &__students {

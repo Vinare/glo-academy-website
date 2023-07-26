@@ -316,12 +316,19 @@
 }
 
 .mySwiper { 
-    padding-right: 5px;
-    margin-right: -5px;
-    padding-left: 5px;
-    margin-left: -5px;
+    padding-right: 20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    margin-left: -20px;
     padding-top: 5px;
     padding-bottom: 60px;
+
+    @media (max-width: 1359px) {
+        padding-right: 14px;
+        margin-right: -14px;
+        padding-left: 14px;
+        margin-left: -14px;
+    }
 
     @media (max-width: 767.98px) {
         margin-left: auto;

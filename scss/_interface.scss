@@ -94,15 +94,31 @@
               width: 248px;
             }
         }
+      }
 
+      &__button {
         &:hover {
+          background-color: rgba(255, 255, 255, 0.25);
+          box-shadow: 2px 2px 5px rgba(224, 220, 216, 0.5) inset, 1px 1px 5px rgba(255, 255, 255, 1);
+          
+        }
+      }
+    }
+
+    .professionsSwiper {
+      .swiper-slide {
+        &:hover {
+          .professions__card {
+            box-shadow: 0px 34px 44px -10px rgba(245, 168, 210, 0.62);
+            transform: rotate(-1deg);
             border-color: transparent;
 
             &::before {
-                opacity: 1;
+              opacity: 1;
             }
+
             .professions__card_period {
-                color: #C790B6;    
+              color: #C790B6;    
             }
 
             .professions__card_price_del {
@@ -114,16 +130,28 @@
                     }
                 }
             }
+
+            &--disabled {
+              box-shadow: none;
+              transform: none;
+              border-color: #E6E1E1;
+
+              &::before {
+                opacity: 0;
+              } 
+
+              .professions__card_period {
+                color: #3584CA;  
+              }
+            }
+          }
+        }
+
+        &--disabled {
+          cursor: default;
         }
       }
 
-      &__button {
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.25);
-          box-shadow: 2px 2px 5px rgba(224, 220, 216, 0.5) inset, 1px 1px 5px rgba(255, 255, 255, 1);
-          
-        }
-      }
     }
   }
 }
