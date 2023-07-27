@@ -332,6 +332,24 @@
     }
   }
 
+  @media (max-width: 538px) {
+    &__vk {
+      &__followers {
+        &__figure {
+          font-size: 16px;
+        }
+          
+        &__thousands {
+          font-size: 15px;
+        }
+      }
+
+      &__buttons {
+        width: 58%;
+      }
+    }
+  }
+
   @media (max-width: 480px) {
     padding: 260px 0 60px;
     
@@ -356,7 +374,6 @@
         flex-shrink: 0;
         margin-right: 20px;
         margin-bottom: 0;
-
       }
 
       &__followers {
@@ -365,8 +382,11 @@
         }
 
         &__figure {
-          font-size: 16px;
           line-height: 20px;
+        }
+
+        &__thousands {
+          font-size: 16px;
         }
       }
       

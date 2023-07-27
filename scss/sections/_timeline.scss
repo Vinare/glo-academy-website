@@ -541,7 +541,7 @@
     }
 
     @media (max-width: 575.98px) {
-       background-image: radial-gradient(99% 22% at 62% 80%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);   
+       background-image: radial-gradient(99% 25% at 71% 80%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);   
        
        &::after {
         clip-path: polygon(0 75%, 100% 48%, 100% 100%, 0% 100%);
@@ -571,12 +571,16 @@
         &::after {
                 clip-path: polygon(0 62%, 100% 45%, 100% 100%, 0% 100%);
             }
-
     }
 
-    @media (max-width: 420px) {
-        background-image: radial-gradient(99% 20% at 79% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+    @media (max-width: 415px) {
+        background-image: radial-gradient(99% 22.2% at 68% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
     }
+
+    @media (max-width: 350px) {
+        background-image: radial-gradient(99% 19% at 79% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+    }
+
 
     .timeline-globe {
         background-image: url(../img/globe.png);
@@ -678,7 +682,8 @@
         }
 
         @media (max-width: 480px) {
-            background-position: left calc(50% + 86px) top 215px;
+            background-position: left calc(50% + 86px) top 175px;
+            min-height: 690px;
             background-size: 500px auto;
             &__students {
                 &_title {
@@ -690,8 +695,17 @@
                     line-height: 20px;
                 }
             }
+        }
 
-            
+        @media (max-width: 415px) {
+            background-position: left calc(50% + 40px) top 222px;
+            min-height: 735px;
+        }
+
+        @media (max-width: 350px) {
+            background-position: left calc(50% + 86px) top 240px;
+            min-height: 772px;
+
         }
     }
 }

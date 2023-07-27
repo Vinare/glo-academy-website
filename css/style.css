@@ -1846,7 +1846,7 @@ header .navbar__button {
 }
 @media (max-width: 575.98px) {
   .timeline-section {
-    background-image: radial-gradient(99% 22% at 62% 80%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+    background-image: radial-gradient(99% 25% at 71% 80%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
   }
   .timeline-section::after {
     -webkit-clip-path: polygon(0 75%, 100% 48%, 100% 100%, 0% 100%);
@@ -1869,9 +1869,14 @@ header .navbar__button {
             clip-path: polygon(0 62%, 100% 45%, 100% 100%, 0% 100%);
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 415px) {
   .timeline-section {
-    background-image: radial-gradient(99% 20% at 79% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+    background-image: radial-gradient(99% 22.2% at 68% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+  }
+}
+@media (max-width: 350px) {
+  .timeline-section {
+    background-image: radial-gradient(99% 19% at 79% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
   }
 }
 .timeline-section .timeline-globe {
@@ -1961,7 +1966,8 @@ header .navbar__button {
 }
 @media (max-width: 480px) {
   .timeline-section .timeline-globe {
-    background-position: left calc(50% + 86px) top 215px;
+    background-position: left calc(50% + 86px) top 175px;
+    min-height: 690px;
     background-size: 500px auto;
   }
   .timeline-section .timeline-globe__students_title {
@@ -1970,6 +1976,18 @@ header .navbar__button {
   }
   .timeline-section .timeline-globe__students_subtitle {
     line-height: 20px;
+  }
+}
+@media (max-width: 415px) {
+  .timeline-section .timeline-globe {
+    background-position: left calc(50% + 40px) top 222px;
+    min-height: 735px;
+  }
+}
+@media (max-width: 350px) {
+  .timeline-section .timeline-globe {
+    background-position: left calc(50% + 86px) top 240px;
+    min-height: 772px;
   }
 }
 
@@ -2453,6 +2471,17 @@ header .navbar__button {
     order: 4;
   }
 }
+@media (max-width: 538px) {
+  .footer__vk__followers__figure {
+    font-size: 16px;
+  }
+  .footer__vk__followers__thousands {
+    font-size: 15px;
+  }
+  .footer__vk__buttons {
+    width: 58%;
+  }
+}
 @media (max-width: 480px) {
   .footer {
     padding: 260px 0 60px;
@@ -2480,8 +2509,10 @@ header .navbar__button {
     margin-bottom: 6px;
   }
   .footer__vk__followers__figure {
-    font-size: 16px;
     line-height: 20px;
+  }
+  .footer__vk__followers__thousands {
+    font-size: 16px;
   }
   .footer__vk__buttons {
     width: 100%;
