@@ -558,7 +558,7 @@
     }
 
     @media (max-width: 480px) {
-        background-image: radial-gradient(99% 28% at 83% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+        background-image: radial-gradient(99% 27% at 83% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
 
         .timeline {
             &-description {
@@ -578,7 +578,7 @@
     }
 
     @media (max-width: 350px) {
-        background-image: radial-gradient(99% 19% at 79% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+        background-image: radial-gradient(99% 18.7% at 76% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
     }
 
 
@@ -703,7 +703,7 @@
         }
 
         @media (max-width: 350px) {
-            background-position: left calc(50% + 86px) top 240px;
+            background-position: left calc(50% + 86px) top 250px;
             min-height: 772px;
 
         }
