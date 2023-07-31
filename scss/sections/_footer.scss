@@ -102,6 +102,7 @@
     display: flex;
     align-items: center;
     height: min-content;
+    transition: all .5s;
 
     &-plus {
       margin-right: 1px;
@@ -123,6 +124,10 @@
     width: 360px;
     height: 90px;
 
+    &_modified {
+      flex-direction: row;
+    }
+
     &__item {
       color: $snow-white;
       font-family: Inter;
@@ -132,10 +137,15 @@
       line-height: 20px;
       padding-bottom: 10px;
       text-decoration: none;
-      
 
       &:nth-child(-n+3) {
         padding-right: 60px;
+      }
+
+      &_modified {
+        &:nth-child(-n+3) {
+          padding-right: 32px;
+        }
       }
     }
   }
@@ -303,6 +313,11 @@
       width: 100%;
       margin-bottom: 60px;
       order: 1;
+
+      &_modified {
+        margin-bottom: 10px;
+      }
+
       &__item:nth-child(-n+3) {
         padding-right: 40px;
       }
@@ -322,6 +337,8 @@
       flex-direction: column;
       width: 100%;
       order: 3;
+      margin-bottom: 20px;
+      
       &__item {
         padding-bottom: 10px;
       }

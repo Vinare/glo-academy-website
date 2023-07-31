@@ -16,6 +16,10 @@
         height: 260px;
         border-radius: 20px;
         transition: all .5s;
+
+        img {
+            border-radius: 20px;
+        }
     }
 
     &__swiper {
@@ -361,6 +365,10 @@
 
                     &_light-blue {
                         box-shadow: 0px 34px 44px -15px rgba(107, 225, 251, 0.69);
+                    }
+
+                    &_green {
+                        box-shadow: 0px 34px 44px -15px rgba(22, 206, 142, 0.69);    
                     }
                 } 
             }   
