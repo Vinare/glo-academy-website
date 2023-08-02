@@ -109,3 +109,31 @@ const professionsSwiper = new Swiper(".professionsSwiper", {
     enabled: true,
   },
 });
+
+// seamless-scroll-polyfill
+
+const links = document.querySelectorAll(".footer__sections__item");
+
+console.log(links);
+
+seamless.polyfill();
+
+links.forEach((element) => {
+  element.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const id = element.getAttribute("href").substring(1);
+
+    const section = document.getElementById(id);
+
+    if (section) {
+      seamless.elementScrollIntoView(section, {
+        behavior: "smooth",
+        block: "center",
+      });
+    } else {
+      console.log("нет");
+    }
+  });
+});
+

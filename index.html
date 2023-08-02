@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>Glo Academy</title>
+  <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@2.3.4" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 
@@ -41,11 +42,11 @@
                     Курсы
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Дизайн</a></li>
-                    <li><a class="dropdown-item" href="#">Верстка</a></li>
-                    <li><a class="dropdown-item" href="#">JavaScript</a></li>
-                    <li><a class="dropdown-item" href="#">Wordpress</a></li>
-                    <li><a class="dropdown-item" href="#">Vue</a></li>
+                    <li><a class="dropdown-item" href="https://glo-academy.com/design" target="_blank">Дизайн</a></li>
+                    <li><a class="dropdown-item" href="https://glo.academy/web-developer" target="_blank">Верстка</a></li>
+                    <li><a class="dropdown-item" href="https://glo-academy.ru/jscript" target="_blank">JavaScript</a></li>
+                    <li><a class="dropdown-item" href="https://glo-academy.com/wp" target="_blank">Wordpress</a></li>
+                    <li><a class="dropdown-item" href="https://glo-academy.com/vue-course/" target="_blank">Vue</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -55,7 +56,7 @@
                   </a>
                   <ul class="dropdown-menu">
                     <!-- <li><a class="dropdown-item" href="#">Верстальщик</a></li> -->
-                    <li><a class="dropdown-item" href="#">Frontend-разработчик</a></li>
+                    <li><a class="dropdown-item" href="https://glo.academy/frontend/" target="_blank">Frontend-разработчик</a></li>
                     <!-- <li><a class="dropdown-item" href="#">FullStack-разработчик</a></li> -->
                   </ul>
                 </li>
@@ -79,7 +80,7 @@
   </header>
   <main>
 
-    <section class="start-learning" id="st-learning">
+    <section class="start-learning">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-xl-7 col-lg-6 order-1 order-lg-2 px-0 start-learning__image_wrapper">
@@ -104,7 +105,7 @@
       </div>
     </section>
 
-    <section class="courses">
+    <section class="courses" id="courses">
       <div class="container">
         <h2 class="courses__title">Получай знания через курсы</h2>
       </div>
@@ -257,7 +258,7 @@
       </div>
     </section>
 
-    <section class="professions">
+    <section class="professions" id="professions">
       <div class="container">
         <div class="professions__title-group">
           <h2 class="professions__title">Или через полноценные профессии</h2>
@@ -690,8 +691,8 @@
         <div class="footer-bottom">
           <div class="footer__sections footer__sections_modified">
             <!-- <a href="#" class="footer__sections__item">Мастер-классы</a> -->
-            <a href="#" class="footer__sections__item footer__sections__item_modified">Курсы</a>
-            <a href="#" class="footer__sections__item footer__sections__item_modified">Профессии</a>
+            <a href="#courses" class="footer__sections__item footer__sections__item_modified">Курсы</a>
+            <a href="#professions" class="footer__sections__item footer__sections__item_modified">Профессии</a>
             <!-- <a href="#" class="footer__sections__item">Шаблоны для верстки</a>
             <a href="#" class="footer__sections__item">Блог</a>
             <a href="#" class="footer__sections__item">Вакансии</a> -->

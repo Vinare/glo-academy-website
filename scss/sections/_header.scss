@@ -96,6 +96,7 @@ header {
             margin-top: 5px;
             transition: all .6s;
             text-decoration: none;
+            text-align: center;
         }
 
         @media (max-width: 991.98px) {
@@ -103,8 +104,8 @@ header {
                 margin-bottom: 24px;
 
                 li {
-                    padding-top: 6px;
-                    padding-bottom: 6px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
                 }
             }
         }
