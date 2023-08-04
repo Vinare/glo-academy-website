@@ -12,7 +12,7 @@
 
 .reviewsgrid {
   &__wrap {
-    font-family: 'Lato';
+    font-family: 'Inter';
     box-sizing: border-box;
     column-count: 4;
     margin-top: 70px;
@@ -47,11 +47,11 @@
       margin-bottom: 5px;
       font-size: 16px;
       font-weight: 700;
-      color: #09284a;
+      color: $color-primary;
     }
 
     &__desc {
-      color: #7d7d7d;
+      color: #6F6F6F;
       font-size: 12px;
     }
 
@@ -82,7 +82,7 @@
         font-size: 14px;
         margin-bottom: 10px;
         line-height: 22px;
-        color: #09284a;
+        color: $color-primary;
       } 
     }
 
@@ -91,7 +91,7 @@
       align-items: center;
       text-decoration: none;
       width: 100%;
-      color: #ff8562;
+      color: #004DBE;
       margin-top: 15px;
 
       & span {
@@ -104,13 +104,16 @@
   &-btn {
     display: none;
     width: 100%;
-    border: none;
-    margin: 0;
-    font-family: 'Proxima Nova';
-    font-weight: 800;
-    font-size: 12px;
-    text-transform: uppercase;
-    padding: 14px 0 12px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 24px;
+    background: #1462d3;
+    border-radius: 8px;
+    border: 0;
+    transition: .3s ease-in-out;
+    color: $snow-white;
   }
 
   @media (max-width: 1140px) {
