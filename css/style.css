@@ -728,7 +728,7 @@ header .navbar__button {
   transition: all 0.5s;
 }
 .courses__card img {
-  border-radius: 20px;
+  border-radius: 22px;
 }
 .courses__swiper__button {
   position: absolute;
@@ -2249,7 +2249,7 @@ header .navbar__button {
 }
 .reviewsgrid-item__desc {
   color: #6F6F6F;
-  font-size: 12px;
+  font-size: 14px;
 }
 .reviewsgrid-item__image {
   min-width: 50px;
