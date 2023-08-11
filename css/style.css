@@ -728,7 +728,7 @@ header .navbar__button {
   transition: all 0.5s;
 }
 .courses__card img {
-  border-radius: 22px;
+  border-radius: 20px;
 }
 .courses__swiper__button {
   position: absolute;
@@ -2205,6 +2205,9 @@ header .navbar__button {
   }
 }
 
+.reviews {
+  padding: 100px 0 80px;
+}
 .reviews__title {
   color: #333333;
   font-family: Inter;
@@ -2214,19 +2217,41 @@ header .navbar__button {
   line-height: 60px;
   margin-bottom: 40px;
 }
+.reviews__subtitle {
+  color: #333333;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+.reviews__link {
+  color: rgba(29, 132, 227, 0.8);
+  transition: opacity 0.5s;
+}
+@media (max-width: 1199.98px) {
+  .reviews__title {
+    font-size: 52px;
+    line-height: 52px;
+  }
+  .reviews__subtitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 
 .reviewsgrid__wrap {
   font-family: "Inter";
   box-sizing: border-box;
   -moz-column-count: 4;
        column-count: 4;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .reviewsgrid-item {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
   will-change: transform;
-  max-width: 260px;
   box-sizing: content-box;
   padding: 20px;
   margin-bottom: 20px;
@@ -2304,6 +2329,12 @@ header .navbar__button {
   transition: 0.3s ease-in-out;
   color: #FFFFFF;
 }
+@media (max-width: 1199.98px) {
+  .reviewsgrid__wrap {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
 @media (max-width: 1140px) {
   .reviewsgrid {
     padding-top: 85px;
@@ -2314,16 +2345,10 @@ header .navbar__button {
   }
   .reviewsgrid-item_active {
     display: block;
-  }
-  .reviewsgrid-item_active_1140 {
-    display: block;
+    max-width: 293px;
+    box-sizing: border-box;
   }
   .reviewsgrid__wrap {
-    -moz-column-count: 2;
-         column-count: 2;
-    max-width: 620px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 50px;
   }
   .reviewsgrid-btn {
@@ -2334,7 +2359,16 @@ header .navbar__button {
     margin-right: auto;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 991.98px) {
+  .reviewsgrid__wrap {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+  .reviewsgrid-item_active {
+    box-sizing: content-box;
+  }
+}
+@media (max-width: 767.98px) {
   .reviewsgrid {
     padding-top: 50px;
     padding-bottom: 25px;
