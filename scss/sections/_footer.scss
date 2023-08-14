@@ -33,6 +33,11 @@
 
     &__icon {
       margin-right: 132px;
+      cursor: pointer;
+
+      &_link {
+        cursor: default;
+      }
     }
 
     &__group {
@@ -102,7 +107,7 @@
     display: flex;
     align-items: center;
     height: min-content;
-    transition: all .5s;
+    cursor: default !important;
 
     &-plus {
       margin-right: 1px;
@@ -126,6 +131,8 @@
 
     &_modified {
       flex-direction: row;
+      width: 370px;
+      height: fit-content;
     }
 
     &__item {
@@ -146,6 +153,9 @@
         &:nth-child(-n+3) {
           padding-right: 32px;
         }
+        &:last-child {
+          padding-right: 0;
+        }
       }
     }
   }
@@ -153,7 +163,7 @@
   &__payment-methods {
     display: flex;
     height: fit-content;
-    flex-basis: 50%;
+    flex-basis: 55%;
     justify-content: flex-end;
     &__item {
       padding-right: 32px;
@@ -285,6 +295,7 @@
     &__payment-methods {
       flex-basis: 40%;
       flex-wrap: wrap;
+      margin-bottom: 24px;
       &__item {
         padding-bottom: 16px;
       }
@@ -313,10 +324,6 @@
       width: 100%;
       margin-bottom: 60px;
       order: 1;
-
-      &_modified {
-        margin-bottom: 10px;
-      }
 
       &__item:nth-child(-n+3) {
         padding-right: 40px;
@@ -368,7 +375,7 @@
   }
 
   @media (max-width: 480px) {
-    padding: 260px 0 60px;
+    padding: 140px 0 60px;
     
     &__title {
       font-size: 32px;
@@ -421,13 +428,8 @@
       margin-bottom: 30px;
 
       &_modified {
-        height: 74px;
-        margin-bottom: 0;
+        height: fit-content;       
       }
-    }
-
-    &__payment-methods {
-      order: 3;
     }
 
     &__policy {
@@ -436,12 +438,12 @@
     }
 
     &__payment-methods {
-      margin-bottom: 40px;
+      margin-bottom: 24px;
+      order: 3;
+      
 
-      &__item {
-        &:nth-child(-n+3) {
+      &__item {  
           padding-bottom: 16px;
-        }
       }
     }
   }

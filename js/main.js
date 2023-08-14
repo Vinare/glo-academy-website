@@ -2,7 +2,7 @@
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
-  loop: true,
+  loop: false,
   spaceBetween: 20,
   slidesOffsetBefore: 16,
   speed: 500,
@@ -47,6 +47,7 @@ const swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".courses__swiper__button--next",
     prevEl: ".courses__swiper__button--prev",
+    disabledClass: "courses__swiper__button--disabled",
   },
 
   keyboard: {
@@ -58,7 +59,7 @@ const swiper = new Swiper(".mySwiper", {
 
 const professionsSwiper = new Swiper(".professionsSwiper", {
   slidesPerView: "auto",
-  loop: true,
+  loop: false,
   spaceBetween: 10,
   slidesOffsetBefore: 16,
   speed: 500,
@@ -103,6 +104,7 @@ const professionsSwiper = new Swiper(".professionsSwiper", {
   navigation: {
     nextEl: ".professions__swiper__button--next",
     prevEl: ".professions__swiper__button--prev",
+    disabledClass: "professions__swiper__button--disabled",
   },
 
   keyboard: {
@@ -112,7 +114,7 @@ const professionsSwiper = new Swiper(".professionsSwiper", {
 
 // seamless-scroll-polyfill
 
-const links = document.querySelectorAll(".footer__sections__item");
+const links = document.querySelectorAll(".footer__sections__item-anchor");
 
 console.log(links);
 

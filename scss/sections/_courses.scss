@@ -50,6 +50,10 @@
                 background-size: 36px;
             }
 
+            &--disabled {
+                display: none;
+            }
+
             @media (max-width: 1449px) {
                 &--prev {
                     left: -35px;
