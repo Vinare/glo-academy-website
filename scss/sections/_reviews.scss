@@ -50,7 +50,6 @@
     -webkit-column-break-inside: avoid;
     break-inside: avoid;
     will-change: transform;
-    // max-width: 260px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     padding: 20px;
@@ -155,12 +154,8 @@
     padding-bottom: 55px;
 
     &-item {
-      display: none;
-
-      &_active {
-        display: block;
-        max-width: 293px;
-        box-sizing: border-box;
+      &:not(.reviewsgrid-item_active) {
+        display: none;
       }
     }
 
@@ -196,7 +191,7 @@
     &__wrap {
       -webkit-column-count: 1;
       column-count: 1;
-      max-width: 300px;
+      max-width: 100%;
       margin-left: auto;
       margin-right: auto;
       margin-top: 35px;
