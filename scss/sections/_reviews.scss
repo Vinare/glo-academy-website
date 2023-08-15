@@ -130,7 +130,6 @@
 
   &-btn {
     display: none;
-    width: 100%;
     font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
@@ -166,7 +165,6 @@
     &-btn {
       display: block;
       margin-top: 25px;
-      max-width: 620px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -195,6 +193,10 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 35px;
+    }
+
+    &-btn {
+      width: 100%;
     }
   }
 }
