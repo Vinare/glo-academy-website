@@ -144,6 +144,8 @@ const viewComments = () => {
   const comments = document.querySelectorAll('.reviewsgrid-item')
   const commentsArray = [...comments]
 
+  console.log(comments);
+
   const start = 6
   const stack = 4
   let count = 0
