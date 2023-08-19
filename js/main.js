@@ -179,8 +179,8 @@ const superTitle = () => {
 
       secondTimer = setTimeout(() => {
         document.title = 'Зай, давай уже начнем? ❤️'
-      }, firstTimeout)
-    }, secondTimeout - firstTimeout)
+      }, secondTimeout - firstTimeout)
+    }, firstTimeout)
   }
 
   const stopTimer = () => {
