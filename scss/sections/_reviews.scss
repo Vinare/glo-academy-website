@@ -241,6 +241,12 @@
       width: 100%;
     }
   }
+
+  @media (max-width: 480px) {
+    &__wrap {
+      margin-top: 30px;
+    }
+  }
 }
 
 

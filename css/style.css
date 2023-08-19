@@ -2410,6 +2410,11 @@ header .navbar__button {
     width: 100%;
   }
 }
+@media (max-width: 480px) {
+  .reviewsgrid__wrap {
+    margin-top: 30px;
+  }
+}
 
 .footer {
   padding: 260px 0 60px;
