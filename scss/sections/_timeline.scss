@@ -591,6 +591,7 @@
         z-index: 1;
         display: flex;
         align-items: center;
+
         &__students {
             margin-top: -60px;
             &_title {
@@ -603,6 +604,7 @@
                 max-width: 40%;
                 margin-bottom: 24px;
             }
+            
             &_subtitle {
                 font-family: 'Inter';
                 font-style: normal;
