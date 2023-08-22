@@ -1407,6 +1407,38 @@ header .navbar__button {
   }
 }
 
+.masterclasses {
+  padding: 80px 0 86px;
+}
+.masterclasses__title {
+  color: #333333;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px;
+  margin-bottom: 0;
+}
+.masterclasses__title_group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+.masterclasses__btn-group {
+  border-radius: 8px;
+  border-color: #BFBFBF;
+}
+.masterclasses__btn-group-input + .masterclasses__btn-group-button:hover {
+  border-color: #BFBFBF;
+}
+.masterclasses__btn-group-input:checked + .masterclasses__btn-group-button {
+  border: 1px solid blue;
+}
+.masterclasses__btn-group-button {
+  border: 1px solid #BFBFBF;
+}
+
 .timeline-section {
   background-color: #141414;
   background-image: radial-gradient(60.62% 50.01% at 77.94% 86.7%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 87.98%);
