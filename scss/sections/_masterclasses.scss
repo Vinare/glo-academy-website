@@ -7,7 +7,7 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 46px; 
+    line-height: 46px;
     margin-bottom: 0;
 
     &_group {
@@ -18,22 +18,40 @@
     }
   }
 
-  &__btn{
+  &__btn {
     &-group {
-      border-radius: 8px; 
-      border-color: #BFBFBF; 
+      border-radius: 8px;
+      border-color: #BFBFBF;
+
+      .masterclasses__btn-group-button {
+        min-width: 80px;
+
+        &.first-button {
+          &:hover {
+            border-left-color: #BFBFBF;
+          }
+        }
+ 
+        &:not(.first-button) {
+          border-left-color: transparent;
+        }
+      }
 
       &-input {
-        & + .masterclasses__btn-group-button {
+        &+.masterclasses__btn-group-button {
           &:hover {
-            border-color: #BFBFBF;
+            border-right-color: #BFBFBF;
+            border-top-color: #BFBFBF;
+            border-bottom-color: #BFBFBF;
           }
         }
 
         &:checked {
-          & + .masterclasses__btn-group-button {
-            border: 1px solid blue;
-          } 
+          &+.masterclasses__btn-group-button {
+            border: 1px solid #1462D3;
+            background-color: #1462D3;
+            color: white;
+          }
         }
       }
 
