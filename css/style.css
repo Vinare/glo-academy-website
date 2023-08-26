@@ -1427,16 +1427,134 @@ header .navbar__button {
 }
 .masterclasses__btn-group {
   border-radius: 8px;
-  border-color: #BFBFBF;
 }
 .masterclasses__btn-group-input + .masterclasses__btn-group-button:hover {
-  border-color: #BFBFBF;
+  border-right-color: #BFBFBF;
+  border-top-color: #BFBFBF;
+  border-bottom-color: #BFBFBF;
+  color: #333333;
 }
 .masterclasses__btn-group-input:checked + .masterclasses__btn-group-button {
-  border: 1px solid blue;
+  border: 1px solid #1462D3;
+  background-color: #1462D3;
+  color: #FFFFFF;
+  font-weight: 700;
 }
 .masterclasses__btn-group-button {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 9px;
   border: 1px solid #BFBFBF;
+  color: #333333;
+  min-width: 80px;
+}
+.masterclasses__btn-group-button.first-button:hover {
+  border-left-color: #BFBFBF;
+}
+.masterclasses__btn-group-button.second-button {
+  min-width: 124px;
+}
+.masterclasses__btn-group-button:not(.first-button) {
+  border-left-color: transparent;
+}
+.masterclasses__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.masterclasses__card {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #808080;
+  height: 220px;
+}
+.masterclasses__card_long {
+  max-width: 650px;
+  width: 49.5%;
+}
+.masterclasses__card_long .masterclasses__card_badge {
+  margin-bottom: 50px;
+}
+.masterclasses__card_long .masterclasses__card_title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 35%;
+}
+.masterclasses__card_long .masterclasses__card_img {
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 20px;
+  border-left: 3px solid #e0e0e0;
+  border-top: 3px solid #e0e0e0;
+  right: 0;
+  bottom: 0;
+  max-width: 312px;
+  max-height: 201px;
+  width: 56%;
+  height: 93%;
+}
+@media (max-width: 1399px) {
+  .masterclasses__card_long {
+    max-width: 560px;
+  }
+  .masterclasses__card_long .masterclasses__card_title {
+    width: 41%;
+  }
+}
+.masterclasses__card_short {
+  max-width: 426px;
+  width: 32.3%;
+}
+.masterclasses__card_short .masterclasses__card_badge {
+  margin-bottom: 10px;
+}
+.masterclasses__card_short .masterclasses__card_title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.masterclasses__card_short .masterclasses__card_img {
+  border-radius: 10px;
+  border: 2px solid rgba(100, 100, 100, 0.2);
+}
+@media (max-width: 1399px) {
+  .masterclasses__card_short {
+    max-width: 366px;
+  }
+}
+.masterclasses__card_text {
+  display: flex;
+  flex-direction: column;
+}
+.masterclasses__card_badge {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 20px;
+  border: 1px solid #808080;
+  color: #333333;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.masterclasses__card_title {
+  color: #333333;
+  font-family: Inter;
+  font-style: normal;
+}
+.masterclasses__card_img {
+  position: absolute;
+}
+.masterclasses__card_img-venom {
+  background-image: url(/img/masterclasses/venom.jpg);
 }
 
 .timeline-section {
