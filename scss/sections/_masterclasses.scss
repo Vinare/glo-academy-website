@@ -75,7 +75,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
   }
 
   &__card {
@@ -87,7 +86,7 @@
 
     &_long {
       max-width: 650px;
-      width: 49.5%;
+      width: calc((100% - 20px) / 2);
 
       & .masterclasses__card_badge {
         margin-bottom: 50px;
@@ -107,10 +106,8 @@
         border-top: 3px solid #e0e0e0;
         right: 0;
         bottom: 0;
-        max-width: 312px;
-        max-height: 201px;
-        width: 56%;
-        height: 93%;
+        width: 320px;
+        height: 200px;
       }
 
       @media (max-width: 1399px) {
@@ -125,7 +122,7 @@
 
     &_short {
       max-width: 426px;
-      width: 32.3%;
+      width: calc((100% - 40px) / 3);
 
       & .masterclasses__card_badge {
         margin-bottom: 10px;
