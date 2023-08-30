@@ -62,37 +62,37 @@
     .professions {
       &__card {
         &::before {
-            content: "";
-            position: absolute;
-            width: 366px;
-            height: 307px;
-            top: 0;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            border: 1px solid transparent;
-            background: radial-gradient(112.83% 90.64% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) padding-box, radial-gradient(112.83% 90.64% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) border-box;
-            border-radius: 30px;
-            transition: opacity .5s;
-            opacity: 0;
-            z-index: -1;
+          content: "";
+          position: absolute;
+          width: 366px;
+          height: 307px;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          border: 1px solid transparent;
+          background: radial-gradient(112.83% 90.64% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) padding-box, radial-gradient(112.83% 90.64% at 79.64% 25.24%, #7ACFE1 0%, #FFA5D1 100%) border-box;
+          border-radius: 30px;
+          transition: opacity .5s;
+          opacity: 0;
+          z-index: -1;
 
-            @media (max-width: 1359px) { 
-                width: 362px;
-            }
+          @media (max-width: 1359px) { 
+              width: 362px;
+          }
 
-            @media (max-width: 1199.98px) {
-                width: 280px;
-                height: 312px;
-            }
+          @media (max-width: 1199.98px) {
+              width: 280px;
+              height: 312px;
+          }
 
-            @media (max-width: 991.98px) {
-              width: 328px;
-            }
+          @media (max-width: 991.98px) {
+            width: 328px;
+          }
 
-            @media (max-width: 767.98px) {
-              width: 248px;
-            }
+          @media (max-width: 767.98px) {
+            width: 248px;
+          }
         }
       }
     }
@@ -151,6 +151,34 @@
             background-color: darken(#1462d3, 6.8%);
             color: $snow-white;
           }
-      }}
+      }
+    }
+
+    .masterclasses__card {
+      &:hover {
+        transform: rotate(-1deg);
+        border-color: transparent;
+
+        & .masterclasses__card_img {
+          background-color: transparent;
+        }
+
+        &.masterclasses__card_button {
+          transform: none;
+        }
+
+        &.masterclasses__card {
+          &::before {
+            opacity: 1;
+          }
+
+          &.-lavender {
+            &::before {
+              background: radial-gradient(482.18% 117.86% at 75.27% 92.50%, #FFC5FC 0%, #FFE3FF 100%) padding-box, radial-gradient(482.18% 117.86% at 75.27% 92.50%, #FFC5FC 0%, #FFE3FF 100%) border-box;
+            }
+          }
+        }
+      }
+    }
   }
 }

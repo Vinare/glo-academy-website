@@ -106,6 +106,24 @@
     color: #FFFFFF;
   }
 }
+@media (hover: hover) and (pointer: fine) {
+  .masterclasses__card:hover {
+    transform: rotate(-1deg);
+    border-color: transparent;
+  }
+  .masterclasses__card:hover .masterclasses__card_img {
+    background-color: transparent;
+  }
+  .masterclasses__card:hover.masterclasses__card_button {
+    transform: none;
+  }
+  .masterclasses__card:hover.masterclasses__card::before {
+    opacity: 1;
+  }
+  .masterclasses__card:hover.masterclasses__card.-lavender::before {
+    background: radial-gradient(482.18% 117.86% at 75.27% 92.5%, #FFC5FC 0%, #FFE3FF 100%) padding-box, radial-gradient(482.18% 117.86% at 75.27% 92.5%, #FFC5FC 0%, #FFE3FF 100%) border-box;
+  }
+}
 header.header {
   padding-top: 16px;
   padding-bottom: 0;
@@ -1474,7 +1492,7 @@ header .navbar__button {
   border-color: #808080;
   height: 220px;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: transform 0.5s, border-color 0.5s;
 }
 .masterclasses__card_long {
   max-width: 650px;
@@ -1492,12 +1510,23 @@ header .navbar__button {
 .masterclasses__card_long .masterclasses__card_img {
   border-top-left-radius: 12px;
   border-bottom-right-radius: 20px;
-  border-left: 3px solid #e0e0e0;
-  border-top: 3px solid #e0e0e0;
+  background-color: #e0e0e0;
+  padding-top: 3px;
+  padding-left: 3px;
   right: 0;
   bottom: 0;
+}
+.masterclasses__card_long .masterclasses__card_img-picture {
   width: 358px;
   height: 200px;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 20px;
+}
+.masterclasses__card_long .masterclasses__card_img-picture.-venom {
+  background-image: url(/img/masterclasses/venom.jpg);
+}
+.masterclasses__card_long .masterclasses__card_img-picture.-yandex {
+  background-image: url(/img/masterclasses/yandex-eda.jpg);
 }
 @media (max-width: 1399px) {
   .masterclasses__card_long {
@@ -1506,7 +1535,7 @@ header .navbar__button {
   .masterclasses__card_long .masterclasses__card_title {
     width: 41%;
   }
-  .masterclasses__card_long .masterclasses__card_img {
+  .masterclasses__card_long .masterclasses__card_img-picture {
     width: 314px;
     height: 200px;
   }
@@ -1528,18 +1557,30 @@ header .navbar__button {
 .masterclasses__card_short .masterclasses__card_img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  border-left: 2px solid #e0e0e0;
-  border-top: 2px solid #e0e0e0;
-  border-right: 2px solid #e0e0e0;
-  background-size: auto;
-  background-position-x: center;
-  width: 386px;
+  background-color: #e0e0e0;
+  padding-left: 2px;
+  padding-top: 2px;
+  padding-right: 2px;
   height: calc(220px - 100% - 36px);
   left: 0;
   top: calc(100% + 14px);
 }
+.masterclasses__card_short .masterclasses__card_img-picture {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 386px;
+  height: 100%;
+  background-size: auto;
+  background-position-x: center;
+}
+.masterclasses__card_short .masterclasses__card_img-picture.-avito {
+  background-image: url(/img/masterclasses/avito.jpg);
+}
+.masterclasses__card_short .masterclasses__card_img-picture.-youtube {
+  background-image: url(/img/masterclasses/youtube.jpg);
+}
 @media (max-width: 1399px) {
-  .masterclasses__card_short .masterclasses__card_img {
+  .masterclasses__card_short .masterclasses__card_img-picture {
     background-position-x: unset;
     width: 326px;
   }
@@ -1547,14 +1588,20 @@ header .navbar__button {
 .masterclasses__card.-disabled {
   display: none;
 }
-.masterclasses__card.-lavender:hover {
-  background: radial-gradient(482.18% 117.86% at 75.27% 92.5%, #FFC5FC 0%, #FFE3FF 100%);
-  transform: rotate(-1deg);
-  border-color: transparent;
-}
-.masterclasses__card.-lavender:hover .masterclasses__card_img {
-  border: transparent;
-  border-top-left-radius: 12px;
+.masterclasses__card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: opacity 0.5s;
+  opacity: 0;
+  z-index: -1;
 }
 .masterclasses__card_content {
   display: flex;
@@ -1583,19 +1630,7 @@ header .navbar__button {
 .masterclasses__card_img {
   position: absolute;
   background-repeat: no-repeat;
-  transition: border-color 0.5s;
-}
-.masterclasses__card_img-venom {
-  background-image: url(/img/masterclasses/venom.jpg);
-}
-.masterclasses__card_img-yandex {
-  background-image: url(/img/masterclasses/yandex-eda.jpg);
-}
-.masterclasses__card_img-avito {
-  background-image: url(/img/masterclasses/avito.jpg);
-}
-.masterclasses__card_img-youtube {
-  background-image: url(/img/masterclasses/youtube.jpg);
+  transition: background-color 0.3s;
 }
 .masterclasses__card_button {
   border: none;
