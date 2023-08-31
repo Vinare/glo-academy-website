@@ -1496,7 +1496,7 @@ header .navbar__button {
   border-color: #808080;
   height: 220px;
   cursor: pointer;
-  transition: transform 0.5s, border-color 0.5s;
+  transition: transform 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 .masterclasses__card_long {
   max-width: 650px;
@@ -1527,10 +1527,10 @@ header .navbar__button {
   border-bottom-right-radius: 20px;
 }
 .masterclasses__card_long .masterclasses__card_img-picture.-venom {
-  background-image: url(/img/masterclasses/venom.jpg);
+  background-image: url(../img/masterclasses/venom.jpg);
 }
 .masterclasses__card_long .masterclasses__card_img-picture.-yandex {
-  background-image: url(/img/masterclasses/yandex-eda.jpg);
+  background-image: url(../img/masterclasses/yandex-eda.jpg);
 }
 @media (max-width: 1399px) {
   .masterclasses__card_long {
@@ -1578,10 +1578,10 @@ header .navbar__button {
   background-position-x: center;
 }
 .masterclasses__card_short .masterclasses__card_img-picture.-avito {
-  background-image: url(/img/masterclasses/avito.jpg);
+  background-image: url(../img/masterclasses/avito.jpg);
 }
 .masterclasses__card_short .masterclasses__card_img-picture.-youtube {
-  background-image: url(/img/masterclasses/youtube.jpg);
+  background-image: url(../img/masterclasses/youtube.jpg);
 }
 @media (max-width: 1399px) {
   .masterclasses__card_short .masterclasses__card_img-picture {
@@ -1595,13 +1595,10 @@ header .navbar__button {
 .masterclasses__card::before {
   content: "";
   position: absolute;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  border: 1px solid transparent;
   border-radius: 20px;
   transition: opacity 0.5s;
   opacity: 0;

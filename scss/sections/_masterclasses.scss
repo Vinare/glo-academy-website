@@ -86,7 +86,7 @@
     border-color: #808080;
     height: 220px; 
     cursor: pointer;
-    transition: transform .5s, border-color .5s;
+    transition: transform .5s ease-in-out, border-color .5s ease-in-out;
 
     &_long {
       max-width: 650px;
@@ -119,11 +119,11 @@
           border-bottom-right-radius: 20px;
 
           &.-venom {
-            background-image: url(/img/masterclasses/venom.jpg);
+            background-image: url(../img/masterclasses/venom.jpg);
           }
 
           &.-yandex {
-            background-image: url(/img/masterclasses/yandex-eda.jpg);
+            background-image: url(../img/masterclasses/yandex-eda.jpg);
           }
         }
       }
@@ -182,11 +182,11 @@
           background-position-x: center;
 
           &.-avito {
-            background-image: url(/img/masterclasses/avito.jpg);
+            background-image: url(../img/masterclasses/avito.jpg);
           }
 
           &.-youtube {
-            background-image: url(/img/masterclasses/youtube.jpg);
+            background-image: url(../img/masterclasses/youtube.jpg);
           }
         }
       }
@@ -208,13 +208,10 @@
     &::before {
       content: "";
       position: absolute;
-      width: calc(100% + 2px);
-      height: calc(100% + 2px);
       top: 0;
       right: 0;
       left: 0;
       bottom: 0;
-      border: 1px solid transparent;
       border-radius: 20px;
       transition: opacity .5s;
       opacity: 0;
