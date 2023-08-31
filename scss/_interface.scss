@@ -163,6 +163,11 @@
           background-color: transparent;
         }
 
+        & .masterclasses__card_badge {
+          color: $color-primary;
+          border-color: $color-primary;
+        }
+
         &.masterclasses__card_button {
           transform: none;
         }
