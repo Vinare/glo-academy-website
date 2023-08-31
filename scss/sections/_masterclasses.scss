@@ -86,7 +86,7 @@
     border-color: #808080;
     height: 220px; 
     cursor: pointer;
-    transition: transform .5s ease-in-out, border-color .5s ease-in-out;
+    transition: transform .5s, border-color .5s;
 
     &_long {
       max-width: 650px;
@@ -245,6 +245,7 @@
       font-family: Inter;
       font-style: normal;
       margin-bottom: 0;
+      transition: color .5s;
     }
 
     &_img {
@@ -255,7 +256,7 @@
 
     &_button {
       border: none;
-      background-image: url(/img/masterclasses/background-button.jpg);
+      background-image: url(../img/masterclasses/background-button.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;
@@ -264,7 +265,7 @@
         position: absolute;
         border: none;
         padding: 0;
-        color: #FFFFFF;
+        color: $snow-white;
         text-align: right;
         font-family: Inter;
         font-size: 16px;

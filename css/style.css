@@ -118,6 +118,13 @@
     color: #333333;
     border-color: #333333;
   }
+  .masterclasses__card:hover .masterclasses__card_badge.--white {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+  }
+  .masterclasses__card:hover .masterclasses__card_title.--white {
+    color: #FFFFFF;
+  }
   .masterclasses__card:hover.masterclasses__card_button {
     transform: none;
   }
@@ -125,7 +132,13 @@
     opacity: 1;
   }
   .masterclasses__card:hover.masterclasses__card.-lavender::before {
-    background: radial-gradient(482.18% 117.86% at 75.27% 92.5%, #FFC5FC 0%, #FFE3FF 100%) padding-box, radial-gradient(482.18% 117.86% at 75.27% 92.5%, #FFC5FC 0%, #FFE3FF 100%) border-box;
+    background: radial-gradient(482.18% 117.86% at 75.27% 92.5%, #FFC5FC 0%, #FFE3FF 100%);
+  }
+  .masterclasses__card:hover.masterclasses__card.-blue::before {
+    background: radial-gradient(628.75% 135.95% at 95.89% 91.59%, #0A8EC5 0%, #3ADEFF 100%);
+  }
+  .masterclasses__card_button:hover .masterclasses__card_badge {
+    color: #FFFFFF;
   }
 }
 header.header {
@@ -1496,7 +1509,7 @@ header .navbar__button {
   border-color: #808080;
   height: 220px;
   cursor: pointer;
-  transition: transform 0.5s ease-in-out, border-color 0.5s ease-in-out;
+  transition: transform 0.5s, border-color 0.5s;
 }
 .masterclasses__card_long {
   max-width: 650px;
@@ -1630,6 +1643,7 @@ header .navbar__button {
   font-family: Inter;
   font-style: normal;
   margin-bottom: 0;
+  transition: color 0.5s;
 }
 .masterclasses__card_img {
   position: absolute;
@@ -1638,7 +1652,7 @@ header .navbar__button {
 }
 .masterclasses__card_button {
   border: none;
-  background-image: url(/img/masterclasses/background-button.jpg);
+  background-image: url(../img/masterclasses/background-button.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;

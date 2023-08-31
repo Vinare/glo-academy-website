@@ -166,10 +166,23 @@
         & .masterclasses__card_badge {
           color: $color-primary;
           border-color: $color-primary;
+
+          &.--white {
+            color: $snow-white;
+            border-color: $snow-white;
+          }
+        }
+
+        & .masterclasses__card_title {
+          &.--white {
+            color: $snow-white;
+          }
         }
 
         &.masterclasses__card_button {
           transform: none;
+
+
         }
 
         &.masterclasses__card {
@@ -179,8 +192,28 @@
 
           &.-lavender {
             &::before {
-              background: radial-gradient(482.18% 117.86% at 75.27% 92.50%, #FFC5FC 0%, #FFE3FF 100%) padding-box, radial-gradient(482.18% 117.86% at 75.27% 92.50%, #FFC5FC 0%, #FFE3FF 100%) border-box;
+              background: radial-gradient(482.18% 117.86% at 75.27% 92.50%, #FFC5FC 0%, #FFE3FF 100%);
             }
+          }
+
+          &.-blue {
+            &::before { 
+              background: radial-gradient(628.75% 135.95% at 95.89% 91.59%, #0A8EC5 0%, #3ADEFF 100%);
+            }
+          }
+
+          &.-lavender-lilac {
+            &::before { 
+
+            }
+          }
+        }
+      }
+
+      &_button {
+        &:hover {
+          & .masterclasses__card_badge {
+            color: $snow-white;
           }
         }
       }
