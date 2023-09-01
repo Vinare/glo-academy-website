@@ -179,10 +179,13 @@
           }
         }
 
+        & .masterclasses__card_number {
+          text-shadow: 4px 4px 2px rgb(47, 93, 153);
+        }
+
         &.masterclasses__card_button {
           transform: none;
-
-
+          background-size: 190% 190%;
         }
 
         &.masterclasses__card {
@@ -198,13 +201,19 @@
 
           &.-blue {
             &::before { 
-              background: radial-gradient(628.75% 135.95% at 95.89% 91.59%, #0A8EC5 0%, #3ADEFF 100%);
+              background: radial-gradient(628.75% 135.95% at 95.89% 91.59%, #60D6F9 0%, #65BBEE 100%);
             }
           }
 
           &.-lavender-lilac {
-            &::before { 
+            &::before {
+              background: linear-gradient(90deg, rgb(251, 208, 250) 22%, rgb(164, 183, 253) 100%); 
+            }
+          }
 
+          &.-dark-blue {
+            &::before {
+              background: linear-gradient(90deg, rgb(164, 183, 253) 24%, rgb(118, 191, 249) 64%, rgb(39, 199, 251) 100%);
             }
           }
         }

@@ -125,8 +125,12 @@
   .masterclasses__card:hover .masterclasses__card_title.--white {
     color: #FFFFFF;
   }
+  .masterclasses__card:hover .masterclasses__card_number {
+    text-shadow: 4px 4px 2px rgb(47, 93, 153);
+  }
   .masterclasses__card:hover.masterclasses__card_button {
     transform: none;
+    background-size: 190% 190%;
   }
   .masterclasses__card:hover.masterclasses__card::before {
     opacity: 1;
@@ -135,7 +139,13 @@
     background: radial-gradient(482.18% 117.86% at 75.27% 92.5%, #FFC5FC 0%, #FFE3FF 100%);
   }
   .masterclasses__card:hover.masterclasses__card.-blue::before {
-    background: radial-gradient(628.75% 135.95% at 95.89% 91.59%, #0A8EC5 0%, #3ADEFF 100%);
+    background: radial-gradient(628.75% 135.95% at 95.89% 91.59%, #60D6F9 0%, #65BBEE 100%);
+  }
+  .masterclasses__card:hover.masterclasses__card.-lavender-lilac::before {
+    background: linear-gradient(90deg, rgb(251, 208, 250) 22%, rgb(164, 183, 253) 100%);
+  }
+  .masterclasses__card:hover.masterclasses__card.-dark-blue::before {
+    background: linear-gradient(90deg, rgb(164, 183, 253) 24%, rgb(118, 191, 249) 64%, rgb(39, 199, 251) 100%);
   }
   .masterclasses__card_button:hover .masterclasses__card_badge {
     color: #FFFFFF;
@@ -1654,8 +1664,10 @@ header .navbar__button {
   border: none;
   background-image: url(../img/masterclasses/background-button.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 20% 20%;
+  background-size: 100% 100%;
   overflow: hidden;
+  transition: 0.5s;
 }
 .masterclasses__card_button .masterclasses__card_badge {
   position: absolute;
@@ -1684,6 +1696,7 @@ header .navbar__button {
   line-height: 140px;
   top: 122px;
   right: 24px;
+  transition: 0.5s;
 }
 
 .timeline-section {
