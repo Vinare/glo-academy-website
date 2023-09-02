@@ -1,8 +1,8 @@
 .container {
-    &-swiper {
-      position: relative;
+  &-swiper {
+    position: relative;
 
-    }
+  }
 }
 
 @media (min-width: 1360px) {
@@ -49,7 +49,7 @@
     }
 
     .start-learning {
-      &__content{
+      &__content {
         &--btn {
           &:hover {
             background-color: darken(#1462d3, 6.8%);
@@ -77,13 +77,13 @@
           opacity: 0;
           z-index: -1;
 
-          @media (max-width: 1359px) { 
-              width: 362px;
+          @media (max-width: 1359px) {
+            width: 362px;
           }
 
           @media (max-width: 1199.98px) {
-              width: 280px;
-              height: 312px;
+            width: 280px;
+            height: 312px;
           }
 
           @media (max-width: 991.98px) {
@@ -110,17 +110,17 @@
             }
 
             .professions__card_period {
-              color: #C790B6;    
+              color: #C790B6;
             }
 
             .professions__card_price_del {
-                svg {
-                    path {
-                        &:nth-child(2) {
-                            stroke: #B0CDF7;
-                        }
-                    }
+              svg {
+                path {
+                  &:nth-child(2) {
+                    stroke: #B0CDF7;
+                  }
                 }
+              }
             }
 
             &--disabled {
@@ -130,10 +130,10 @@
 
               &::before {
                 opacity: 0;
-              } 
+              }
 
               .professions__card_period {
-                color: #3584CA;  
+                color: #3584CA;
               }
             }
           }
@@ -148,13 +148,37 @@
     .reviewsgrid {
       &-btn {
         &:hover {
-            background-color: darken(#1462d3, 6.8%);
-            color: $snow-white;
-          }
+          background-color: darken(#1462d3, 6.8%);
+          color: $snow-white;
+        }
       }
     }
 
     .masterclasses__card {
+      &.-lavender {
+        &::before {
+          background: radial-gradient(482.18% 117.86% at 75.27% 92.50%, #FFC5FC 0%, #FFE3FF 100%);
+        }
+      }
+
+      &.-blue {
+        &::before {
+          background: radial-gradient(628.75% 135.95% at 95.89% 91.59%, #60D6F9 0%, #65BBEE 100%);
+        }
+      }
+
+      &.-lavender-lilac {
+        &::before {
+          background: linear-gradient(90deg, rgb(251, 208, 250) 22%, rgb(164, 183, 253) 100%);
+        }
+      }
+
+      &.-dark-blue {
+        &::before {
+          background: linear-gradient(90deg, rgb(164, 183, 253) 24%, rgb(118, 191, 249) 64%, rgb(39, 199, 251) 100%);
+        }
+      }
+
       &:hover {
         transform: rotate(-1deg);
         border-color: transparent;
@@ -191,30 +215,6 @@
         &.masterclasses__card {
           &::before {
             opacity: 1;
-          }
-
-          &.-lavender {
-            &::before {
-              background: radial-gradient(482.18% 117.86% at 75.27% 92.50%, #FFC5FC 0%, #FFE3FF 100%);
-            }
-          }
-
-          &.-blue {
-            &::before { 
-              background: radial-gradient(628.75% 135.95% at 95.89% 91.59%, #60D6F9 0%, #65BBEE 100%);
-            }
-          }
-
-          &.-lavender-lilac {
-            &::before {
-              background: linear-gradient(90deg, rgb(251, 208, 250) 22%, rgb(164, 183, 253) 100%); 
-            }
-          }
-
-          &.-dark-blue {
-            &::before {
-              background: linear-gradient(90deg, rgb(164, 183, 253) 24%, rgb(118, 191, 249) 64%, rgb(39, 199, 251) 100%);
-            }
           }
         }
       }
