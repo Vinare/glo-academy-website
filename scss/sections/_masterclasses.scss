@@ -21,7 +21,7 @@
   &__btn {
     &-group {
       border-radius: 8px;
-      
+
 
       &-input {
         &+.masterclasses__btn-group-button {
@@ -48,7 +48,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 20px; 
+        line-height: 20px;
         padding: 9px;
         border: 1px solid #BFBFBF;
         color: $color-primary;
@@ -63,7 +63,7 @@
         &.second-button {
           min-width: 124px;
         }
- 
+
         &:not(.first-button) {
           border-left-color: transparent;
         }
@@ -84,9 +84,10 @@
     border-width: 1px;
     border-style: solid;
     border-color: #808080;
-    height: 220px; 
+    height: 220px;
     cursor: pointer;
     transition: transform .5s, border-color .5s;
+    display: block;
 
     &_long {
       max-width: 650px;
@@ -99,7 +100,7 @@
       & .masterclasses__card_title {
         font-size: 20px;
         font-weight: 700;
-        line-height: 24px; 
+        line-height: 24px;
         width: 35%;
       }
 
@@ -111,20 +112,12 @@
         padding-left: 3px;
         right: 0;
         bottom: 0;
-        
+
         &-picture {
           width: 358px;
           height: 200px;
           border-top-left-radius: 12px;
           border-bottom-right-radius: 20px;
-
-          &.-venom {
-            background-image: url(../img/masterclasses/venom.jpg);
-          }
-
-          &.-yandex {
-            background-image: url(../img/masterclasses/yandex-eda.jpg);
-          }
         }
       }
 
@@ -134,7 +127,7 @@
         & .masterclasses__card_title {
           width: 41%;
         }
-        
+
         & .masterclasses__card_img {
           &-picture {
             width: 314px;
@@ -176,13 +169,13 @@
             background-repeat: no-repeat;
             background-size: 100% auto;
           }
-          
+
         }
       }
     }
 
     &_short {
-       width: calc((100% - 40px) / 3);
+      width: calc((100% - 40px) / 3);
 
       & .masterclasses__card_content {
         position: relative;
@@ -215,17 +208,9 @@
           border-top-right-radius: 10px;
           width: 100%;
           height: 100%;
-          
+
           background-size: auto;
           background-position-x: center;
-
-          &.-avito {
-            background-image: url(../img/masterclasses/avito.jpg);
-          }
-
-          &.-youtube {
-            background-image: url(../img/masterclasses/youtube.jpg);
-          }
         }
       }
 
@@ -264,7 +249,7 @@
       width: max-content;
       padding: 4px 8px;
       border-radius: 20px;
-      border-width: 1px;  
+      border-width: 1px;
       border-style: solid;
       border-color: #808080;
       color: $color-primary;
@@ -272,7 +257,7 @@
       font-size: 10px;
       font-style: normal;
       font-weight: 400;
-      line-height: 14px; 
+      line-height: 14px;
       text-transform: uppercase;
       transition: border-color .5s, color .5s;
     }
@@ -289,6 +274,24 @@
       position: absolute;
       background-repeat: no-repeat;
       transition: background-color .5s;
+
+      &-picture {
+        &.-venom {
+          background-image: url(../img/masterclasses/venom.jpg);
+        }
+
+        &.-yandex {
+          background-image: url(../img/masterclasses/yandex-eda.jpg);
+        }
+
+        &.-avito {
+          background-image: url(../img/masterclasses/avito.jpg);
+        }
+
+        &.-youtube {
+          background-image: url(../img/masterclasses/youtube.jpg);
+        }
+      }
     }
 
     &_button {
@@ -326,10 +329,290 @@
       font-size: 140px;
       font-style: normal;
       font-weight: 900;
-      line-height: 140px; 
+      line-height: 140px;
       top: 122px;
       right: 24px;
       transition: .5s;
+    }
+  }
+
+  &__swiper {
+    &__button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-58%);
+      width: 24px;
+      height: 56px;
+      border: none;
+      z-index: 99;
+      cursor: pointer;
+      background-repeat: no-repeat;
+
+      &--prev {
+        left: -50px;
+        background-image: url('../img/chevron_left_icon_black.svg');
+        
+        background-position: center;
+        background-size: 36px;
+      }
+
+      &--next {
+        right: -50px;
+        background-image: url('../img/chevron_right_icon_black.svg');
+        
+        background-position: center;
+        background-size: 36px;
+      }
+
+      &--disabled {
+        display: none;
+      }
+      @media (min-width: 992px) {
+        &--prev {
+          display: none;
+        }
+
+        &--next {
+          display: none;
+        }
+      }
+
+      @media (max-width: 991.98px) {
+        &--prev {
+          left: -70px;
+        }
+
+        &--next {
+          right: -70px;
+        }
+      }
+
+      @media (max-width: 949px) {
+        &--prev {
+          left: -63px;
+        }
+
+        &--next {
+          right: -63px;
+        }
+      }
+
+      @media (max-width: 899px) {
+        &--prev {
+          left: -40px;
+        }
+
+        &--next {
+          right: -40px; 
+        }
+      }
+
+      @media (max-width: 849px) {
+        &--prev {
+          left: -28px;
+        }
+
+        &--next {
+          right: -28px; 
+        }
+      }
+
+      @media (max-width: 799px) {
+
+        &--prev {
+          left: -20px;
+        }
+
+        &--next {
+          right: -20px; 
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        &--prev {
+          display: none;
+        }
+
+        &--next {
+          display: none;
+        }
+      }
+   }    
+}
+
+  @media (max-width: 1199.98px) {
+    &__btn-group {
+      &-button {
+        padding: 8px;
+        min-width: 70px;
+      }
+
+      &-input:checked + .masterclasses__btn-group-button {
+        min-width: 78px;
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &__title {
+      font-size: 38px;
+      &_group {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+
+    &__card{
+
+      &.-disabled {
+        display: block;
+      }
+
+      &_long {
+        width: 100%;
+        height: 250px;
+
+        & .masterclasses__card_img {
+          height: calc(250px - 100% - 36px);
+
+          &-picture {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+        }
+      }
+
+      &_short {
+        width: 100%;
+        height: 250px;
+
+        & .masterclasses__card_title {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+
+        & .masterclasses__card_img {
+          height: calc(250px - 100% - 36px);
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+          padding-top: 3px;
+          padding-left: 3px;
+          padding-right: 3px;
+        }
+      }
+    }
+
+    &__btn {
+      &-group {
+        display: none;
+      }
+    }
+
+    &__card {
+      &_button {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &__title {
+      font-size: 32px;
+      line-height: 44px;
+    }
+
+    &__card{
+      &_long {
+        width: 300px;
+      }
+
+      &_short {
+        width: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 0 60px;
+
+    &__title {
+      line-height: 38px;
+
+      &_group {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__card {
+      &_long {
+        padding: 20px 16px;
+        width: 248px;
+        height: 220px;
+
+        & .masterclasses__card_content {
+          padding-left: 3px;
+        }
+
+        & .masterclasses__card_badge {
+          margin-bottom: 8px;
+        }
+
+        & .masterclasses__card_title {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 20px; 
+        }
+
+        & .masterclasses__card_img {
+          height: calc(220px - 100% - 36px);
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          &-picture {
+            width: 208px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+          }
+        }
+      }
+
+      &_short {
+        padding: 20px 16px;
+        width: 248px;
+        height: 220px;
+
+        & .masterclasses__card_content {
+          padding-left: 3px;
+        }
+
+        & .masterclasses__card_badge {
+          margin-bottom: 8px;
+        }
+
+        & .masterclasses__card_title {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 20px; 
+        }
+
+        & .masterclasses__card_img {
+          height: calc(220px - 100% - 36px);
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          &-picture {
+            width: 208px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+          }
+        }
+      }
     }
   }
 }
