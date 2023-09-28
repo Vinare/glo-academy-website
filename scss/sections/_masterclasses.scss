@@ -1,0 +1,618 @@
+.masterclasses {
+  padding: 80px 0 86px;
+
+  &__title {
+    color: $color-primary;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 0;
+
+    &_group {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__btn {
+    &-group {
+      border-radius: 8px;
+
+
+      &-input {
+        &+.masterclasses__btn-group-button {
+          &:hover {
+            border-right-color: #BFBFBF;
+            border-top-color: #BFBFBF;
+            border-bottom-color: #BFBFBF;
+            color: $color-primary;
+          }
+        }
+
+        &:checked {
+          &+.masterclasses__btn-group-button {
+            border: 1px solid #1462D3;
+            background-color: #1462D3;
+            color: $snow-white;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &-button {
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 9px;
+        border: 1px solid #BFBFBF;
+        color: $color-primary;
+        min-width: 80px;
+
+        &.first-button {
+          &:hover {
+            border-left-color: #BFBFBF;
+          }
+        }
+
+        &.second-button {
+          min-width: 124px;
+        }
+
+        &:not(.first-button) {
+          border-left-color: transparent;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__card {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #808080;
+    height: 220px;
+    cursor: pointer;
+    transition: transform .5s, border-color .5s;
+    display: block;
+
+    &_long {
+      max-width: 650px;
+      width: calc((100% - 20px) / 2);
+
+      & .masterclasses__card_badge {
+        margin-bottom: 50px;
+      }
+
+      & .masterclasses__card_title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        width: 35%;
+      }
+
+      & .masterclasses__card_img {
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 20px;
+        background-color: #e0e0e0;
+        padding-top: 3px;
+        padding-left: 3px;
+        right: 0;
+        bottom: 0;
+
+        &-picture {
+          width: 358px;
+          height: 200px;
+          border-top-left-radius: 12px;
+          border-bottom-right-radius: 20px;
+        }
+      }
+
+      @media (max-width: 1399px) {
+        max-width: 560px;
+
+        & .masterclasses__card_title {
+          width: 41%;
+        }
+
+        & .masterclasses__card_img {
+          &-picture {
+            width: 314px;
+            height: 200px;
+          }
+        }
+      }
+
+      @media (max-width: 1199.98px) {
+        & .masterclasses__card_content {
+          position: relative;
+        }
+
+        & .masterclasses__card_title {
+          width: 100%;
+        }
+
+        & .masterclasses__card_badge {
+          margin-bottom: 10px;
+        }
+
+        & .masterclasses__card_img {
+          border-top-right-radius: 12px;
+          border-bottom-right-radius: 0;
+          background-color: #e0e0e0;
+          padding-top: 3px;
+          padding-left: 3px;
+          padding-right: 3px;
+          right: 0;
+          left: 0;
+          top: calc(100% + 14px);
+          height: calc(220px - 100% - 36px);
+
+          &-picture {
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+          }
+
+        }
+      }
+    }
+
+    &_short {
+      width: calc((100% - 40px) / 3);
+
+      & .masterclasses__card_content {
+        position: relative;
+      }
+
+      & .masterclasses__card_badge {
+        margin-bottom: 10px;
+      }
+
+      & .masterclasses__card_title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+      }
+
+      & .masterclasses__card_img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: #e0e0e0;
+        padding-left: 2px;
+        padding-top: 2px;
+        padding-right: 2px;
+        height: calc(220px - 100% - 36px);
+        left: 0;
+        right: 0;
+        top: calc(100% + 14px);
+
+        &-picture {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+          height: 100%;
+
+          background-size: auto;
+          background-position-x: center;
+        }
+      }
+
+      @media (max-width: 1399px) {
+        & .masterclasses__card_img {
+          &-picture {
+            background-position-x: unset;
+          }
+        }
+      }
+    }
+
+    &.-disabled {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      border-radius: 20px;
+      transition: opacity .5s;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_badge {
+      width: max-content;
+      padding: 4px 8px;
+      border-radius: 20px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #808080;
+      color: $color-primary;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px;
+      text-transform: uppercase;
+      transition: border-color .5s, color .5s;
+    }
+
+    &_title {
+      color: $color-primary;
+      font-family: Inter;
+      font-style: normal;
+      margin-bottom: 0;
+      transition: color .5s;
+    }
+
+    &_img {
+      position: absolute;
+      background-repeat: no-repeat;
+      transition: background-color .5s;
+
+      &-picture {
+        &.-venom {
+          background-image: url(../img/masterclasses/venom.jpg);
+        }
+
+        &.-yandex {
+          background-image: url(../img/masterclasses/yandex-eda.jpg);
+        }
+
+        &.-avito {
+          background-image: url(../img/masterclasses/avito.jpg);
+        }
+
+        &.-youtube {
+          background-image: url(../img/masterclasses/youtube.jpg);
+        }
+      }
+    }
+
+    &_button {
+      border: none;
+      background-image: url(../img/masterclasses/background-button.jpg);
+      background-repeat: no-repeat;
+      background-position: 20% 20%;
+      background-size: 100% 100%;
+      overflow: hidden;
+      transition: .5s;
+
+      & .masterclasses__card_badge {
+        position: absolute;
+        border: none;
+        padding: 0;
+        color: $snow-white;
+        text-align: right;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: none;
+        top: 82px;
+        right: 30px;
+        max-width: 120px;
+      }
+    }
+
+    &_number {
+      position: absolute;
+      color: #F4F4F4;
+      text-align: right;
+      font-family: Inter;
+      font-size: 140px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 140px;
+      top: 122px;
+      right: 24px;
+      transition: .5s;
+    }
+  }
+
+  &__swiper {
+    &__button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-58%);
+      width: 24px;
+      height: 56px;
+      border: none;
+      z-index: 99;
+      cursor: pointer;
+      background-repeat: no-repeat;
+
+      &--prev {
+        left: -50px;
+        background-image: url('../img/chevron_left_icon_black.svg');
+        
+        background-position: center;
+        background-size: 36px;
+      }
+
+      &--next {
+        right: -50px;
+        background-image: url('../img/chevron_right_icon_black.svg');
+        
+        background-position: center;
+        background-size: 36px;
+      }
+
+      &--disabled {
+        display: none;
+      }
+      @media (min-width: 992px) {
+        &--prev {
+          display: none;
+        }
+
+        &--next {
+          display: none;
+        }
+      }
+
+      @media (max-width: 991.98px) {
+        &--prev {
+          left: -70px;
+        }
+
+        &--next {
+          right: -70px;
+        }
+      }
+
+      @media (max-width: 949px) {
+        &--prev {
+          left: -63px;
+        }
+
+        &--next {
+          right: -63px;
+        }
+      }
+
+      @media (max-width: 899px) {
+        &--prev {
+          left: -40px;
+        }
+
+        &--next {
+          right: -40px; 
+        }
+      }
+
+      @media (max-width: 849px) {
+        &--prev {
+          left: -28px;
+        }
+
+        &--next {
+          right: -28px; 
+        }
+      }
+
+      @media (max-width: 799px) {
+
+        &--prev {
+          left: -20px;
+        }
+
+        &--next {
+          right: -20px; 
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        &--prev {
+          display: none;
+        }
+
+        &--next {
+          display: none;
+        }
+      }
+   }    
+}
+
+  @media (max-width: 1199.98px) {
+    &__btn-group {
+      &-button {
+        padding: 8px;
+        min-width: 70px;
+      }
+
+      &-input:checked + .masterclasses__btn-group-button {
+        min-width: 78px;
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &__title {
+      font-size: 38px;
+      &_group {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+
+    &__card{
+
+      &.-disabled {
+        display: block;
+      }
+
+      &_long {
+        width: 100%;
+        height: 250px;
+
+        & .masterclasses__card_img {
+          height: calc(250px - 100% - 36px);
+
+          &-picture {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+        }
+      }
+
+      &_short {
+        width: 100%;
+        height: 250px;
+
+        & .masterclasses__card_title {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+
+        & .masterclasses__card_img {
+          height: calc(250px - 100% - 36px);
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+          padding-top: 3px;
+          padding-left: 3px;
+          padding-right: 3px;
+        }
+      }
+    }
+
+    &__btn {
+      &-group {
+        display: none;
+      }
+    }
+
+    &__card {
+      &_button {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &__title {
+      font-size: 32px;
+      line-height: 44px;
+    }
+
+    &__card{
+      &_long {
+        width: 300px;
+      }
+
+      &_short {
+        width: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 0 60px;
+
+    &__title {
+      line-height: 38px;
+
+      &_group {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__card {
+      &_long {
+        padding: 20px 16px;
+        width: 248px;
+        height: 220px;
+
+        & .masterclasses__card_content {
+          padding-left: 3px;
+        }
+
+        & .masterclasses__card_badge {
+          margin-bottom: 8px;
+        }
+
+        & .masterclasses__card_title {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 20px; 
+        }
+
+        & .masterclasses__card_img {
+          height: calc(220px - 100% - 36px);
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          &-picture {
+            width: 208px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+          }
+        }
+      }
+
+      &_short {
+        padding: 20px 16px;
+        width: 248px;
+        height: 220px;
+
+        & .masterclasses__card_content {
+          padding-left: 3px;
+        }
+
+        & .masterclasses__card_badge {
+          margin-bottom: 8px;
+        }
+
+        & .masterclasses__card_title {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 20px; 
+        }
+
+        & .masterclasses__card_img {
+          height: calc(220px - 100% - 36px);
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          &-picture {
+            width: 208px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}

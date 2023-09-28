@@ -5,20 +5,24 @@ const sliderInit = () => {
     loop: false,
     spaceBetween: 20,
     slidesOffsetBefore: 16,
+    slidesOffsetAfter: 16,
     speed: 500,
     breakpoints: {
       480: {
         slidesPerView: "auto",
         slidesOffsetBefore: 12,
+        slidesOffsetAfter: 12,
         spaceBetween: 20,
       },
       576: {
         slidesPerView: "auto",
         slidesOffsetBefore: 30,
+        slidesOffsetAfter: 30,
         spaceBetween: 30,
       },
       768: {
         slidesOffsetBefore: 0,
+        slidesOffsetAfter: 0,
         slidesPerView: 3,
         spaceBetween: 30,
       },
@@ -43,40 +47,44 @@ const sliderInit = () => {
         slidesOffsetBefore: 0,
       },
     },
-  
+
     navigation: {
       nextEl: ".courses__swiper__button--next",
       prevEl: ".courses__swiper__button--prev",
       disabledClass: "courses__swiper__button--disabled",
     },
-  
+
     keyboard: {
       enabled: true,
     },
   });
-  
+
   // Swiper-slider Professions
   const professionsSwiper = new Swiper(".professionsSwiper", {
     slidesPerView: "auto",
     loop: false,
     spaceBetween: 10,
     slidesOffsetBefore: 16,
+    slidesOffsetAfter: 16,
     speed: 500,
     breakpoints: {
       480: {
         slidesPerView: "auto",
         spaceBetween: 20,
         slidesOffsetBefore: 16,
+        slidesOffsetAfter: 12,
       },
       576: {
         slidesPerView: "auto",
         spaceBetween: 22,
         slidesOffsetBefore: 30,
+        slidesOffsetAfter: 30,
       },
       768: {
         slidesPerView: 2,
         spaceBetween: 31,
         slidesOffsetBefore: 0,
+        slidesOffsetAfter: 0,
       },
       992: {
         slidesPerView: 3,
@@ -99,17 +107,81 @@ const sliderInit = () => {
         slidesOffsetBefore: 0,
       },
     },
-  
+
     navigation: {
       nextEl: ".professions__swiper__button--next",
       prevEl: ".professions__swiper__button--prev",
       disabledClass: "professions__swiper__button--disabled",
     },
-  
+
     keyboard: {
       enabled: true,
     },
   });
+
+  // Swiper-slider Masterclasses
+
+  // breakpoint where swiper will be destroyed
+  const breakpoint = window.matchMedia('(min-width: 992px)');
+  let masterclassesSwiper;
+
+  const breakpointChecker = function () {
+    
+    if (breakpoint.matches === true) {
+      if (masterclassesSwiper !== undefined) masterclassesSwiper.destroy(true, true);
+      return;
+
+    } else if (breakpoint.matches === false) {
+      return enableSwiper();
+    }
+  };
+
+
+  const enableSwiper = function () {
+    masterclassesSwiper = new Swiper(".masterclassesSwiper", {
+      slidesPerView: "auto",
+      loop: false,
+      spaceBetween: 16,
+      slidesOffsetBefore: 16,
+      slidesOffsetAfter: 16,
+      speed: 500,
+      breakpoints: {
+        480: {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+          slidesOffsetBefore: 12,
+          slidesOffsetAfter: 12,
+        },
+        576: {
+          slidesPerView: "auto",
+          spaceBetween: 30,
+          slidesOffsetBefore: 30,
+          slidesOffsetAfter: 30,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          slidesOffsetBefore: 0,
+          slidesOffsetAfter: 0,
+        }
+      },
+  
+      navigation: {
+        nextEl: ".masterclasses__swiper__button--next",
+        prevEl: ".masterclasses__swiper__button--prev",
+        disabledClass: "masterclasses__swiper__button--disabled",
+      },
+  
+      keyboard: {
+        enabled: true,
+      },
+    });
+  
+  };
+
+  breakpoint.addEventListener('change', breakpointChecker);
+
+  breakpointChecker();
 }
 
 // seamless-scroll-polyfill
@@ -197,7 +269,21 @@ const superTitle = () => {
   startTimer()
 }
 
+const masterclassesFunc = () => {
+  const cards = document.querySelectorAll('.masterclasses__card.swiper-slide')
+  const showBtn = document.querySelector('.masterclasses__card_button')
+
+  showBtn.addEventListener('click', () => {
+    cards.forEach(card => {
+      card.classList.remove('-disabled')
+    })
+
+    showBtn.style.display = 'none'
+  })
+}
+
 sliderInit()
 smoothScroll()
 viewComments()
 superTitle()
+masterclassesFunc()
