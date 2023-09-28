@@ -1,0 +1,25 @@
+{
+  "name": "glo-academy-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vinare/glo-academy-website.git"
+  },
+  "keywords": [],
+  "author": "Vinarskaya Ekaterina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vinare/glo-academy-website/issues"
+  },
+  "homepage": "https://github.com/Vinare/glo-academy-website#readme",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
