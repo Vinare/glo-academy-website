@@ -1,0 +1,91 @@
+.students {
+  background: url(../img/students/students-background-img.png), #688EA1;
+  padding: 80px 0 0;
+  background-repeat: no-repeat;
+  background-position: top 44px left calc(100% - 123px);
+
+  &__title {
+    color: $snow-white;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    width: 50%;
+    margin-bottom: 24px;
+  }
+
+  &__buttons {
+    &-group {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 40px;
+      width: calc(50% + 52px);
+      flex-wrap: wrap;
+    }
+  }
+
+  &__button {
+    border: 1px solid $snow-white;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 7px 13px 7px 11px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: $snow-white;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: default !important;
+
+    &-plus {
+      margin-right: 1px;
+    }
+  }
+
+  &__subtitle {
+    color: $snow-white;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    width: 45%;
+  }
+
+  &-text {
+    margin-bottom: 116px;
+  }
+
+  &-dossier {
+    position: relative;
+  }
+
+  &-feedback {
+    position: absolute;
+    bottom: 346px;
+    right: 0;
+    padding: 15px 15px 12px 20px;
+    width: 241px;
+    height: auto;
+    background-image: url(../img/students/girls-feedback.svg);
+    background-position: right 0 bottom 0;
+    &__words {
+      color: $color-primary;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; 
+      margin-bottom: 0;
+    }
+  }
+
+
+
+
+
+}
