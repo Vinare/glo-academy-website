@@ -52,6 +52,7 @@
         padding: 9px;
         border: 1px solid #BFBFBF;
         color: $color-primary;
+        background-color: $snow-white;
         min-width: 80px;
 
         &.first-button {
@@ -64,9 +65,9 @@
           min-width: 124px;
         }
 
-        &:not(.first-button) {
-          border-left-color: transparent;
-        }
+        // &:not(.first-button) {
+        //   border-left-color: transparent;
+        // }
       }
     }
   }
