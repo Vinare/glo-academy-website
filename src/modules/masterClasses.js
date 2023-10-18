@@ -38,7 +38,7 @@ export const masterClasses = () => {
     wrapper.insertAdjacentHTML(
       "beforeend",
       `
-            <div class="swiper-slide masterclasses__card ${getCardSize(idx)} ${randomHover()} ${getDisabledClass(idx, masterclasses.length)}" data-tag="${item.tags.join(' / ')}">
+            <a href="${item.link}" target="_blank" class="swiper-slide masterclasses__card ${getCardSize(idx)} ${randomHover()} ${getDisabledClass(idx, masterclasses.length)}" data-tag="${item.tags.join(' / ')}">
                 <div class="masterclasses__card_content">
                 <span class="masterclasses__card_badge">${item.tags.join(' / ')} • ${item.time} мин</span>
                 <h3 class="masterclasses__card_title">${item.title}</h3>
