@@ -191,7 +191,7 @@ export const sliderInit = () => {
     //   disableOnInteraction: false,
     // },
     slidesPerView: 'auto',
-    // spaceBetween: 10,
+    spaceBetween: 10,
     // slidesOffsetBefore: 16,
     // slidesOffsetAfter: 16,
     // speed: 500,
