@@ -184,60 +184,73 @@ export const sliderInit = () => {
   breakpointChecker();
 
   // Swiper-slider Students
-  const studentsSwiper = new Swiper(".studentsSwiper", {
-    // modules: [ Autoplay ],
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
-    slidesPerView: 'auto',
-    spaceBetween: 10,
-    // slidesOffsetBefore: 16,
-    // slidesOffsetAfter: 16,
-    // speed: 500,
-    // breakpoints: {
-    //   480: {
-    //     // slidesPerView: "auto",
-    //     spaceBetween: 20,
-    //     slidesOffsetBefore: 16,
-    //     slidesOffsetAfter: 12,
-    //   },
-    //   576: {
-    //     // slidesPerView: "auto",
-    //     spaceBetween: 22,
-    //     slidesOffsetBefore: 30,
-    //     slidesOffsetAfter: 30,
-    //   },
-    //   768: {
-    //     // slidesPerView: 2,
-    //     spaceBetween: 31,
-    //     slidesOffsetBefore: 0,
-    //     slidesOffsetAfter: 0,
-    //   },
-    //   992: {
-    //     // slidesPerView: 3,
-    //     spaceBetween: 40,
-    //     slidesOffsetBefore: 0,
-    //   },
-    //   1200: {
-    //     // slidesPerView: 3,
-    //     spaceBetween: 6,
-    //     slidesOffsetBefore: 0,
-    //   },
-    //   1360: {
-    //     // slidesPerView: 3,
-    //     spaceBetween: 13,
-    //     slidesOffsetBefore: 0,
-    //   },
-    //   1400: {
-    //     // slidesPerView: 3,
-    //     spaceBetween: 103,
-    //     slidesOffsetBefore: 0,
-    //   },
-    // },
+  // const studentsSwiper = new Swiper(".studentsSwiper", {
+  //   loop: false,
+  //   modules: [ Autoplay ],
+  //   autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  //   },
+  //   slidesPerView: "auto",
+  //   spaceBetween: 10,
+  //   // slidesOffsetBefore: 16,
+  //   // slidesOffsetAfter: 16,
+  //   // speed: 500,
+  //   // breakpoints: {
+  //   //   480: {
+  //   //     // slidesPerView: "auto",
+  //   //     spaceBetween: 20,
+  //   //     slidesOffsetBefore: 16,
+  //   //     slidesOffsetAfter: 12,
+  //   //   },
+  //   //   576: {
+  //   //     // slidesPerView: "auto",
+  //   //     spaceBetween: 22,
+  //   //     slidesOffsetBefore: 30,
+  //   //     slidesOffsetAfter: 30,
+  //   //   },
+  //   //   768: {
+  //   //     // slidesPerView: 2,
+  //   //     spaceBetween: 31,
+  //   //     slidesOffsetBefore: 0,
+  //   //     slidesOffsetAfter: 0,
+  //   //   },
+  //   //   992: {
+  //   //     // slidesPerView: 3,
+  //   //     spaceBetween: 40,
+  //   //     slidesOffsetBefore: 0,
+  //   //   },
+  //   //   1200: {
+  //   //     // slidesPerView: 3,
+  //   //     spaceBetween: 6,
+  //   //     slidesOffsetBefore: 0,
+  //   //   },
+  //   //   1360: {
+  //   //     // slidesPerView: 3,
+  //   //     spaceBetween: 13,
+  //   //     slidesOffsetBefore: 0,
+  //   //   },
+  //   //   1400: {
+  //   //     // slidesPerView: 3,
+  //   //     spaceBetween: 103,
+  //   //     slidesOffsetBefore: 0,
+  //   //   },
+  //   // },
 
-    // keyboard: {
-    //   enabled: true,
-    // },
+  //   // keyboard: {
+  //   //   enabled: true,
+  //   // },
+  // });
+
+  // Splide-slider Students
+
+  var splide = new Splide(".splide", {
+    type: "loop",
+    perPage: 3,
+    perMove: 1,
   });
+
+  splide.mount();
+
+
 };

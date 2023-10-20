@@ -2160,6 +2160,9 @@ header .navbar__button {
   padding: 28px 26px;
   flex-direction: column;
 }
+.students-education__companies {
+  padding: 20px 32px;
+}
 
 .timeline-section {
   background-color: #141414;
