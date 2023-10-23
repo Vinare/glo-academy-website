@@ -244,17 +244,10 @@ export const sliderInit = () => {
 
   // Splide-slider Students
 
-  const splide = new Splide(".splide", {
-    type: 'loop',
-    autoplay: true,
-    perPage : 5,
+  var splide = new Splide(".splide", {
+    type: "loop",
+    perPage: 3,
     perMove: 1,
-    autoWidth: true,
-    rewind: true,
-    gap: 80,
-    pagination: false,
-    arrows: false,
-    padding: '20px 32px'
   });
 
   splide.mount();
