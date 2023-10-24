@@ -22,13 +22,13 @@
     &-group {
       border-radius: 8px;
 
-
       &-input {
         &+.masterclasses__btn-group-button {
           &:hover {
             border-right-color: #BFBFBF;
             border-top-color: #BFBFBF;
             border-bottom-color: #BFBFBF;
+            border-left-color: #BFBFBF;
             color: $color-primary;
           }
         }
@@ -39,6 +39,12 @@
             background-color: #1462D3;
             color: $snow-white;
             font-weight: 700;
+
+            // &.first-button {
+            //   &:hover {
+            //     border-left-color: #1462D3;
+            //   }
+            // }
           }
         }
       }
@@ -55,11 +61,10 @@
         background-color: $snow-white;
         min-width: 80px;
 
-        &.first-button {
-          &:hover {
-            border-left-color: #BFBFBF;
-          }
+        &:hover {
+          border-left-color: #BFBFBF;
         }
+        
 
         &.second-button {
           min-width: 124px;

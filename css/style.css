@@ -1476,6 +1476,7 @@ header .navbar__button {
   border-right-color: #BFBFBF;
   border-top-color: #BFBFBF;
   border-bottom-color: #BFBFBF;
+  border-left-color: #BFBFBF;
   color: #333333;
 }
 .masterclasses__btn-group-input:checked + .masterclasses__btn-group-button {
@@ -1496,7 +1497,7 @@ header .navbar__button {
   background-color: #FFFFFF;
   min-width: 80px;
 }
-.masterclasses__btn-group-button.first-button:hover {
+.masterclasses__btn-group-button:hover {
   border-left-color: #BFBFBF;
 }
 .masterclasses__btn-group-button.second-button {
@@ -2157,11 +2158,18 @@ header .navbar__button {
   display: flex;
   flex-basis: 50%;
   border-left: 1px solid #688EA1;
-  padding: 28px 26px;
+  padding: 21px 30px 18px 26px;
   flex-direction: column;
 }
+.students-education__salary_average {
+  padding-left: 4px;
+}
 .students-education__companies {
-  padding: 20px 32px;
+  padding: 20px 31px;
+}
+
+.splide__list {
+  align-items: center;
 }
 
 .timeline-section {

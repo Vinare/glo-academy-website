@@ -244,12 +244,16 @@
       display: flex;
       flex-basis: 50%;
       border-left: 1px solid #688EA1;
-      padding: 28px 26px;
+      padding: 21px 30px 18px 26px;
       flex-direction: column;
+
+      &_average {
+        padding-left: 4px;
+      }
     }
 
     &__companies {
-      padding: 20px 32px;
+      padding: 20px 31px;
     }
   }
 
@@ -258,6 +262,11 @@
 
 
 }
+
+.splide {
+  &__list {
+    align-items: center;
+  }}
 
 
 

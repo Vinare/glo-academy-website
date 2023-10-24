@@ -246,8 +246,12 @@ export const sliderInit = () => {
 
   var splide = new Splide(".splide", {
     type: "loop",
-    perPage: 3,
     perMove: 1,
+    autoWidth: true,
+    gap: 80,
+    arrows: false,
+    pagination: false,
+    // autoplay: true,
   });
 
   splide.mount();
