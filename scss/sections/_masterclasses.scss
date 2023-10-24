@@ -28,8 +28,11 @@
             border-right-color: #BFBFBF;
             border-top-color: #BFBFBF;
             border-bottom-color: #BFBFBF;
-            // border-left-color: #BFBFBF;
             color: $color-primary;
+
+            &.first-button {
+              border-left-color: #BFBFBF;
+            }
           }
         }
 
@@ -42,11 +45,11 @@
             position: relative;
             z-index: 10 !important;
 
-            // &.first-button {
-            //   &:hover {
-            //     border-left-color: #1462D3;
-            //   }
-            // }
+            &.first-button {
+              &:hover {
+                border-left-color: #1462D3;
+              }
+            }
           }
         }
       }
@@ -62,23 +65,11 @@
         color: $color-primary;
         background-color: $snow-white;
         min-width: 80px;
-
-        &:hover {
-          // border-left-color: #BFBFBF !important;
-
-          &.first-button {
-            border-left-color: #BFBFBF !important;
-          }
-        }
-        
+        transition: none;
 
         &.second-button {
           min-width: 124px;
         }
-
-        // &:not(.first-button) {
-        //   border-left-color: transparent;
-        // }
       }
     }
   }
