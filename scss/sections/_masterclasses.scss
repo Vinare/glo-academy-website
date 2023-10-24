@@ -28,7 +28,7 @@
             border-right-color: #BFBFBF;
             border-top-color: #BFBFBF;
             border-bottom-color: #BFBFBF;
-            border-left-color: #BFBFBF;
+            // border-left-color: #BFBFBF;
             color: $color-primary;
           }
         }
@@ -39,6 +39,8 @@
             background-color: #1462D3;
             color: $snow-white;
             font-weight: 700;
+            position: relative;
+            z-index: 10 !important;
 
             // &.first-button {
             //   &:hover {
@@ -62,7 +64,11 @@
         min-width: 80px;
 
         &:hover {
-          border-left-color: #BFBFBF;
+          // border-left-color: #BFBFBF !important;
+
+          &.first-button {
+            border-left-color: #BFBFBF !important;
+          }
         }
         
 
