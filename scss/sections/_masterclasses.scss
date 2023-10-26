@@ -26,13 +26,11 @@
         &+.masterclasses__btn-group-button {
           &:hover {
             border-right-color: #BFBFBF;
+            border-left-color: #BFBFBF;
             border-top-color: #BFBFBF;
             border-bottom-color: #BFBFBF;
             color: $color-primary;
-
-            &.first-button {
-              border-left-color: #BFBFBF;
-            }
+            background-color: $snow-white;
           }
         }
 

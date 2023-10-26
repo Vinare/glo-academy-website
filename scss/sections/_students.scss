@@ -1,8 +1,14 @@
 .students {
-  background: url(../img/students/students-background-img.png), #688EA1;
-  padding: 80px 0 0;
-  background-repeat: no-repeat;
-  background-position: top 44px left calc(100% - 123px);
+  background-color: #688EA1;
+  padding: 0;
+
+  &-container {
+    position: relative;
+    background: url(../img/students/students-background-img.png);
+    background-repeat: no-repeat;
+    background-position: top 44px right 13px;
+    padding: 80px 0 0;
+  }
 
   &__title {
     color: $snow-white;
@@ -11,7 +17,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 60px;
-    width: 50%;
+    width: 44%;
     margin-bottom: 24px;
   }
 
@@ -94,7 +100,6 @@
         font-weight: 400;
         line-height: 18px; 
       }
-
     }
 
     &__cv {
@@ -183,6 +188,8 @@
     font-family: Inter;
     color: $color-primary;
     font-style: normal;
+    z-index: 1;
+    position: relative;
 
     &__title {
       color: $snow-white;
@@ -240,24 +247,123 @@
     }
 
     &__salary {
-      background: radial-gradient(106.82% 1008.85% at 89.58% 0%, rgba(104, 142, 161, 0.00) 0%, rgba(104, 142, 161, 0.36) 100%), #FFF;
+      background: radial-gradient(206.82% 3500% at 100% 0%, rgb(255, 255, 255) 0%, rgba(104, 142, 161, 0.63) 100%), #FFF;
       display: flex;
       flex-basis: 50%;
       border-left: 1px solid #688EA1;
       padding: 21px 30px 18px 26px;
       flex-direction: column;
 
+      &_choice {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+
+        &_upd {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+      }
+
       &_average {
         padding-left: 4px;
+        display: flex;
+        justify-content: space-between;
+
+        &_title {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px; 
+          margin-bottom: 1px;
+          display: block;
+        }
+
+        &_developer {
+          display: block;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 30px;
+        }
+
+        &_figure {
+          font-size: 52px;
+          font-weight: 700;
+          line-height: 52px;
+        }
       }
     }
 
     &__companies {
       padding: 20px 31px;
+      background-color: $snow-white;
     }
   }
 
-  
+  &__btn {
+    &-group {
+      border-radius: 8px;
+      width: calc(50% + 24px);
+
+      &-input {
+        &+.students__btn-group-button {
+          &:hover {
+            border-right-color: #BFBFBF;
+            border-left-color: #BFBFBF;
+            border-top-color: #BFBFBF;
+            border-bottom-color: #BFBFBF;
+            color: $color-primary;
+            background-color: $snow-white;
+          }
+        }
+
+        &:checked {
+          &+.students__btn-group-button {
+            border: 1px solid #1462D3;
+            background-color: #1462D3;
+            color: $snow-white;
+            font-weight: 700;
+            position: relative;
+            z-index: 10 !important;
+
+            &.first-button {
+              &:hover {
+                border-left-color: #1462D3;
+              }
+            }
+          }
+        }
+      }
+
+      &-button {
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 9px;
+        border: 1px solid #BFBFBF;
+        color: $color-primary;
+        background-color: $snow-white;
+        width: 50%;
+        height: fit-content;
+        transition: none;
+
+        &.second-button {
+          margin-left: 0 !important;
+          border-left: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1399px) {
+    &__title {
+      width: 50%;
+    }
+
+  }
 
 
 

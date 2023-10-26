@@ -1474,16 +1474,22 @@ header .navbar__button {
 }
 .masterclasses__btn-group-input + .masterclasses__btn-group-button:hover {
   border-right-color: #BFBFBF;
+  border-left-color: #BFBFBF;
   border-top-color: #BFBFBF;
   border-bottom-color: #BFBFBF;
-  border-left-color: #BFBFBF;
   color: #333333;
+  background-color: #FFFFFF;
 }
 .masterclasses__btn-group-input:checked + .masterclasses__btn-group-button {
   border: 1px solid #1462D3;
   background-color: #1462D3;
   color: #FFFFFF;
   font-weight: 700;
+  position: relative;
+  z-index: 10 !important;
+}
+.masterclasses__btn-group-input:checked + .masterclasses__btn-group-button.first-button:hover {
+  border-left-color: #1462D3;
 }
 .masterclasses__btn-group-button {
   font-family: Inter;
@@ -1496,9 +1502,7 @@ header .navbar__button {
   color: #333333;
   background-color: #FFFFFF;
   min-width: 80px;
-}
-.masterclasses__btn-group-button:hover {
-  border-left-color: #BFBFBF;
+  transition: none;
 }
 .masterclasses__btn-group-button.second-button {
   min-width: 124px;
@@ -1948,10 +1952,15 @@ header .navbar__button {
 }
 
 .students {
-  background: url(../img/students/students-background-img.png), #688EA1;
-  padding: 80px 0 0;
+  background-color: #688EA1;
+  padding: 0;
+}
+.students-container {
+  position: relative;
+  background: url(../img/students/students-background-img.png);
   background-repeat: no-repeat;
-  background-position: top 44px left calc(100% - 123px);
+  background-position: top 44px right 13px;
+  padding: 80px 0 0;
 }
 .students__title {
   color: #FFFFFF;
@@ -1960,7 +1969,7 @@ header .navbar__button {
   font-style: normal;
   font-weight: 700;
   line-height: 60px;
-  width: 50%;
+  width: 44%;
   margin-bottom: 24px;
 }
 .students__buttons-group {
@@ -2106,6 +2115,8 @@ header .navbar__button {
   font-family: Inter;
   color: #333333;
   font-style: normal;
+  z-index: 1;
+  position: relative;
 }
 .students-education__title {
   color: #FFFFFF;
@@ -2154,18 +2165,97 @@ header .navbar__button {
   margin-bottom: 0;
 }
 .students-education__salary {
-  background: radial-gradient(106.82% 1008.85% at 89.58% 0%, rgba(104, 142, 161, 0) 0%, rgba(104, 142, 161, 0.36) 100%), #FFF;
+  background: radial-gradient(206.82% 3500% at 100% 0%, rgb(255, 255, 255) 0%, rgba(104, 142, 161, 0.63) 100%), #FFF;
   display: flex;
   flex-basis: 50%;
   border-left: 1px solid #688EA1;
   padding: 21px 30px 18px 26px;
   flex-direction: column;
 }
+.students-education__salary_choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.students-education__salary_choice_upd {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
 .students-education__salary_average {
   padding-left: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.students-education__salary_average_title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 1px;
+  display: block;
+}
+.students-education__salary_average_developer {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.students-education__salary_average_figure {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 52px;
 }
 .students-education__companies {
   padding: 20px 31px;
+  background-color: #FFFFFF;
+}
+.students__btn-group {
+  border-radius: 8px;
+  width: calc(50% + 24px);
+}
+.students__btn-group-input + .students__btn-group-button:hover {
+  border-right-color: #BFBFBF;
+  border-left-color: #BFBFBF;
+  border-top-color: #BFBFBF;
+  border-bottom-color: #BFBFBF;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+.students__btn-group-input:checked + .students__btn-group-button {
+  border: 1px solid #1462D3;
+  background-color: #1462D3;
+  color: #FFFFFF;
+  font-weight: 700;
+  position: relative;
+  z-index: 10 !important;
+}
+.students__btn-group-input:checked + .students__btn-group-button.first-button:hover {
+  border-left-color: #1462D3;
+}
+.students__btn-group-button {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 9px;
+  border: 1px solid #BFBFBF;
+  color: #333333;
+  background-color: #FFFFFF;
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: none;
+}
+.students__btn-group-button.second-button {
+  margin-left: 0 !important;
+  border-left: none;
+}
+@media (max-width: 1399px) {
+  .students__title {
+    width: 50%;
+  }
 }
 
 .splide__list {
@@ -2175,7 +2265,8 @@ header .navbar__button {
 .timeline-section {
   background-color: #141414;
   background-image: radial-gradient(60.62% 50.01% at 77.94% 86.7%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 87.98%);
-  padding: 140px 0 0;
+  padding: 184px 0 0;
+  margin-top: -94px;
   position: relative;
 }
 .timeline-section::after {
