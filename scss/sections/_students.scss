@@ -130,7 +130,6 @@
 
       &_country {
         width: 87px;
-        max-width: calc(50% - 447px);
       }
 
       &_position {
@@ -139,7 +138,7 @@
         }
 
         &.-previous {
-          width: calc(50% - 281px);
+          width: 256px;
         }
       }
     }
@@ -153,6 +152,10 @@
         font-size: 20px;
         font-weight: 700;
         line-height: 24px;
+      }
+
+      &_arrow {
+        width: calc(50% + 121px);  
       }
     }
   }
@@ -363,16 +366,187 @@
       width: 50%;
     }
 
+    &-dossier {
+      &__background{
+        &_position{
+          &.-previous {
+            width: calc(50% - 281px);
+          }
+        }
+      }
+    }
   }
 
+  @media (max-width: 1199.98px) {
+    &__title {
+      width: 460px;
+      font-size: 48px;
+      line-height: 54px;
+    }
 
+    &__subtitle {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &__buttons {
+      &-group {
+        margin-bottom: 34px;
+      }
+    }
+
+    &-dossier { 
+      &__name {
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      &__background {
+        font-size: 18px;
+        line-height: 22px;
+
+        &_position {
+          &.-previous {
+            width: calc(50% - 223px);
+          }
+
+          &.-current {
+            width: calc(50% - 125px);
+          }
+        }
+      } 
+
+      &__progress { 
+        &_arrow {
+          width: calc(50% + 78px);
+        }
+      }
+    }
+
+    &-feedback {
+      bottom: 361px;
+    }
+
+    &__btn {
+      &-group {
+        width: calc(50% + 39px);
+      }
+    }
+
+    &-education {
+      &__title {
+        font-size: 38px;
+        line-height: 44px;  
+      }
+
+      &__salary  {
+        &_choice {
+          margin-bottom: 16px;
+        }
+
+        &_average {
+          align-items: flex-end;
+
+          &_title {
+            margin-bottom: 2px;
+          }
+
+          &_developer {
+            font-size: 20px;
+            line-height: 22px;
+          }
+
+          &_figure {
+            font-size: 40px;
+            line-height: 38px;
+          }
+        }
+      }
+
+      &__percentage {
+        margin-right: 13px;
+
+        &_number {
+          font-size: 100px;
+          line-height: 106px;
+          letter-spacing: -9px;
+          min-width: 120px;
+        }
+
+        &_percent {
+          font-size: 28px;
+          line-height: 34px;
+        }
+      }
+
+      &__text {
+        &_title {
+          font-size: 32px;
+          line-height: 40px;
+          margin-bottom: 2px;
+        }
+      }
+
+      &__companies {
+        padding: 18px 31px;
+      }
+    }
+
+    &__btn {
+      &-group {
+        width: 260px;
+          
+        &-button {
+          padding: 7px 9px;    
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &-container {
+      background-position: top 44px right 0;
+      background-size: 450px auto;
+    }
+
+    &__title {
+      width: 370px;
+      font-size: 38px;
+      line-height: 44px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 24px;
+      width: 340px;
+    }
+
+    &__buttons {
+      &-group {
+        width: 350px; 
+      }
+    }
+
+    &-text {
+      margin-bottom: 77px;
+    }
+  }
 
 }
 
 .splide {
   &__list {
     align-items: center;
-  }}
+  }
+
+  @media (max-width: 1199.98px) {
+    &__slide {
+      img {
+        width: 90%;
+      }
+    }
+  }
+}
 
 
 
