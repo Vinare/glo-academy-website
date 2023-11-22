@@ -2129,10 +2129,13 @@ header .navbar__button {
   line-height: 46px;
   margin-bottom: 24px;
 }
+.students-education-upper {
+  display: flex;
+}
 .students-education__efficiency {
   padding: 20px 24px 2px;
   display: flex;
-  flex-basis: 50%;
+  width: 50%;
   background: linear-gradient(0deg, rgba(104, 142, 161, 0.3) 0%, rgba(104, 142, 161, 0.3) 100%), #FFF;
   justify-content: space-between;
 }
@@ -2160,6 +2163,9 @@ header .navbar__button {
   line-height: 46px;
   margin-bottom: 4px;
 }
+.students-education__text_title.-mobile {
+  display: none;
+}
 .students-education__text_subtitle {
   font-size: 16px;
   font-weight: 400;
@@ -2169,26 +2175,25 @@ header .navbar__button {
 .students-education__salary {
   background: radial-gradient(206.82% 3500% at 100% 0%, rgb(255, 255, 255) 0%, rgba(104, 142, 161, 0.63) 100%), #FFF;
   display: flex;
-  flex-basis: 50%;
+  width: 50%;
   border-left: 1px solid #688EA1;
   padding: 21px 30px 18px 26px;
-  flex-direction: column;
-}
-.students-education__salary_choice {
-  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+}
+.students-education__salary_choice_hh {
+  width: 49px;
+  height: 49px;
   margin-bottom: 18px;
 }
 .students-education__salary_choice_upd {
   width: 20px;
   height: 20px;
   cursor: pointer;
+  margin-top: 15px;
 }
-.students-education__salary_average {
+.students-education__salary_average_text {
   padding-left: 4px;
-  display: flex;
-  justify-content: space-between;
 }
 .students-education__salary_average_title {
   font-size: 16px;
@@ -2207,6 +2212,7 @@ header .navbar__button {
   font-size: 52px;
   font-weight: 700;
   line-height: 52px;
+  align-self: flex-end;
 }
 .students-education__companies {
   padding: 20px 31px;
@@ -2215,6 +2221,9 @@ header .navbar__button {
 .students__btn-group {
   border-radius: 8px;
   width: calc(50% + 24px);
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 5px;
 }
 .students__btn-group-input + .students__btn-group-button:hover {
   border-right-color: #BFBFBF;
@@ -2263,17 +2272,20 @@ header .navbar__button {
   }
 }
 @media (max-width: 1199.98px) {
+  .students-text {
+    margin-bottom: 88px;
+  }
   .students__title {
     width: 460px;
     font-size: 48px;
     line-height: 54px;
   }
+  .students__buttons-group {
+    width: calc(50% - 40px);
+  }
   .students__subtitle {
     font-size: 22px;
     line-height: 28px;
-  }
-  .students__buttons-group {
-    margin-bottom: 34px;
   }
   .students-dossier__name {
     font-size: 22px;
@@ -2293,10 +2305,7 @@ header .navbar__button {
     width: calc(50% + 78px);
   }
   .students-feedback {
-    bottom: 361px;
-  }
-  .students__btn-group {
-    width: calc(50% + 39px);
+    bottom: 339px;
   }
   .students-education__title {
     font-size: 38px;
@@ -2342,6 +2351,7 @@ header .navbar__button {
   }
   .students__btn-group {
     width: 260px;
+    margin-top: 7px;
   }
   .students__btn-group-button {
     padding: 7px 9px;
@@ -2367,6 +2377,68 @@ header .navbar__button {
   }
   .students-text {
     margin-bottom: 77px;
+  }
+  .students-dossier__name {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .students-dossier__background {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .students-dossier__background_position.-previous {
+    width: calc(50% - 127px);
+  }
+  .students-dossier__background_position.-current {
+    width: calc(50% - 109px);
+  }
+  .students-dossier__progress_arrow {
+    width: calc(50% + 62px);
+  }
+  .students-education__title {
+    font-size: 36px;
+  }
+  .students-education__percentage {
+    display: none;
+  }
+  .students-education__text_title {
+    display: none;
+  }
+  .students-education__text_title.-mobile {
+    display: block;
+  }
+  .students-education__salary {
+    padding: 21px 30px 18px 24px;
+  }
+  .students-education__salary_choice {
+    flex-wrap: wrap;
+  }
+  .students-education__salary_choice_upd {
+    margin-top: 12px;
+    order: 2;
+  }
+  .students-education__salary_choice_hh {
+    width: 44px;
+    height: 44px;
+    order: 1;
+  }
+  .students-education__salary_average_text {
+    padding-left: 0;
+    order: 3;
+  }
+  .students-education__salary_average_figure {
+    order: 4;
+  }
+  .students-feedback {
+    bottom: 330px;
+  }
+  .students__btn-group {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .students__btn-group-button {
+    padding: 9px;
   }
 }
 

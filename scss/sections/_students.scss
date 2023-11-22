@@ -204,10 +204,14 @@
       margin-bottom: 24px;
     }
 
+    &-upper {
+      display: flex;
+    }
+
     &__efficiency {
       padding: 20px 24px 2px;
       display: flex;
-      flex-basis: 50%;
+      width: 50%;
       background: linear-gradient(0deg, rgba(104, 142, 161, 0.3) 0%, rgba(104, 142, 161, 0.3) 100%), #FFF;
       justify-content: space-between;
     }
@@ -239,6 +243,10 @@
         font-weight: 700;
         line-height: 46px;
         margin-bottom: 4px;
+
+        &.-mobile {
+          display: none;
+        }
       }
 
       &_subtitle {
@@ -252,28 +260,31 @@
     &__salary {
       background: radial-gradient(206.82% 3500% at 100% 0%, rgb(255, 255, 255) 0%, rgba(104, 142, 161, 0.63) 100%), #FFF;
       display: flex;
-      flex-basis: 50%;
+      width: 50%;
       border-left: 1px solid #688EA1;
       padding: 21px 30px 18px 26px;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
 
       &_choice {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 18px;
+        &_hh {
+          width: 49px;
+          height: 49px;
+          margin-bottom: 18px;
+        }
 
         &_upd {
           width: 20px;
           height: 20px;
           cursor: pointer;
+          margin-top: 15px;
         }
       }
 
       &_average {
-        padding-left: 4px;
-        display: flex;
-        justify-content: space-between;
+        &_text {
+          padding-left: 4px;
+        }
 
         &_title {
           font-size: 16px;
@@ -294,6 +305,7 @@
           font-size: 52px;
           font-weight: 700;
           line-height: 52px;
+          align-self: flex-end;
         }
       }
     }
@@ -308,6 +320,8 @@
     &-group {
       border-radius: 8px;
       width: calc(50% + 24px);
+      height: fit-content;
+      margin-top: 5px;
 
       &-input {
         &+.students__btn-group-button {
@@ -378,21 +392,25 @@
   }
 
   @media (max-width: 1199.98px) {
+    &-text {
+      margin-bottom: 88px;
+    }
+
     &__title {
       width: 460px;
       font-size: 48px;
       line-height: 54px;
     }
 
+    &__buttons { 
+      &-group {
+        width: calc(50% - 40px);
+      }
+    }
+
     &__subtitle {
       font-size: 22px;
       line-height: 28px;
-    }
-
-    &__buttons {
-      &-group {
-        margin-bottom: 34px;
-      }
     }
 
     &-dossier { 
@@ -424,13 +442,7 @@
     }
 
     &-feedback {
-      bottom: 361px;
-    }
-
-    &__btn {
-      &-group {
-        width: calc(50% + 39px);
-      }
+      bottom: 339px;
     }
 
     &-education {
@@ -495,6 +507,7 @@
     &__btn {
       &-group {
         width: 260px;
+        margin-top: 7px;
           
         &-button {
           padding: 7px 9px;    
@@ -530,8 +543,101 @@
     &-text {
       margin-bottom: 77px;
     }
-  }
 
+    &-dossier  {
+      &__name {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      &__background {
+        font-size: 16px;
+        line-height: 20px;
+
+        &_position  {
+          &.-previous {
+            width: calc(50% - 127px);
+          }
+
+          &.-current {
+            width: calc(50% - 109px);
+          }
+        }
+      }
+
+      &__progress {
+        &_arrow {
+          width: calc(50% + 62px);
+        }
+      }
+    }
+
+    &-education {
+      &__title {
+        font-size: 36px;
+      }
+
+      &__percentage {
+        display: none;
+      }
+
+      &__text {
+        &_title {
+          display: none;
+
+          &.-mobile {
+            display: block;
+          }
+        }
+      }
+
+      &__salary {
+        padding: 21px 30px 18px 24px;
+
+        &_choice {
+          flex-wrap: wrap;
+
+          &_upd {
+            margin-top: 12px;
+            order: 2;
+          }
+
+          &_hh {
+            width: 44px;
+            height: 44px;
+            order: 1;
+          }
+        }
+
+        &_average {
+          &_text {
+            padding-left: 0;
+            order: 3;
+          }
+
+          &_figure {
+            order: 4;
+          }
+        }
+      }
+    }
+
+    &-feedback {
+      bottom: 330px;
+    }
+
+    &__btn {
+      &-group {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 16px;
+          
+        &-button {
+          padding: 9px;    
+        }
+      }
+    }
+  }
 }
 
 .splide {
