@@ -2396,16 +2396,15 @@ header .navbar__button {
     width: calc(50% + 62px);
   }
   .students-education__title {
-    font-size: 36px;
+    font-size: 32px;
   }
   .students-education__percentage {
-    display: none;
+    margin-right: 9px;
   }
-  .students-education__text_title {
-    display: none;
-  }
-  .students-education__text_title.-mobile {
-    display: block;
+  .students-education__percentage_number {
+    font-size: 80px;
+    line-height: 80px;
+    min-width: 95px;
   }
   .students-education__salary {
     padding: 21px 30px 18px 24px;
@@ -2420,6 +2419,7 @@ header .navbar__button {
   .students-education__salary_choice_hh {
     width: 44px;
     height: 44px;
+    margin-bottom: 14px;
     order: 1;
   }
   .students-education__salary_average_text {
@@ -2427,6 +2427,7 @@ header .navbar__button {
     order: 3;
   }
   .students-education__salary_average_figure {
+    font-size: 38px;
     order: 4;
   }
   .students-feedback {
@@ -2435,10 +2436,10 @@ header .navbar__button {
   .students__btn-group {
     width: 100%;
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
   .students__btn-group-button {
-    padding: 9px;
+    padding: 7px 9px;
   }
 }
 

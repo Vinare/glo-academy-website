@@ -574,22 +574,28 @@
 
     &-education {
       &__title {
-        font-size: 36px;
+        font-size: 32px;
       }
 
       &__percentage {
-        display: none;
-      }
-
-      &__text {
-        &_title {
-          display: none;
-
-          &.-mobile {
-            display: block;
-          }
+        margin-right: 9px;
+        
+        &_number {
+          font-size: 80px;
+          line-height: 80px;
+          min-width: 95px;
         }
       }
+
+      // &__text {
+      //   &_title {
+      //     display: none;
+
+      //     &.-mobile {
+      //       display: block;
+      //     }
+      //   }
+      // }
 
       &__salary {
         padding: 21px 30px 18px 24px;
@@ -605,6 +611,7 @@
           &_hh {
             width: 44px;
             height: 44px;
+            margin-bottom: 14px;
             order: 1;
           }
         }
@@ -616,6 +623,7 @@
           }
 
           &_figure {
+            font-size: 38px;
             order: 4;
           }
         }
@@ -630,10 +638,10 @@
       &-group {
         width: 100%;
         margin-top: 0;
-        margin-bottom: 16px;
+        margin-bottom: 18px;
           
         &-button {
-          padding: 9px;    
+          padding: 7px 9px;    
         }
       }
     }
