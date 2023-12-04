@@ -199,7 +199,7 @@ export const sliderInit = () => {
         gap: 37,
       },
       991: {
-        gap: 70
+        gap: 34
       }
     },
   });
