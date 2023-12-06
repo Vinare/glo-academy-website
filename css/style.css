@@ -2088,6 +2088,9 @@ header .navbar__button {
 .students-dossier__progress_arrow {
   width: calc(50% + 121px);
 }
+.students-dossier__progress_arrow.-mobile {
+  display: none;
+}
 .students-feedback {
   position: absolute;
   bottom: 346px;
@@ -2472,6 +2475,46 @@ header .navbar__button {
   }
   .students-education__title {
     font-size: 26px;
+  }
+  .students-dossier__wrapper {
+    display: flex;
+  }
+  .students-dossier__cv {
+    background: #FFFFFF;
+  }
+  .students-dossier__background {
+    order: 2;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .students-dossier__background_age {
+    margin-bottom: 24px;
+  }
+  .students-dossier__background_country, .students-dossier__background_position.-previous {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .students-dossier__background_position.-current {
+    width: 100%;
+  }
+  .students-dossier__progress {
+    order: 1;
+    flex-direction: column;
+    margin-right: 20px;
+    gap: 4px;
+    height: calc(100% - 20px);
+  }
+  .students-dossier__progress_letter {
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.5;
+  }
+  .students-dossier__progress_arrow {
+    display: none;
+  }
+  .students-dossier__progress_arrow.-mobile {
+    display: block;
+    width: inherit;
   }
 }
 

@@ -156,6 +156,10 @@
 
       &_arrow {
         width: calc(50% + 121px);  
+
+        &.-mobile {
+          display: none;
+        }
       }
     }
   }
@@ -691,6 +695,61 @@
       &__title {
         font-size: 26px;
       }   
+    }
+
+    &-dossier {
+      &__wrapper {
+        display: flex;
+
+      }
+
+      &__cv {
+        background: $snow-white;
+      }
+
+      &__background {
+        order: 2;
+        flex-direction: column;
+        margin-bottom: 0;
+
+        &_age { 
+          margin-bottom: 24px;
+        }
+
+        &_country, &_position.-previous  {
+          width: 100%;
+          margin-bottom: 24px;
+        }
+
+        &_position.-current {
+          width: 100%;
+        }
+      }
+
+      &__progress {
+        order: 1;
+        flex-direction: column;
+        margin-right: 20px;
+        gap: 4px;
+        height: calc(100% - 20px);
+
+        &_letter {
+          font-size: 16px;
+          line-height: 20px;
+          opacity: 0.5;
+        }
+
+        &_arrow {
+          display: none;
+
+          &.-mobile {
+            display: block;
+            width: inherit;
+          }
+        }
+
+
+      }
     }
 
   }
