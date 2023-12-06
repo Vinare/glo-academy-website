@@ -2449,9 +2449,6 @@ header .navbar__button {
     margin-top: 0;
     margin-bottom: 18px;
   }
-  .students__btn-group-button {
-    padding: 7px 9px;
-  }
 }
 @media (max-width: 767.98px) {
   .students-container {
@@ -2476,11 +2473,47 @@ header .navbar__button {
   .students-education__title {
     font-size: 26px;
   }
+  .students-education__text_title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .students-education-upper {
+    flex-direction: column;
+  }
+  .students-education__efficiency {
+    width: 100%;
+    padding: 20px 24px 20px;
+    background: linear-gradient(0deg, rgba(104, 142, 161, 0.3) 0%, rgba(104, 142, 161, 0.3) 100%), #FFF;
+  }
+  .students-education__percentage {
+    margin-right: 10px;
+  }
+  .students-education__percentage_number {
+    font-size: 64px;
+    line-height: 64px;
+    min-width: 82px;
+    letter-spacing: -7px;
+  }
+  .students-education__percentage_percent {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .students-education__salary {
+    width: 100%;
+    padding: 21px 30px 20px 24px;
+    background: linear-gradient(0deg, rgba(104, 142, 161, 0.3) 0%, rgba(104, 142, 161, 0.3) 100%), #FFF;
+    border-top: 1px solid #688EA1;
+    border-left: none;
+  }
+  .students-education__salary_choice_hh {
+    order: 2;
+  }
   .students-dossier__wrapper {
     display: flex;
   }
   .students-dossier__cv {
     background: #FFFFFF;
+    padding: 8px 24px 24px;
   }
   .students-dossier__background {
     order: 2;
@@ -2488,11 +2521,15 @@ header .navbar__button {
     margin-bottom: 0;
   }
   .students-dossier__background_age {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
-  .students-dossier__background_country, .students-dossier__background_position.-previous {
+  .students-dossier__background_country {
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+  }
+  .students-dossier__background_position.-previous {
+    width: 100%;
+    margin-bottom: 32px;
   }
   .students-dossier__background_position.-current {
     width: 100%;
@@ -2500,9 +2537,9 @@ header .navbar__button {
   .students-dossier__progress {
     order: 1;
     flex-direction: column;
-    margin-right: 20px;
-    gap: 4px;
-    height: calc(100% - 20px);
+    margin-right: 18px;
+    gap: 5px;
+    height: 144px;
   }
   .students-dossier__progress_letter {
     font-size: 16px;
@@ -2515,6 +2552,12 @@ header .navbar__button {
   .students-dossier__progress_arrow.-mobile {
     display: block;
     width: inherit;
+  }
+  .students-feedback {
+    bottom: 402px;
+  }
+  .students__btn-group {
+    width: 260px;
   }
 }
 
@@ -2990,7 +3033,7 @@ header .navbar__button {
 }
 @media (max-width: 767.98px) {
   .timeline-section {
-    padding: 60px 0 0;
+    padding: 170px 0 0;
   }
 }
 @media (max-width: 575.98px) {

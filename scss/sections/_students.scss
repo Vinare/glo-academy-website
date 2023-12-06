@@ -655,10 +655,6 @@
         width: 100%;
         margin-top: 0;
         margin-bottom: 18px;
-          
-        &-button {
-          padding: 7px 9px;    
-        }
       }
     }
   }
@@ -694,7 +690,52 @@
     &-education {
       &__title {
         font-size: 26px;
-      }   
+      }
+      
+      &__text {
+        &_title {
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+
+      &-upper {
+        flex-direction: column;
+      }
+
+      &__efficiency {
+        width: 100%;
+        padding: 20px 24px 20px;
+        background: linear-gradient(0deg, rgba(104, 142, 161, 0.30) 0%, rgba(104, 142, 161, 0.30) 100%), #FFF;
+      }
+
+      &__percentage {
+        margin-right: 10px;
+
+        &_number {
+          font-size: 64px;
+          line-height: 64px;
+          min-width: 82px;
+          letter-spacing: -7px;
+        }
+
+        &_percent {
+          font-size: 24px;
+          line-height: 26px;
+        }
+      }
+
+      &__salary {
+        width: 100%;
+        padding: 21px 30px 20px 24px;
+        background: linear-gradient(0deg, rgba(104, 142, 161, 0.30) 0%, rgba(104, 142, 161, 0.30) 100%), #FFF;
+        border-top: 1px solid #688EA1;
+        border-left: none;
+
+        &_choice_hh {
+          order: 2;
+        }
+      }
     }
 
     &-dossier {
@@ -705,6 +746,7 @@
 
       &__cv {
         background: $snow-white;
+        padding: 8px 24px 24px;
       }
 
       &__background {
@@ -713,12 +755,17 @@
         margin-bottom: 0;
 
         &_age { 
-          margin-bottom: 24px;
+          margin-bottom: 16px;
         }
 
-        &_country, &_position.-previous  {
+        &_country  {
           width: 100%;
-          margin-bottom: 24px;
+          margin-bottom: 16px;
+        }
+
+        &_position.-previous {
+          width: 100%;
+          margin-bottom: 32px;
         }
 
         &_position.-current {
@@ -729,9 +776,9 @@
       &__progress {
         order: 1;
         flex-direction: column;
-        margin-right: 20px;
-        gap: 4px;
-        height: calc(100% - 20px);
+        margin-right: 18px;
+        gap: 5px;
+        height: 144px;
 
         &_letter {
           font-size: 16px;
@@ -747,9 +794,15 @@
             width: inherit;
           }
         }
-
-
       }
+    }
+
+    &-feedback {
+      bottom: 402px;
+    }
+
+    &__btn-group {
+      width: 260px;
     }
 
   }
