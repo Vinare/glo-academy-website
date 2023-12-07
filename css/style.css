@@ -2560,6 +2560,34 @@ header .navbar__button {
     width: 260px;
   }
 }
+@media (max-width: 575.98px) {
+  .students-container {
+    background-position: top 335px right 12px;
+  }
+}
+@media (max-width: 511px) {
+  .students-text {
+    margin-bottom: 418px;
+  }
+}
+@media (max-width: 480px) {
+  .students-container {
+    padding-top: 40px;
+    background-position: top 360px center;
+  }
+  .students__title {
+    line-height: 38px;
+    margin-bottom: 16px;
+  }
+  .students__buttons-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .students__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 
 .splide__list {
   align-items: center;
