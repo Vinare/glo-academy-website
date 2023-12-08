@@ -540,7 +540,7 @@
 
     &__buttons {
       &-group {
-        width: 350px; 
+        width: 100%; 
       }
     }
 
@@ -602,16 +602,6 @@
           line-height: 36px;
         }
       }
-
-      // &__text {
-      //   &_title {
-      //     display: none;
-
-      //     &.-mobile {
-      //       display: block;
-      //     }
-      //   }
-      // }
 
       &__salary {
         padding: 21px 30px 18px 24px;
@@ -689,7 +679,8 @@
 
     &-education {
       &__title {
-        font-size: 26px;
+        font-size: 30px;
+        line-height: 36px;
       }
       
       &__text {
@@ -822,7 +813,12 @@
   @media(max-width: 480px) {
     &-container {
       padding-top: 40px;
-      background-position: top 360px center;
+      background-position: top 246px center;
+      background-size: 356.6px 438.33px;
+    }
+
+    &-text {
+      margin-bottom: 392px;
     }
 
     &__title {
@@ -842,8 +838,126 @@
       line-height: 20px;
     }
 
+    &-feedback {
+      bottom: 344px;
+      right: calc(50% - 114px);
+      width: 233px;
+      background-image: url(../img/students/girls-feedback-mobile.svg);
+    }
+
+    &-dossier {
+      margin-bottom: 60px;
+
+      &__tab {
+        background-image: url(../img/students/dossier-tab-mobile.svg);
+      }
+
+      &__cv {
+        padding: 8px 16px 16px;
+      }
+
+      &__name {
+        font-size: 24px;
+        line-height: 30px; 
+      }
+
+      &__progress {
+        height: 128px;
+      }
+
+      &__background {
+        &_age, &_country {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    &-education {
+      border-radius: 20px;
+
+      &__title {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 20px;
+      }
+
+      &__percentage {
+        display: none;
+      }
+
+      &__efficiency {
+        order: 2;
+        border-top: 1px solid #688EA1;
+      }
+
+      &__text {
+        &_title {
+          display: none;
+
+          &.-mobile {
+            display: block;
+          }
+        }
+      }
+
+      &__salary {
+        order: 1;
+        padding: 16px 14px 16px 16px;
+        border-top: none;
+      }
+    }
+
+    
+
+
   }
-}
+
+  @media(max-width: 465px) {
+    &-container {
+      background-position: top 266px center;
+    }
+  }
+
+  @media(max-width: 454px) {
+    &-container {
+      background-position: top 304px center;
+    }
+  }
+
+  @media(max-width: 415px) {
+    &-dossier {
+      &__progress {
+        height: 148px;
+      }
+    }
+
+    &-feedback {
+      bottom: 364px;
+    }
+  }
+
+  @media(max-width: 383px) {
+    &-feedback {
+      bottom: 384px;
+    }
+  }
+
+  @media(max-width: 381px) {
+    &-container {
+      background-position: top 350px center;
+    }
+  }
+
+  @media(max-width: 323px) {
+    &-container {
+      background-position: top 360px center;
+    }
+
+    &-text {
+      margin-bottom: 382px;
+    }
+  } 
+} 
 
 .splide {
   &__list {

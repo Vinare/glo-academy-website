@@ -2376,7 +2376,7 @@ header .navbar__button {
     width: 340px;
   }
   .students__buttons-group {
-    width: 350px;
+    width: 100%;
   }
   .students-text {
     margin-bottom: 77px;
@@ -2471,7 +2471,8 @@ header .navbar__button {
     bottom: 390px;
   }
   .students-education__title {
-    font-size: 26px;
+    font-size: 30px;
+    line-height: 36px;
   }
   .students-education__text_title {
     font-size: 24px;
@@ -2573,7 +2574,11 @@ header .navbar__button {
 @media (max-width: 480px) {
   .students-container {
     padding-top: 40px;
-    background-position: top 360px center;
+    background-position: top 246px center;
+    background-size: 356.6px 438.33px;
+  }
+  .students-text {
+    margin-bottom: 392px;
   }
   .students__title {
     line-height: 38px;
@@ -2586,6 +2591,93 @@ header .navbar__button {
   .students__subtitle {
     font-size: 16px;
     line-height: 20px;
+  }
+  .students-feedback {
+    bottom: 344px;
+    right: calc(50% - 114px);
+    width: 233px;
+    background-image: url(../img/students/girls-feedback-mobile.svg);
+  }
+  .students-dossier {
+    margin-bottom: 60px;
+  }
+  .students-dossier__tab {
+    background-image: url(../img/students/dossier-tab-mobile.svg);
+  }
+  .students-dossier__cv {
+    padding: 8px 16px 16px;
+  }
+  .students-dossier__name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .students-dossier__progress {
+    height: 128px;
+  }
+  .students-dossier__background_age, .students-dossier__background_country {
+    margin-bottom: 8px;
+  }
+  .students-education {
+    border-radius: 20px;
+  }
+  .students-education__title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+  .students-education__percentage {
+    display: none;
+  }
+  .students-education__efficiency {
+    order: 2;
+    border-top: 1px solid #688EA1;
+  }
+  .students-education__text_title {
+    display: none;
+  }
+  .students-education__text_title.-mobile {
+    display: block;
+  }
+  .students-education__salary {
+    order: 1;
+    padding: 16px 14px 16px 16px;
+    border-top: none;
+  }
+}
+@media (max-width: 465px) {
+  .students-container {
+    background-position: top 266px center;
+  }
+}
+@media (max-width: 454px) {
+  .students-container {
+    background-position: top 304px center;
+  }
+}
+@media (max-width: 415px) {
+  .students-dossier__progress {
+    height: 148px;
+  }
+  .students-feedback {
+    bottom: 364px;
+  }
+}
+@media (max-width: 383px) {
+  .students-feedback {
+    bottom: 384px;
+  }
+}
+@media (max-width: 381px) {
+  .students-container {
+    background-position: top 350px center;
+  }
+}
+@media (max-width: 323px) {
+  .students-container {
+    background-position: top 360px center;
+  }
+  .students-text {
+    margin-bottom: 382px;
   }
 }
 
