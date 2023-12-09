@@ -1,3 +1,6 @@
+import Swiper from 'swiper';
+import { Autoplay } from 'swiper/modules';
+
 export const sliderInit = () => {
   // Swiper-slider
   const swiper = new Swiper(".mySwiper", {
@@ -179,4 +182,38 @@ export const sliderInit = () => {
   breakpoint.addEventListener("change", breakpointChecker);
 
   breakpointChecker();
+
+
+  // Splide-slider Students
+
+  var splide = new Splide(".splide", {
+    type: "loop",
+    perMove: 1,
+    autoWidth: true,
+    gap: 80,
+    arrows: false,
+    pagination: false,
+    // autoplay: true,
+    breakpoints: {
+      1199: {
+        gap: 37,
+      },
+      991: {
+        gap: 34,
+      },
+      767: {
+        gap: 27,
+      },
+      575: {
+        gap: 30,
+      },
+      480: {
+        gap: 24,
+      }
+    },
+  });
+
+  splide.mount();
+
+
 };

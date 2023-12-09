@@ -1,7 +1,8 @@
 .timeline-section {
     background-color: #141414;
     background-image: radial-gradient(60.62% 50.01% at 77.94% 86.7%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 87.98%);
-    padding: 140px 0 0;
+    padding: 184px 0 0;
+    margin-top: -94px;
     position: relative;
 
     &::after {
@@ -521,7 +522,8 @@
     }
 
     @media (max-width: 1199.98px) {
-        padding: 80px 0 0;
+        // padding: 80px 0 0;
+        margin-top: -85px;
         &::after {
             height: 94px;
         }
@@ -536,8 +538,13 @@
         }
     }
 
+    @media (max-width: 991.98px) {
+        margin-top: -82px;
+    }
+
     @media (max-width: 767.98px) {
-        padding: 60px 0 0;
+        // padding: 60px 0 0;
+        padding: 170px 0 0;
     }
 
     @media (max-width: 575.98px) {
@@ -559,6 +566,8 @@
 
     @media (max-width: 480px) {
         background-image: radial-gradient(99% 27% at 83% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+        padding: 125px 0 0;
+        margin-top: -65px;
 
         .timeline {
             &-description {

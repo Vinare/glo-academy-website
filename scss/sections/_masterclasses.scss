@@ -22,14 +22,15 @@
     &-group {
       border-radius: 8px;
 
-
       &-input {
         &+.masterclasses__btn-group-button {
           &:hover {
             border-right-color: #BFBFBF;
+            border-left-color: #BFBFBF;
             border-top-color: #BFBFBF;
             border-bottom-color: #BFBFBF;
             color: $color-primary;
+            background-color: $snow-white;
           }
         }
 
@@ -39,6 +40,14 @@
             background-color: #1462D3;
             color: $snow-white;
             font-weight: 700;
+            position: relative;
+            z-index: 10 !important;
+
+            &.first-button {
+              &:hover {
+                border-left-color: #1462D3;
+              }
+            }
           }
         }
       }
@@ -52,20 +61,12 @@
         padding: 9px;
         border: 1px solid #BFBFBF;
         color: $color-primary;
+        background-color: $snow-white;
         min-width: 80px;
-
-        &.first-button {
-          &:hover {
-            border-left-color: #BFBFBF;
-          }
-        }
+        transition: none;
 
         &.second-button {
           min-width: 124px;
-        }
-
-        &:not(.first-button) {
-          border-left-color: transparent;
         }
       }
     }
@@ -88,6 +89,7 @@
     cursor: pointer;
     transition: transform .5s, border-color .5s;
     display: block;
+    text-decoration: none;
 
     &_long {
       max-width: 650px;
@@ -209,8 +211,9 @@
           width: 100%;
           height: 100%;
 
-          background-size: auto;
+          background-size: cover;
           background-position-x: center;
+          background-repeat: no-repeat;
         }
       }
 

@@ -1,7 +1,7 @@
+import { scrollIntoView } from "seamless-scroll-polyfill";
+
 export const smoothScroll = () => {
   const links = document.querySelectorAll(".footer__sections__item-anchor");
-
-  seamless.polyfill();
 
   links.forEach((element) => {
     element.addEventListener("click", (event) => {
@@ -12,7 +12,7 @@ export const smoothScroll = () => {
       const section = document.getElementById(id);
 
       if (section) {
-        seamless.elementScrollIntoView(section, {
+        scrollIntoView(section, {
           behavior: "smooth",
           block: "center",
         });
