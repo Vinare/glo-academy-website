@@ -280,7 +280,6 @@
         &_upd {
           width: 20px;
           height: 20px;
-          cursor: pointer;
           margin-top: 15px;
         }
       }
@@ -888,6 +887,7 @@
       &__efficiency {
         order: 2;
         border-top: 1px solid #688EA1;
+        padding: 16px;
       }
 
       &__text {
@@ -896,6 +896,7 @@
 
           &.-mobile {
             display: block;
+            margin-bottom: 4px;
           }
         }
       }
@@ -904,6 +905,48 @@
         order: 1;
         padding: 16px 14px 16px 16px;
         border-top: none;
+
+        &_choice {
+          &_hh {
+            width: 38px;
+            height: 38px;
+            order: 2;
+            margin-bottom: 10px;
+          }
+
+          &_upd {
+            margin-top: 9px;
+          }
+        }
+
+        &_average { 
+          &_title {
+            margin-bottom: 0;
+          }
+
+          &_developer {
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          
+        }
+      }
+
+      &__companies {
+        padding: 12px 20px 12px 16px;
+      }
+
+    }
+
+    &__btn {
+      &-group {
+        width: 258px;
+        margin-bottom: 16px;
+
+        &-button {
+          padding: 7px 9px;
+        }
       }
     }
 
@@ -922,6 +965,34 @@
     &-container {
       background-position: top 304px center;
     }
+  }
+
+  @media(max-width: 435px) {
+    &__btn-group {
+      width: 100%;
+
+      &-button {
+        padding: 9px;
+      }
+    }
+
+    &-education {
+      &__salary {
+        &_choice { 
+          &_hh {
+            order: 1;
+          }
+        }
+
+        &_average {
+          &_figure {
+            font-size: 52px;
+            line-height: 52px; 
+          }
+        }
+      }
+    }
+
   }
 
   @media(max-width: 415px) {
@@ -980,6 +1051,54 @@
       img {
         width: 85%;
       }
+    }
+  }
+
+  @media(max-width: 480px) {
+    &__slide {
+      justify-content: flex-start;
+
+      & .yandex {
+        width: 74.18px;
+        height: 30.19px;
+      }
+
+      & .sber {
+        width: 152.45px;
+        height: 24.15px;
+      }
+
+      & .tinkoff {
+        width: 176.47px;
+        height: 40px;
+      }
+
+      & .epam {
+        width: 104.47px;
+        height: 36.98px;
+      }
+
+      & .unipro {
+        width: 59.12px;
+        height: 35.47px;
+      }
+
+      & .algoritmika {
+        width: 135.85px;
+        height: 30.94px;
+      }
+
+      & .hawking {
+        width: 134.34px;
+        height: 37.74px;
+      }
+
+      & .elma {
+        width: 96.6px;
+        height: 21.89px;
+      }
+
+
     }
   }
 }

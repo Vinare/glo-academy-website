@@ -566,6 +566,8 @@
 
     @media (max-width: 480px) {
         background-image: radial-gradient(99% 27% at 83% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+        padding: 125px 0 0;
+        margin-top: -65px;
 
         .timeline {
             &-description {

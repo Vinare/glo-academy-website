@@ -207,6 +207,9 @@ export const sliderInit = () => {
       575: {
         gap: 30,
       },
+      480: {
+        gap: 24,
+      }
     },
   });
 

@@ -374,4 +374,196 @@ export const masterclasses = [
         tags: [Tags.JS],
         time: 747
     },
+    {
+        id: 45,
+        title: 'Воркшоп «Свой YouTube на JavaScript»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/06/yt.jpg',
+        link: 'https://glo-academy.ru/intensive/vorkshop-svoy-youtube-na-javascript/',
+        tags: [Tags.JS],
+        time: 690
+    },
+    {
+        id: 46,
+        title: 'Воркшоп «Свой Ozon на JavaScript»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/06/oz-project.jpg',
+        link: 'https://glo-academy.ru/intensive/vorkshop-svoy-ozon-na-javascript-2/',
+        tags: [Tags.JS],
+        time: 594
+    },
+    {
+        id: 47,
+        title: 'Воркшоп «Свой Avito на JavaScript»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/07/project.jpg',
+        link: 'https://glo-academy.ru/intensive/vorkshop-svoy-avito-na-javascript/',
+        tags: [Tags.JS],
+        time: 594
+    },
+    {
+        id: 48,
+        title: 'Воркшоп «Промостраница iPhone 12 Pro на JavaScript»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2021/03/mask-group.jpg',
+        link: 'https://glo-academy.ru/intensive/iphone-12-promo/',
+        tags: [Tags.JS],
+        time: 619
+    },
+    {
+        id: 49,
+        title: 'Воркшоп «Пишем свой Netclicks на JavaScript»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/06/nj-project.jpg',
+        link: 'https://glo-academy.ru/intensive/vorkshop-pishem-svoy-netclicks-na-js/',
+        tags: [Tags.JS],
+        time: 60
+    },
+    {
+        id: 50,
+        title: 'Воркшоп «Конструктор сайтов на JavaScript»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2021/07/mask-group-2.jpg',
+        link: 'https://glo-academy.ru/intensive/constructor/',
+        tags: [Tags.JS],
+        time: 619
+    },
+    {
+        id: 51,
+        title: 'Воркшоп «Кинопоиск на JavaScript»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/06/k-pr.png',
+        link: 'https://glo-academy.ru/intensive/vorkshop-kinopoisk-na-javascript/',
+        tags: [Tags.JS],
+        time: 440
+    },
+    {
+        id: 52,
+        title: 'Воркшоп «Калькулятор расходов на ReactJS»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/08/mask-group-2.jpg',
+        link: 'https://glo-academy.ru/intensive/react-calc-money/',
+        tags: [Tags.JS],
+        time: 420
+    },
+    {
+        id: 53,
+        title: 'Воркшоп «ИКЕЯ на JS»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/10/main.jpg',
+        link: 'https://glo-academy.ru/intensive/workshop-ikea-js/',
+        tags: [Tags.JS],
+        time: 705
+    },
+    {
+        id: 54,
+        title: 'Воркшоп «SPA приложение SpaceX»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/10/main-1.jpg',
+        link: 'https://glo-academy.ru/intensive/react-spacex/',
+        tags: [Tags.JS],
+        time: 618
+    },
+    {
+        id: 55,
+        title: 'Воркшоп «Pikadu на JS»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/11/mian.jpg',
+        link: 'https://glo-academy.ru/intensive/pikadu-na-js/',
+        tags: [Tags.JS],
+        time: 630
+    },
+    {
+        id: 56,
+        title: 'Воркшоп «Dendy игра на HTML/CSS»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/06/game.png',
+        link: 'https://glo-academy.ru/intensive/vorkshop-dendy-igra-na-html-css/',
+        tags: [Tags.HTML],
+        time: 35
+    },
+    {
+        id: 57,
+        title: 'Воркшоп «Cвой AliJSpress на JavaScript',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/06/alijs.jpg',
+        link: 'https://glo-academy.ru/intensive/vorkshop-cvoy-alijspress-na-javascript/',
+        tags: [Tags.JS],
+        time: 760
+    },
+    {
+        id: 58,
+        title: 'Верстка сайта интернет банка',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/06/penk-bank.png',
+        link: 'https://glo-academy.ru/intensive/vorkshop-po-veb-razrabotke/',
+        tags: [Tags.HTML],
+        time: 240
+    },
+    {
+        id: 59,
+        title: 'Верстка интернет-магазина «Амазонка»',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/06/amazon.png',
+        link: 'https://glo-academy.ru/intensive/vorkshop-svoy-ozon-na-javascript/',
+        tags: [Tags.HTML],
+        time: 457
+    },
+    {
+        id: 60,
+        title: 'Бэтмен 2022',
+        image: 'https://glo-academy.ru/wp-content/uploads/2022/02/mask-group.jpg',
+        link: 'https://glo-academy.ru/intensive/batman-2022/',
+        tags: [Tags.HTML],
+        time: 196
+    },
+    {
+        id: 61,
+        title: 'Автомагазин — посадка верстки на WordPress',
+        image: 'https://glo-academy.ru/wp-content/uploads/2021/05/mask-group.jpg',
+        link: 'https://glo-academy.ru/intensive/autoshop/',
+        tags: [Tags.PHP],
+        time: 67
+    },
+    {
+        id: 62,
+        title: 'Twitter на PHP',
+        image: 'https://glo-academy.ru/wp-content/uploads/2021/11/mask-group-1.jpg',
+        link: 'https://glo-academy.ru/intensive/twitter-php/',
+        tags: [Tags.PHP],
+        time: 266
+    },
+    {
+        id: 63,
+        title: 'Flowers — посадка верстки на WordPress',
+        image: 'https://glo-academy.ru/wp-content/uploads/2021/02/mask-group-1.jpg',
+        link: 'https://glo-academy.ru/intensive/flowers-wp/',
+        tags: [Tags.PHP],
+        time: 114
+    },
+    {
+        id: 64,
+        title: 'Cоцсеть «Дистанция» на HTML и CSS',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/08/mask-group-3.jpg',
+        link: 'https://glo-academy.ru/intensive/html-css-distantsiya/',
+        tags: [Tags.HTML],
+        time: 203
+    },
+    {
+        id: 65,
+        title: 'Cвой промосайт компании SpaceX Илона Маска',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/08/mask-group.png',
+        link: 'https://glo-academy.ru/intensive/promo-spacex/',
+        tags: [Tags.HTML],
+        time: 250
+    },
+    {
+        id: 66,
+        title: 'Cвой интернет-магазин «Ламода» на JavaScript',
+        image: 'https://glo-academy.ru/wp-content/uploads/2021/07/mask-group.jpg',
+        link: 'https://glo-academy.ru/intensive/lamoda/',
+        tags: [Tags.JS],
+        time: 196
+    },
+    {
+        id: 67,
+        title: 'Cвой Pikabu',
+        image: 'https://glo-academy.ru/wp-content/uploads/2020/10/mian-1.jpg',
+        link: 'https://glo-academy.ru/intensive/pikadu/',
+        tags: [Tags.HTML],
+        time: 174
+    },
+    {
+        id: 68,
+        title: '«iPhone 13 pro promo» на JS',
+        image: 'https://glo-academy.ru/wp-content/uploads/2022/01/mask-group-1.jpg',
+        link: 'https://glo-academy.ru/intensive/iphone-13-pro-promo/',
+        tags: [Tags.JS],
+        time: 129
+    },
 ]
