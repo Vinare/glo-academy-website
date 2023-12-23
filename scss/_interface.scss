@@ -28,6 +28,12 @@
   }
 }
 
+.gap-30 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 @media (hover: hover) {
   @media (pointer: fine) {
     .promo {

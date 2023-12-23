@@ -1,0 +1,185 @@
+.courses-content {
+  padding-top: 182px; 
+  margin-top: -94px;
+  padding-bottom: 80px;
+
+  &__title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px; 
+    color: $color-primary;
+    margin-bottom: 24px;
+  }
+
+  &__grid {
+    &_item {
+      border-radius: 20px;
+      background: #F6F6F6;
+      color: $color-primary;
+      font-family: Inter;
+      font-style: normal;
+
+      &.upper {
+        padding: 30px 40px;
+        min-height: 280px;
+
+        // @media(max-width: 1360px) {
+        //   max-width: 750px;
+        // }
+      }
+
+      &.lower {
+        padding: 40px 34px 34px 40px;
+      }
+
+      &.-video-lessons {
+        background-image: url(../img/courses-content/video-lessons-bgd.png);
+        background-repeat: no-repeat;
+        background-position: right 0 top 33px;
+ 
+      } 
+      
+      &.-webinars {
+        background-image: url(../img/courses-content/webinars-bgd.png);
+        background-repeat: no-repeat;
+        background-position: right 0 top 11px;
+      }
+
+      &.-additional-materials {
+        padding: 30px 20px 30px 32px;
+        height: 100%;
+      }
+
+      // &.-mentors {
+      //   @media(max-width: 1360px) {
+      //     max-width: 635px;
+      //   }
+      // } 
+      
+      &.-employment {
+        background-image: url(../img/courses-content/employment-bgd.png);
+        background-repeat: no-repeat;
+        background-position: right 0 bottom 0;
+        height: 100%;
+
+        // @media(max-width: 1360px) {
+        //   max-width: 475px;
+        // }
+      }
+
+      &_icon {
+        position: absolute;
+        left: -29px;
+        bottom: -24.5px;
+
+        &.-document {
+          top: -23.5px;
+          bottom: -22.5px;
+        }
+
+        &.-mentors {
+          bottom: 2px;
+          left: calc(50% - 8px);
+        }
+      }
+
+      &_title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 46px; 
+        padding-left: 54px;
+        margin-bottom: 0;
+        color: $color-primary;
+
+        &.-bottom {
+          padding-left: 0;
+        }
+
+        &-group {
+          position: relative;
+          margin-bottom: 16px;
+        }
+      }
+
+      &_text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 0;
+        width: calc(50% + 15px);
+
+        &.-first-child {
+          margin-bottom: 10px;
+        }
+
+        &.-forwebinars {
+          width: calc(50% - 53px);
+        }
+
+        &.-formaterials {
+          padding-right: 12px;
+        }
+
+        &.-foremployment {
+          width: calc(50% + 68px);
+        }
+      }
+    } 
+  }
+
+  @media (min-width: 1400px) {
+    &__grid { 
+      &_item { 
+        &_text {
+          width: 445px;
+
+          &.-forwebinars {
+            width: 407px;
+          }
+
+          &.-foremployment {
+            width: 268px;
+          }
+
+          &.-formaterials {
+            padding-right: 0;
+          }
+
+          &.-foremployment {
+            width: 300px;
+          }
+        }
+
+        &_icon {
+          &.-mentors {
+            left: calc(50% - 58px);
+          }
+        }
+      }
+    }
+  }
+
+  .col-xl-7 {
+    @media(min-width: 1200px) {
+      max-width: 659px;
+    }
+  }
+
+  .col-xl-5 {
+    @media(min-width: 1200px) {
+      max-width: 499px;
+    }
+  }
+
+  .col-xl-8 {
+    @media(min-width: 1200px) {
+      max-width: 774px;
+    }
+  }
+
+  .col-xl-4 {
+    @media(min-width: 1200px) {
+      max-width: 385px;
+    }
+  }
+}

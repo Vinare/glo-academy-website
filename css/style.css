@@ -20,6 +20,12 @@
     --bs-gutter-x: 2rem;
   }
 }
+.gap-30 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .promo__button:hover {
     background-color: #9fd3ff;
@@ -2192,7 +2198,6 @@ header .navbar__button {
 .students-education__salary_choice_upd {
   width: 20px;
   height: 20px;
-  cursor: pointer;
   margin-top: 15px;
 }
 .students-education__salary_average_text {
@@ -2631,17 +2636,45 @@ header .navbar__button {
   .students-education__efficiency {
     order: 2;
     border-top: 1px solid #688EA1;
+    padding: 16px;
   }
   .students-education__text_title {
     display: none;
   }
   .students-education__text_title.-mobile {
     display: block;
+    margin-bottom: 4px;
   }
   .students-education__salary {
     order: 1;
     padding: 16px 14px 16px 16px;
     border-top: none;
+  }
+  .students-education__salary_choice_hh {
+    width: 38px;
+    height: 38px;
+    order: 2;
+    margin-bottom: 10px;
+  }
+  .students-education__salary_choice_upd {
+    margin-top: 9px;
+  }
+  .students-education__salary_average_title {
+    margin-bottom: 0;
+  }
+  .students-education__salary_average_developer {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .students-education__companies {
+    padding: 12px 20px 12px 16px;
+  }
+  .students__btn-group {
+    width: 258px;
+    margin-bottom: 16px;
+  }
+  .students__btn-group-button {
+    padding: 7px 9px;
   }
 }
 @media (max-width: 465px) {
@@ -2652,6 +2685,21 @@ header .navbar__button {
 @media (max-width: 454px) {
   .students-container {
     background-position: top 304px center;
+  }
+}
+@media (max-width: 435px) {
+  .students__btn-group {
+    width: 100%;
+  }
+  .students__btn-group-button {
+    padding: 9px;
+  }
+  .students-education__salary_choice_hh {
+    order: 1;
+  }
+  .students-education__salary_average_figure {
+    font-size: 52px;
+    line-height: 52px;
   }
 }
 @media (max-width: 415px) {
@@ -2696,6 +2744,177 @@ header .navbar__button {
   }
   .splide__slide img {
     width: 85%;
+  }
+}
+@media (max-width: 480px) {
+  .splide__slide {
+    justify-content: flex-start;
+  }
+  .splide__slide .yandex {
+    width: 74.18px;
+    height: 30.19px;
+  }
+  .splide__slide .sber {
+    width: 152.45px;
+    height: 24.15px;
+  }
+  .splide__slide .tinkoff {
+    width: 176.47px;
+    height: 40px;
+  }
+  .splide__slide .epam {
+    width: 104.47px;
+    height: 36.98px;
+  }
+  .splide__slide .unipro {
+    width: 59.12px;
+    height: 35.47px;
+  }
+  .splide__slide .algoritmika {
+    width: 135.85px;
+    height: 30.94px;
+  }
+  .splide__slide .hawking {
+    width: 134.34px;
+    height: 37.74px;
+  }
+  .splide__slide .elma {
+    width: 96.6px;
+    height: 21.89px;
+  }
+}
+
+.courses-content {
+  padding-top: 182px;
+  margin-top: -94px;
+  padding-bottom: 80px;
+}
+.courses-content__title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #333333;
+  margin-bottom: 24px;
+}
+.courses-content__grid_item {
+  border-radius: 20px;
+  background: #F6F6F6;
+  color: #333333;
+  font-family: Inter;
+  font-style: normal;
+}
+.courses-content__grid_item.upper {
+  padding: 30px 40px;
+  min-height: 280px;
+}
+.courses-content__grid_item.lower {
+  padding: 40px 34px 34px 40px;
+}
+.courses-content__grid_item.-video-lessons {
+  background-image: url(../img/courses-content/video-lessons-bgd.png);
+  background-repeat: no-repeat;
+  background-position: right 0 top 33px;
+}
+.courses-content__grid_item.-webinars {
+  background-image: url(../img/courses-content/webinars-bgd.png);
+  background-repeat: no-repeat;
+  background-position: right 0 top 11px;
+}
+.courses-content__grid_item.-additional-materials {
+  padding: 30px 20px 30px 32px;
+  height: 100%;
+}
+.courses-content__grid_item.-employment {
+  background-image: url(../img/courses-content/employment-bgd.png);
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
+  height: 100%;
+}
+.courses-content__grid_item_icon {
+  position: absolute;
+  left: -29px;
+  bottom: -24.5px;
+}
+.courses-content__grid_item_icon.-document {
+  top: -23.5px;
+  bottom: -22.5px;
+}
+.courses-content__grid_item_icon.-mentors {
+  bottom: 2px;
+  left: calc(50% - 8px);
+}
+.courses-content__grid_item_title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  padding-left: 54px;
+  margin-bottom: 0;
+  color: #333333;
+}
+.courses-content__grid_item_title.-bottom {
+  padding-left: 0;
+}
+.courses-content__grid_item_title-group {
+  position: relative;
+  margin-bottom: 16px;
+}
+.courses-content__grid_item_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0;
+  width: calc(50% + 15px);
+}
+.courses-content__grid_item_text.-first-child {
+  margin-bottom: 10px;
+}
+.courses-content__grid_item_text.-forwebinars {
+  width: calc(50% - 53px);
+}
+.courses-content__grid_item_text.-formaterials {
+  padding-right: 12px;
+}
+.courses-content__grid_item_text.-foremployment {
+  width: calc(50% + 68px);
+}
+@media (min-width: 1400px) {
+  .courses-content__grid_item_text {
+    width: 445px;
+  }
+  .courses-content__grid_item_text.-forwebinars {
+    width: 407px;
+  }
+  .courses-content__grid_item_text.-foremployment {
+    width: 268px;
+  }
+  .courses-content__grid_item_text.-formaterials {
+    padding-right: 0;
+  }
+  .courses-content__grid_item_text.-foremployment {
+    width: 300px;
+  }
+  .courses-content__grid_item_icon.-mentors {
+    left: calc(50% - 58px);
+  }
+}
+@media (min-width: 1200px) {
+  .courses-content .col-xl-7 {
+    max-width: 659px;
+  }
+}
+@media (min-width: 1200px) {
+  .courses-content .col-xl-5 {
+    max-width: 499px;
+  }
+}
+@media (min-width: 1200px) {
+  .courses-content .col-xl-8 {
+    max-width: 774px;
+  }
+}
+@media (min-width: 1200px) {
+  .courses-content .col-xl-4 {
+    max-width: 385px;
   }
 }
 
@@ -3172,6 +3391,8 @@ header .navbar__button {
 @media (max-width: 480px) {
   .timeline-section {
     background-image: radial-gradient(99% 27% at 83% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
+    padding: 125px 0 0;
+    margin-top: -65px;
   }
   .timeline-section .timeline-description-months {
     margin-bottom: 80px;
