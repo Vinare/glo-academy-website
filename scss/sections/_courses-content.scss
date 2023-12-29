@@ -4,6 +4,7 @@
   padding-bottom: 80px;
 
   &__title {
+    font-family: Inter;
     font-size: 60px;
     font-weight: 700;
     line-height: 60px; 
@@ -22,10 +23,6 @@
       &.upper {
         padding: 30px 40px;
         min-height: 280px;
-
-        // @media(max-width: 1360px) {
-        //   max-width: 750px;
-        // }
       }
 
       &.lower {
@@ -49,22 +46,12 @@
         padding: 30px 20px 30px 32px;
         height: 100%;
       }
-
-      // &.-mentors {
-      //   @media(max-width: 1360px) {
-      //     max-width: 635px;
-      //   }
-      // } 
       
       &.-employment {
         background-image: url(../img/courses-content/employment-bgd.png);
         background-repeat: no-repeat;
         background-position: right 0 bottom 0;
         height: 100%;
-
-        // @media(max-width: 1360px) {
-        //   max-width: 475px;
-        // }
       }
 
       &_icon {
@@ -116,10 +103,6 @@
           width: calc(50% - 53px);
         }
 
-        &.-formaterials {
-          padding-right: 12px;
-        }
-
         &.-foremployment {
           width: calc(50% + 68px);
         }
@@ -159,27 +142,197 @@
     }
   }
 
-  .col-xl-7 {
-    @media(min-width: 1200px) {
+  @media(min-width: 1360px) {
+    &__grid { 
+      &_item { 
+        &_text {
+          &.-formaterials {
+            padding-right: 12px;
+          }
+        }
+      }
+    }
+
+    .col-xl-7 {
       max-width: 659px;
     }
-  }
-
-  .col-xl-5 {
-    @media(min-width: 1200px) {
-      max-width: 499px;
+  
+    .col-xl-5 { 
+      min-width: 499px; 
+    }
+  
+    .col-xl-8 { 
+      max-width: 774px; 
+    }
+  
+    .col-xl-4 {
+      max-width: 385px; 
     }
   }
 
-  .col-xl-8 {
-    @media(min-width: 1200px) {
-      max-width: 774px;
+  @media (max-width: 1199.98px) {
+    &__title {
+      font-size: 48px;
+    }
+
+    &__grid { 
+      &_item { 
+        &_icon {
+          width: 80px;
+          bottom: -22.5px;
+        }
+
+        &_title {
+          font-size: 30px;
+          line-height: 36px;
+          padding-left: 48px;
+        }
+
+        &_text {
+          width: 50%;
+
+          &.-forwebinars {
+            width: 45%;
+          }
+        }
+
+        &.upper {
+          min-height: 300px;
+        }
+
+        &.-video-lessons {
+          background-position: left calc(100% + 215px) top 33px;
+        }
+        
+        &.-webinars {
+          background-position: left calc(100% + 50px) bottom 0;
+        } 
+      }
     }
   }
 
-  .col-xl-4 {
-    @media(min-width: 1200px) {
-      max-width: 385px;
+  @media (max-width: 991.98px) {
+    &__title {
+      font-size: 38px;
+    }
+
+    &__grid{
+      &_item {
+        &.upper {
+          min-height: 280px;
+        }
+
+        &.lower {
+          padding: 30px 34px 34px 40px;
+        }
+
+        &.-additional-materials {
+          padding: 30px 20px 30px 40px;
+        }
+
+        &_text {
+          width: 46%;
+        }
+
+        &-block {
+          padding-bottom: 38px;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+
+        &_title {
+          &-group {
+            &.-mentors {
+              margin-bottom: 54px;
+            }
+          }
+        }
+
+        &_icon {
+          &.-mentors {
+            left: 0;
+            bottom: -38px;
+          }
+        }
+
+        &_text {
+          &.-foremployment {
+            width: 430px;
+          }
+        }
+
+        &.-employment {
+          background-position: right 14px bottom 0;
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 767.98px) {
+    &__title {
+      font-size: 32px;
+    }
+
+    &__grid {
+      &_item {
+        &.upper  {
+          padding: 30px 30px 30px 40px;
+          min-height: 450px;
+        }
+      
+        &.-video-lessons {
+          background-position: left 37px top 203px;
+        }
+        
+        &.-webinars {
+          background-position: right 0 top 173px;
+          background-size: 520px auto;
+        }
+        
+        &.-employment  {
+          background-position: right 9px bottom 0;
+        }
+        
+        &_icon {
+          width: 70px;
+          bottom: -18px;
+          left: -24px;
+
+          &.-document {
+            top: unset;
+            bottom: -16px;
+          }
+        }
+        
+        &_title {
+          font-size: 26px;
+
+          &-group {
+            &.-mentors  {
+              margin-bottom: 58px;
+            }
+          }
+        }
+        
+        &_text {
+          width: 100%;
+        
+          &.-forwebinars  {
+            width: 100%;
+          }
+        
+          &.-foremployment  {
+            width: 420px;
+          }
+        }
+      }
     }
   }
+
+
+
+  
 }
