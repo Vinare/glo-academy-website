@@ -129,7 +129,7 @@
           }
 
           &.-foremployment {
-            width: 300px;
+            width: 325px;
           }
         }
 
@@ -142,7 +142,7 @@
     }
   }
 
-  @media(min-width: 1360px) {
+  @media(min-width: 1360px) { @media (max-width: 1399px) {
     &__grid { 
       &_item { 
         // &.-video-lessons {
@@ -172,7 +172,7 @@
     .col-xl-4 {
       max-width: 385px; 
     }
-  }
+  }}
 
   @media (max-width: 1199.98px) {
     &__title {
@@ -205,11 +205,11 @@
         }
 
         &.-video-lessons {
-          background-position: left calc(100% + 215px) top 33px;
+          background-position: left calc(100% + 42px) top 33px;
         }
         
         &.-webinars {
-          background-position: left calc(100% + 50px) bottom 0;
+          background-position: left calc(100% + 55px) bottom 0;
         } 
       }
     }
