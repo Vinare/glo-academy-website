@@ -2994,7 +2994,7 @@ header .navbar__button {
     background-position: left 37px top 203px;
   }
   .courses-content__grid_item.-webinars {
-    background-position: right 0 top 173px;
+    background-position: right 0 top 172px;
     background-size: 520px auto;
   }
   .courses-content__grid_item.-employment {
@@ -3024,13 +3024,23 @@ header .navbar__button {
   .courses-content__grid_item_text.-foremployment {
     width: 420px;
   }
+  .courses-content__grid_item-block {
+    padding-bottom: 36px;
+  }
 }
 @media (max-width: 575.98px) {
+  .courses-content__grid_item.-video-lessons {
+    background-position: left calc(100% + 26px) top calc(100% + 71px);
+  }
   .courses-content__grid_item.-webinars {
-    background-size: 562px auto;
+    background-size: calc(100% + 13px) auto;
+    background-position: right 0 top calc(100% + 79px);
   }
   .courses-content__grid_item_icon.-mentors {
     bottom: -40px;
+  }
+  .courses-content__grid_item-block {
+    padding-bottom: 35px;
   }
 }
 @media (max-width: 480px) {
