@@ -2,6 +2,7 @@
   padding-top: 182px; 
   margin-top: -94px;
   padding-bottom: 80px;
+  background-color: $snow-white;
 
   &__title {
     font-family: Inter;
@@ -145,10 +146,6 @@
   @media(min-width: 1360px) { @media (max-width: 1399px) {
     &__grid { 
       &_item { 
-        // &.-video-lessons {
-        //   background-size: 360px 247px;
-        // }
-
         &_text {
           &.-formaterials {
             padding-right: 12px;
@@ -176,6 +173,9 @@
   }
 
   @media (max-width: 1199.98px) {
+    padding-top: 175px;
+    margin-top: -85px;
+
     &__title {
       font-size: 48px;
     }
@@ -223,6 +223,9 @@
   }
 
   @media (max-width: 991.98px) {
+    padding-top: 162px;
+    margin-top: -82px;
+
     &__title {
       font-size: 38px;
     }
@@ -279,7 +282,6 @@
     .row-gap-30 {
       row-gap: 30px;
     }
-
   }
 
   @media (max-width: 767.98px) {
@@ -293,6 +295,12 @@
           padding: 30px 30px 30px 40px;
           min-height: 450px;
         }
+
+        &.lower {
+          &.-employment {
+            padding: 0;
+          }
+        }
       
         &.-video-lessons {
           background-position: left 37px top 203px;
@@ -304,7 +312,13 @@
         }
         
         &.-employment  {
-          background-position: right 9px bottom 0;
+          background-image: none;
+        }
+
+        &_content {
+          &.-employment {
+            padding: 30px 34px 12px 40px;
+          }
         }
         
         &_icon {
@@ -331,12 +345,17 @@
         &_text {
           width: 100%;
         
-          &.-forwebinars  {
+          &.-forwebinars, &.-foremployment  {
             width: 100%;
           }
-        
-          &.-foremployment  {
-            width: 420px;
+        }
+
+        &_image {
+          &.-employment {
+            background-image: url(../img/courses-content/employment-bgd.png);
+            background-repeat: no-repeat;
+            background-position: center top 0;
+            height: 141px;
           }
         }
 
@@ -350,18 +369,34 @@
   @media (max-width: 575.98px) {
     &__grid {
       &_item {
-        &.-video-lessons {
-          background-position: left calc(100% + 26px) top calc(100% + 71px);
+        &.upper {
+          padding: 0;
+          overflow: hidden;
         }
 
-        &.-webinars {
-          background-size: calc(100% + 13px) auto;
-          background-position: right 0 top calc(100% + 79px);
+        &.-video-lessons, &.-webinars {
+          background-image: none;
         }
 
-        // &.-webinars {
-          // background-size: 562px auto;
-        // }
+        &_content {
+          padding: 30px 30px 30px 40px;
+        }
+
+        &_image {        
+          height: 65%;
+          background-repeat: no-repeat;
+
+          &.-video-lessons {
+            background-image: url(../img/courses-content/video-lessons-bgd-large.png);
+            background-position: left 28px top 0;
+          }
+
+          &.-webinars {
+            background-image: url(../img/courses-content/webinars-bgd.png);
+            background-position: top 0 right 0;
+            background-size: calc(100% + 12px) auto;
+          }
+        }
 
         &_icon {
           &.-mentors {
@@ -378,7 +413,7 @@
 
   @media (max-width: 480px) {
     padding-top: 125px;
-    margin-top: -64px;
+    margin-top: -65px;
     padding-bottom: 60px;
 
     &__title {
@@ -388,26 +423,20 @@
 
     &__grid {
       &_item {
-        &.upper, &.lower {
-          padding: 20px 16px;
-          
-        }
-
         &.-additional-materials {
           padding: 24px 16px 20px;
         }
 
         &.-video-lessons {
-          background-image: url(../img/courses-content/video-lessons-bgd-mobile.png);
-          background-position: left 6px top 226px;
           min-height: 420px;
         }
 
         &.-webinars {        
-          background-image: url(../img/courses-content/webinars-bgd-mobile.png);
-          background-position: right 0 top 170px;
-          background-size: 100% auto;
           min-height: 375px;
+        }
+
+        &_content, &.lower {
+          padding: 20px 16px;
         }
 
         &_icon {
@@ -425,6 +454,14 @@
             width: unset;
             top: unset;
             bottom: -42px;
+          }
+        }
+
+        &_content {
+          padding: 20px 16px;
+
+          &.-employment {
+            padding: 20px 16px 7px;
           }
         }
 
@@ -460,9 +497,27 @@
           }
         }
 
-        &.-employment {
-          background-position: left 49px top 119px;
-          min-height: 222px;
+        &_image {  
+          &.-video-lessons {   
+            background-position: left 6px top 0;
+            
+            @media (max-width: 384px) {
+              background-image: url(../img/courses-content/video-lessons-bgd-mobile.png);
+            }
+          }
+
+          &.-webinars { 
+            background-size: calc(100% + 16px) auto;
+
+            @media (max-width: 330px) {
+              background-image: url(../img/courses-content/webinars-bgd-mobile.png);
+              background-size: auto;
+            }
+          }
+
+          &.-employment {
+            height: 103px;
+          }
         }
 
       }
@@ -476,8 +531,4 @@
       row-gap: 16px;
     }
   }
-
-
-
-  
 }

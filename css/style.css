@@ -2788,6 +2788,7 @@ header .navbar__button {
   padding-top: 182px;
   margin-top: -94px;
   padding-bottom: 80px;
+  background-color: #FFFFFF;
 }
 .courses-content__title {
   font-family: Inter;
@@ -2913,6 +2914,10 @@ header .navbar__button {
   }
 }
 @media (max-width: 1199.98px) {
+  .courses-content {
+    padding-top: 175px;
+    margin-top: -85px;
+  }
   .courses-content__title {
     font-size: 48px;
   }
@@ -2947,6 +2952,10 @@ header .navbar__button {
   }
 }
 @media (max-width: 991.98px) {
+  .courses-content {
+    padding-top: 162px;
+    margin-top: -82px;
+  }
   .courses-content__title {
     font-size: 38px;
   }
@@ -2990,6 +2999,9 @@ header .navbar__button {
     padding: 30px 30px 30px 40px;
     min-height: 450px;
   }
+  .courses-content__grid_item.lower.-employment {
+    padding: 0;
+  }
   .courses-content__grid_item.-video-lessons {
     background-position: left 37px top 203px;
   }
@@ -2998,7 +3010,10 @@ header .navbar__button {
     background-size: 520px auto;
   }
   .courses-content__grid_item.-employment {
-    background-position: right 9px bottom 0;
+    background-image: none;
+  }
+  .courses-content__grid_item_content.-employment {
+    padding: 30px 34px 12px 40px;
   }
   .courses-content__grid_item_icon {
     width: 70px;
@@ -3018,23 +3033,42 @@ header .navbar__button {
   .courses-content__grid_item_text {
     width: 100%;
   }
-  .courses-content__grid_item_text.-forwebinars {
+  .courses-content__grid_item_text.-forwebinars, .courses-content__grid_item_text.-foremployment {
     width: 100%;
   }
-  .courses-content__grid_item_text.-foremployment {
-    width: 420px;
+  .courses-content__grid_item_image.-employment {
+    background-image: url(../img/courses-content/employment-bgd.png);
+    background-repeat: no-repeat;
+    background-position: center top 0;
+    height: 141px;
   }
   .courses-content__grid_item-block {
     padding-bottom: 36px;
   }
 }
 @media (max-width: 575.98px) {
-  .courses-content__grid_item.-video-lessons {
-    background-position: left calc(100% + 26px) top calc(100% + 71px);
+  .courses-content__grid_item.upper {
+    padding: 0;
+    overflow: hidden;
   }
-  .courses-content__grid_item.-webinars {
-    background-size: calc(100% + 13px) auto;
-    background-position: right 0 top calc(100% + 79px);
+  .courses-content__grid_item.-video-lessons, .courses-content__grid_item.-webinars {
+    background-image: none;
+  }
+  .courses-content__grid_item_content {
+    padding: 30px 30px 30px 40px;
+  }
+  .courses-content__grid_item_image {
+    height: 65%;
+    background-repeat: no-repeat;
+  }
+  .courses-content__grid_item_image.-video-lessons {
+    background-image: url(../img/courses-content/video-lessons-bgd-large.png);
+    background-position: left 28px top 0;
+  }
+  .courses-content__grid_item_image.-webinars {
+    background-image: url(../img/courses-content/webinars-bgd.png);
+    background-position: top 0 right 0;
+    background-size: calc(100% + 12px) auto;
   }
   .courses-content__grid_item_icon.-mentors {
     bottom: -40px;
@@ -3046,29 +3080,24 @@ header .navbar__button {
 @media (max-width: 480px) {
   .courses-content {
     padding-top: 125px;
-    margin-top: -64px;
+    margin-top: -65px;
     padding-bottom: 60px;
   }
   .courses-content__title {
     line-height: 38px;
     margin-bottom: 12px;
   }
-  .courses-content__grid_item.upper, .courses-content__grid_item.lower {
-    padding: 20px 16px;
-  }
   .courses-content__grid_item.-additional-materials {
     padding: 24px 16px 20px;
   }
   .courses-content__grid_item.-video-lessons {
-    background-image: url(../img/courses-content/video-lessons-bgd-mobile.png);
-    background-position: left 6px top 226px;
     min-height: 420px;
   }
   .courses-content__grid_item.-webinars {
-    background-image: url(../img/courses-content/webinars-bgd-mobile.png);
-    background-position: right 0 top 170px;
-    background-size: 100% auto;
     min-height: 375px;
+  }
+  .courses-content__grid_item_content, .courses-content__grid_item.lower {
+    padding: 20px 16px;
   }
   .courses-content__grid_item_icon {
     width: 64px;
@@ -3084,6 +3113,12 @@ header .navbar__button {
     width: unset;
     top: unset;
     bottom: -42px;
+  }
+  .courses-content__grid_item_content {
+    padding: 20px 16px;
+  }
+  .courses-content__grid_item_content.-employment {
+    padding: 20px 16px 7px;
   }
   .courses-content__grid_item_title {
     font-size: 20px;
@@ -3108,9 +3143,29 @@ header .navbar__button {
   .courses-content__grid_item_text.-foremployment {
     width: 100%;
   }
-  .courses-content__grid_item.-employment {
-    background-position: left 49px top 119px;
-    min-height: 222px;
+  .courses-content__grid_item_image.-video-lessons {
+    background-position: left 6px top 0;
+  }
+}
+@media (max-width: 480px) and (max-width: 384px) {
+  .courses-content__grid_item_image.-video-lessons {
+    background-image: url(../img/courses-content/video-lessons-bgd-mobile.png);
+  }
+}
+@media (max-width: 480px) {
+  .courses-content__grid_item_image.-webinars {
+    background-size: calc(100% + 16px) auto;
+  }
+}
+@media (max-width: 480px) and (max-width: 330px) {
+  .courses-content__grid_item_image.-webinars {
+    background-image: url(../img/courses-content/webinars-bgd-mobile.png);
+    background-size: auto;
+  }
+}
+@media (max-width: 480px) {
+  .courses-content__grid_item_image.-employment {
+    height: 103px;
   }
   .courses-content .gap-30 {
     gap: 16px;
@@ -3123,8 +3178,7 @@ header .navbar__button {
 .timeline-section {
   background-color: #141414;
   background-image: radial-gradient(60.62% 50.01% at 77.94% 86.7%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 87.98%);
-  padding: 184px 0 0;
-  margin-top: -94px;
+  padding: 140px 0 0;
   position: relative;
 }
 .timeline-section::after {
@@ -3558,7 +3612,7 @@ header .navbar__button {
 }
 @media (max-width: 1199.98px) {
   .timeline-section {
-    margin-top: -85px;
+    padding: 80px 0 0;
   }
   .timeline-section::after {
     height: 94px;
@@ -3567,14 +3621,9 @@ header .navbar__button {
     margin-bottom: 182px;
   }
 }
-@media (max-width: 991.98px) {
-  .timeline-section {
-    margin-top: -82px;
-  }
-}
 @media (max-width: 767.98px) {
   .timeline-section {
-    padding: 170px 0 0;
+    padding: 60px 0 0;
   }
 }
 @media (max-width: 575.98px) {
@@ -3593,8 +3642,6 @@ header .navbar__button {
 @media (max-width: 480px) {
   .timeline-section {
     background-image: radial-gradient(99% 27% at 83% 83%, rgba(20, 97, 210, 0.6) 0%, rgba(20, 97, 210, 0) 80.98%);
-    padding: 125px 0 0;
-    margin-top: -65px;
   }
   .timeline-section .timeline-description-months {
     margin-bottom: 80px;
